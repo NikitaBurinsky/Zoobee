@@ -1,2 +1,5 @@
 # Zoobee
+.net8
+
+
 

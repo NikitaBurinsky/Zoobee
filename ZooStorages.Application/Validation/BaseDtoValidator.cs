@@ -5,15 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZooStorages.Domain.Localization;
+using Zoobee.Domain.Localization;
 
-namespace ZooStorages.Application.Validation
+namespace Zoobee.Application.Validation
 {
 	public abstract class BaseDtoValidator<T> : AbstractValidator<T>
 		where T : class
 	{
+		public virtual string ValidationMessageObjectName { get; set; } = nameof(T);
 		public string ValidationMessage(string message)
-			=> localizer[$"Validation.{nameof(T)}.{message}"];
+			=> localizer[$"Validation.{ValidationMessageObjectName}.{message}"];	
 
 		public IStringLocalizer<Validations> localizer;
 		public BaseDtoValidator(IStringLocalizer<Validations> localizer)

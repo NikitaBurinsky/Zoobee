@@ -8,9 +8,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using ZooStorages.Application.Interfaces.Repositories;
+using Zoobee.Application.Interfaces.Repositories;
 
-namespace ZooStorages.Application.ServiceCollectionExtensions
+namespace Zoobee.Application.ServiceCollectionExtensions
 {
 	public static class ApplicationLayerDependencyInjection
 	{
@@ -18,11 +18,9 @@ namespace ZooStorages.Application.ServiceCollectionExtensions
 		{
 			services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 			services.AddAutoMapper(cfg => { }, Assembly.GetExecutingAssembly());
-			services.AddFluentValidationAutoValidation();
+			services.AddFluentValidationAutoValidation(
+				cfg => cfg.DisableDataAnnotationsValidation = true);
 			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 		}
-
-
-
 	}
 }

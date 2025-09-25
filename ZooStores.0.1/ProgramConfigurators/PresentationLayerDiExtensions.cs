@@ -1,23 +1,32 @@
 ﻿using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
-using ZooStorages.Core.Errors;
-using ZooStorages.Domain.Localization;
+using Zoobee.Core.Errors;
+using Zoobee.Domain.Localization;
 
-namespace ZooStores.Web.ProgramConfigurators
+namespace Zoobee.Web.ProgramConfigurators
 {
 	public static class PresentationLayerDiExtensions
 	{
-		public static void AddLocalizationResources(this IServiceCollection services)
+		public static void AddPresentationLayer(this IServiceCollection services)
+		{
+			services.AddLocalizationResources();
+			services.AddSwaggerEndpointsDocumentation();
+			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+		}
+		private static void AddLocalizationResources(this IServiceCollection services)
 		{
 			services.AddLocalization(r => r.ResourcesPath = "LocalizationResources");
 			services.AddScoped<Errors>();
 			services.AddScoped<Validations>();
+			services.AddScoped<Authorization>();
+
+			services.AddFluentValidationAutoValidation();
 			services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 		}
-
-		public static void AddSwaggerEndpointsDocumentation(this IServiceCollection services)
+		private static void AddSwaggerEndpointsDocumentation(this IServiceCollection services)
 		{
 			services.AddEndpointsApiExplorer();
 			services.AddSwaggerGen(c =>
@@ -31,7 +40,6 @@ namespace ZooStores.Web.ProgramConfigurators
 				});
 			});
 		}
-
 
 		public class SwaggerFileUploadFilter : IOperationFilter
 		{

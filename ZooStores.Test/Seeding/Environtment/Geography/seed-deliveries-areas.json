@@ -1,0 +1,242 @@
+[
+  {
+    "Id": null,
+    "AreaName": "Центральный район Минска",
+    "GeoArea": [
+      {
+        "Latitude": 53.902257,
+        "Longitude": 27.561824
+      },
+      {
+        "Latitude": 53.909413,
+        "Longitude": 27.574892
+      },
+      {
+        "Latitude": 53.899876,
+        "Longitude": 27.591034
+      },
+      {
+        "Latitude": 53.892721,
+        "Longitude": 27.577966
+      }
+    ],
+    "IsTemplate": true,
+    "SellerCompanyName": null
+  },
+  {
+    "Id": null,
+    "AreaName": "Фрунзенский район Минска",
+    "GeoArea": [
+      {
+        "Latitude": 53.893209,
+        "Longitude": 27.476547
+      },
+      {
+        "Latitude": 53.904567,
+        "Longitude": 27.492311
+      },
+      {
+        "Latitude": 53.896432,
+        "Longitude": 27.523478
+      },
+      {
+        "Latitude": 53.885074,
+        "Longitude": 27.507714
+      }
+    ],
+    "IsTemplate": false,
+    "SellerCompanyName": "FourPaws"
+  },
+  {
+    "Id": null,
+    "AreaName": "Центр Гродно",
+    "GeoArea": [
+      {
+        "Latitude": 53.677839,
+        "Longitude": 23.829578
+      },
+      {
+        "Latitude": 53.684995,
+        "Longitude": 23.842646
+      },
+      {
+        "Latitude": 53.675458,
+        "Longitude": 23.858788
+      },
+      {
+        "Latitude": 53.668302,
+        "Longitude": 23.845720
+      }
+    ],
+    "IsTemplate": true,
+    "SellerCompanyName": null
+  },
+  {
+    "Id": null,
+    "AreaName": "Железнодорожный район Гомеля",
+    "GeoArea": [
+      {
+        "Latitude": 52.434517,
+        "Longitude": 30.998535
+      },
+      {
+        "Latitude": 52.441673,
+        "Longitude": 31.011603
+      },
+      {
+        "Latitude": 52.432136,
+        "Longitude": 31.027745
+      },
+      {
+        "Latitude": 52.424980,
+        "Longitude": 31.014677
+      }
+    ],
+    "IsTemplate": false,
+    "SellerCompanyName": "FourPaws"
+  },
+  {
+    "Id": null,
+    "AreaName": "Ленинский район Бреста",
+    "GeoArea": [
+      {
+        "Latitude": 52.093042,
+        "Longitude": 23.685527
+      },
+      {
+        "Latitude": 52.100198,
+        "Longitude": 23.698595
+      },
+      {
+        "Latitude": 52.090661,
+        "Longitude": 23.714737
+      },
+      {
+        "Latitude": 52.083505,
+        "Longitude": 23.701669
+      }
+    ],
+    "IsTemplate": true,
+    "SellerCompanyName": null
+  },
+  {
+    "Id": null,
+    "AreaName": "Октябрьский район Витебска",
+    "GeoArea": [
+      {
+        "Latitude": 55.184217,
+        "Longitude": 30.202869
+      },
+      {
+        "Latitude": 55.191373,
+        "Longitude": 30.215937
+      },
+      {
+        "Latitude": 55.181836,
+        "Longitude": 30.232079
+      },
+      {
+        "Latitude": 55.174680,
+        "Longitude": 30.219011
+      }
+    ],
+    "IsTemplate": false,
+    "SellerCompanyName": "PetCare"
+  },
+  {
+    "Id": null,
+    "AreaName": "Первомайский район Могилева",
+    "GeoArea": [
+      {
+        "Latitude": 53.900716,
+        "Longitude": 30.332248
+      },
+      {
+        "Latitude": 53.907872,
+        "Longitude": 30.345316
+      },
+      {
+        "Latitude": 53.898335,
+        "Longitude": 30.361458
+      },
+      {
+        "Latitude": 53.891179,
+        "Longitude": 30.348390
+      }
+    ],
+    "IsTemplate": true,
+    "SellerCompanyName": null
+  },
+  {
+    "Id": null,
+    "AreaName": "Советский район Бобруйска",
+    "GeoArea": [
+      {
+        "Latitude": 53.138557,
+        "Longitude": 29.232467
+      },
+      {
+        "Latitude": 53.145713,
+        "Longitude": 29.245535
+      },
+      {
+        "Latitude": 53.136176,
+        "Longitude": 29.261677
+      },
+      {
+        "Latitude": 53.129020,
+        "Longitude": 29.248609
+      }
+    ],
+    "IsTemplate": false,
+    "SellerCompanyName": "ZooLavka"
+  },
+  {
+    "Id": null,
+    "AreaName": "Центр Барановичей",
+    "GeoArea": [
+      {
+        "Latitude": 53.129381,
+        "Longitude": 25.993847
+      },
+      {
+        "Latitude": 53.136537,
+        "Longitude": 26.006915
+      },
+      {
+        "Latitude": 53.127000,
+        "Longitude": 26.023057
+      },
+      {
+        "Latitude": 53.119844,
+        "Longitude": 26.009989
+      }
+    ],
+    "IsTemplate": true,
+    "SellerCompanyName": null
+  },
+  {
+    "Id": null,
+    "AreaName": "Заводской район Солигорска",
+    "GeoArea": [
+      {
+        "Latitude": 52.789657,
+        "Longitude": 27.534218
+      },
+      {
+        "Latitude": 52.796813,
+        "Longitude": 27.547286
+      },
+      {
+        "Latitude": 52.787276,
+        "Longitude": 27.563428
+      },
+      {
+        "Latitude": 52.780120,
+        "Longitude": 27.550360
+      }
+    ],
+    "IsTemplate": false,
+    "SellerCompanyName": "ZooLavka"
+  }
+]

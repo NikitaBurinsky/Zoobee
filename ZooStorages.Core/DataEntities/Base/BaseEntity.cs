@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZooStorages.Domain.DataEntities.Base;
-using ZooStorages.Domain.DataEntities.Base.SoftDelete;
+using Zoobee.Domain.DataEntities.Base;
+using Zoobee.Domain.DataEntities.Base.SoftDelete;
 
-namespace ZooStores.Application.DtoTypes.Base
+namespace Zoobee.Application.DtoTypes.Base
 {
 	public class BaseEntity : ISoftDeletableEntity, IEntityMetadata
 	{

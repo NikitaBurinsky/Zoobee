@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZooStorages.Domain.DataEntities.Base
+namespace Zoobee.Domain.DataEntities.Base
 {
 	public interface IEntityMetadata
 	{

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoobee.Web", "Zoobee.Web.csproj", "{ED3F9475-F1F5-4734-A1EF-9AB41531C72C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9587D54D-970F-4ED0-8DA0-1453236E22EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoobee.Application", "..\ZooStorages.Application\Zoobee.Application.csproj", "{29CF803B-928D-4C31-8BA1-73BF1C4251DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3F0A4BEA-D4B3-4279-885F-B6BA29ADA129}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5C761D43-DEBE-4D4C-8441-D9F8656E76AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooStores.Test", "..\ZooStores.Test\ZooStores.Test.csproj", "{C71D47AE-FF23-4CF3-B2E5-319E7013CE9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoobee.Infrastructure", "..\ZooStorages.Infrastructure\Zoobee.Infrastructure.csproj", "{303A674B-FB6E-47FA-B20D-32510C30B38B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoobee.Domain", "..\ZooStorages.Core\Zoobee.Domain.csproj", "{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED3F9475-F1F5-4734-A1EF-9AB41531C72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3F9475-F1F5-4734-A1EF-9AB41531C72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3F9475-F1F5-4734-A1EF-9AB41531C72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3F9475-F1F5-4734-A1EF-9AB41531C72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29CF803B-928D-4C31-8BA1-73BF1C4251DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29CF803B-928D-4C31-8BA1-73BF1C4251DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29CF803B-928D-4C31-8BA1-73BF1C4251DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29CF803B-928D-4C31-8BA1-73BF1C4251DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71D47AE-FF23-4CF3-B2E5-319E7013CE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71D47AE-FF23-4CF3-B2E5-319E7013CE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71D47AE-FF23-4CF3-B2E5-319E7013CE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71D47AE-FF23-4CF3-B2E5-319E7013CE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303A674B-FB6E-47FA-B20D-32510C30B38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303A674B-FB6E-47FA-B20D-32510C30B38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303A674B-FB6E-47FA-B20D-32510C30B38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303A674B-FB6E-47FA-B20D-32510C30B38B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED3F9475-F1F5-4734-A1EF-9AB41531C72C} = {5C761D43-DEBE-4D4C-8441-D9F8656E76AB}
+		{29CF803B-928D-4C31-8BA1-73BF1C4251DD} = {9587D54D-970F-4ED0-8DA0-1453236E22EB}
+		{303A674B-FB6E-47FA-B20D-32510C30B38B} = {3F0A4BEA-D4B3-4279-885F-B6BA29ADA129}
+		{89B91FE0-38B7-4418-BC7C-DC0E5C5A6737} = {9587D54D-970F-4ED0-8DA0-1453236E22EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA2D8226-DF73-484F-B7D9-C93C548EAB45}
+	EndGlobalSection
+EndGlobal

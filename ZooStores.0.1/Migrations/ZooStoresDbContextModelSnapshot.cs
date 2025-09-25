@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NetTopologySuite.Geometries;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using ZooStores.Infrastructure.Repositoties;
+using Zoobee.Infrastructure.Repositoties;
 
 #nullable disable
 
@@ -22,10 +21,9 @@ namespace ZooStores.Web.Migrations
                 .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            NpgsqlModelBuilderExtensions.HasPostgresExtension(modelBuilder, "postgis");
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("DeliveryOptionEntityProductSlotEntity", b =>
+            modelBuilder.Entity("DeliveryOptionEntitySellingSlotEntity", b =>
                 {
                     b.Property<Guid>("DeliveryOptionsId")
                         .HasColumnType("uuid");
@@ -37,13 +35,414 @@ namespace ZooStores.Web.Migrations
 
                     b.HasIndex("ProductSlotsId");
 
-                    b.ToTable("DeliveryOptionEntityProductSlotEntity");
+                    b.ToTable("DeliveryOptionEntitySellingSlotEntity");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
                         .HasColumnType("text");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("text");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("SelfPickupOptionEntitySellingSlotEntity", b =>
+                {
+                    b.Property<Guid>("ProductSlotsId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("SelfPickupOptionsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("ProductSlotsId", "SelfPickupOptionsId");
+
+                    b.HasIndex("SelfPickupOptionsId");
+
+                    b.ToTable("SelfPickupOptionEntitySellingSlotEntity");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Catalog.Reviews.ReviewEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<float>("Rating")
+                        .HasColumnType("real");
+
+                    b.Property<Guid>("ReviewedProductId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("ReviewerUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasMaxLength(750)
+                        .HasColumnType("character varying(750)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReviewedProductId");
+
+                    b.HasIndex("ReviewerUserId");
+
+                    b.ToTable("Reviews");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Catalog.Tags.TagEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid?>("BaseProductEntityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("NormalizedTagName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)");
+
+                    b.Property<string>("ProductType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("TagName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BaseProductEntityId");
+
+                    b.HasIndex("NormalizedTagName")
+                        .IsUnique();
+
+                    b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Creators.BrandEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("BrandName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(750)
+                        .HasColumnType("character varying(750)");
+
+                    b.Property<string>("NormalizedBrandName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedBrandName")
+                        .IsUnique();
+
+                    b.ToTable("Brands");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Creators.CreatorCountryEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CountryName")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)");
+
+                    b.Property<string>("NormalizedCountryName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CreatorCountries");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Geography.DeliveryAreaEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("AreaName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsTemplate")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid?>("SellerCompanyId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AreaName")
+                        .IsUnique();
+
+                    b.HasIndex("SellerCompanyId");
+
+                    b.ToTable("DeliveryAreas");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Geography.LocationEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("text");
+
+                    b.Property<string>("City")
+                        .HasColumnType("text");
+
+                    b.Property<string>("NormalizedAddress")
+                        .HasColumnType("text");
+
+                    b.Property<string>("NormalizedCity")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locations");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.CreatorCompanyEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<string>("NormalizedCompanyName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedCompanyName")
+                        .IsUnique();
+
+                    b.ToTable("CreatorCompanies");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.ProductLineupEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BrandId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("LineupDescription")
+                        .IsRequired()
+                        .HasMaxLength(750)
+                        .HasColumnType("character varying(750)");
+
+                    b.Property<string>("LineupName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<string>("NormalizedLineupName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BrandId");
+
+                    b.ToTable("ProductsLineups");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.SellerCompanyEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<string>("NormalizedCompanyName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedCompanyName")
+                        .IsUnique();
+
+                    b.ToTable("SellerCompanies");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.ZooStoreEntity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<TimeOnly?>("ClosingTime")
+                        .HasColumnType("time without time zone");
+
+                    b.Property<Guid?>("LocationId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<string>("NormalizedName")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("character varying(60)");
+
+                    b.Property<TimeOnly?>("OpeningTime")
+                        .HasColumnType("time without time zone");
+
+                    b.Property<Guid>("SellerCompanyId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("StoreType")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LocationId");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique();
+
+                    b.HasIndex("SellerCompanyId");
+
+                    b.ToTable("ZooStores");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Identity.Role.ApplicationRole", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -66,131 +465,11 @@ namespace ZooStores.Web.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("text");
-
-                    b.Property<string>("RoleId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetRoleClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("text");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("AspNetUserClaims", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ProviderKey")
-                        .HasColumnType("text");
-
-                    b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("text");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("LoginProvider", "ProviderKey");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("AspNetUserLogins", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("text");
-
-                    b.Property<string>("RoleId")
-                        .HasColumnType("text");
-
-                    b.HasKey("UserId", "RoleId");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetUserRoles", (string)null);
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("text");
-
-                    b.Property<string>("LoginProvider")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Value")
-                        .HasColumnType("text");
-
-                    b.HasKey("UserId", "LoginProvider", "Name");
-
-                    b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("ProductSlotEntitySelfPickupOptionEntity", b =>
-                {
-                    b.Property<Guid>("ProductSlotsId")
                         .HasColumnType("uuid");
-
-                    b.Property<Guid>("SelfPickupOptionsId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("ProductSlotsId", "SelfPickupOptionsId");
-
-                    b.HasIndex("SelfPickupOptionsId");
-
-                    b.ToTable("ProductSlotEntitySelfPickupOptionEntity");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Identity.TestUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("text");
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("integer");
@@ -239,8 +518,10 @@ namespace ZooStores.Web.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)");
 
-                    b.Property<int>("Year")
-                        .HasColumnType("integer");
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasMaxLength(21)
+                        .HasColumnType("character varying(21)");
 
                     b.HasKey("Id");
 
@@ -252,9 +533,13 @@ namespace ZooStores.Web.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("UserType").HasValue("BaseApplicationUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Media.MediaFileEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Media.MediaFileEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -282,155 +567,121 @@ namespace ZooStores.Web.Migrations
                     b.ToTable("MediaFiles");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes.ProductAttributeTypeEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.BaseProductEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("AttributeName")
+                    b.Property<string>("Article")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(10)
+                        .HasColumnType("character varying(10)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("AttributeName")
-                        .IsUnique();
-
-                    b.ToTable("ExtAttributesTypes");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.ExtendedAttributes.ProductAttributeEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<Guid>("BrandId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("AttributeTypeId")
+                    b.Property<Guid>("CreatorCompanyId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("AttributeValue")
+                    b.Property<Guid>("CreatorCountryId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(400)
+                        .HasColumnType("character varying(400)");
 
-                    b.Property<Guid?>("ProductId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AttributeTypeId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ExtAttributes");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Information")
+                    b.Property<string>("Discriminator")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(21)
+                        .HasColumnType("character varying(21)");
+
+                    b.Property<string>("EAN")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("character varying(13)");
+
+                    b.Property<decimal>("MaxPrice")
+                        .HasColumnType("numeric");
 
                     b.Property<List<string>>("MediaURI")
                         .IsRequired()
                         .HasColumnType("text[]");
 
+                    b.Property<decimal>("MinPrice")
+                        .HasColumnType("numeric");
+
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
+
+                    b.Property<string>("NormalizedName")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("ProductTypeId")
+                    b.Property<Guid>("PetKindId")
                         .HasColumnType("uuid");
+
+                    b.Property<Guid>("ProductLineUpId")
+                        .HasColumnType("uuid");
+
+                    b.Property<float>("Rating")
+                        .HasColumnType("real");
+
+                    b.Property<string>("UPC")
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("character varying(12)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Name")
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("CreatorCompanyId");
+
+                    b.HasIndex("CreatorCountryId");
+
+                    b.HasIndex("NormalizedName")
                         .IsUnique();
 
-                    b.HasIndex("ProductTypeId");
+                    b.HasIndex("PetKindId");
+
+                    b.HasIndex("ProductLineUpId");
 
                     b.ToTable("Products");
+
+                    b.HasDiscriminator().HasValue("BaseProductEntity");
+
+                    b.UseTphMappingStrategy();
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.Reviews.ReviewEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.PetKindEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("ProductEntityId")
-                        .HasColumnType("uuid");
-
-                    b.Property<decimal>("Rating")
-                        .HasMaxLength(10)
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("ReviewerName")
+                    b.Property<string>("NormalizedPetKindName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(30)
+                        .HasColumnType("character varying(30)");
 
-                    b.Property<string>("Text")
+                    b.Property<string>("PetKindName")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Title")
                         .HasMaxLength(30)
                         .HasColumnType("character varying(30)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductEntityId");
-
-                    b.ToTable("Reviews");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.Tags.TagEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid?>("ProductEntityId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("TagName")
-                        .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("character varying(40)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductEntityId");
-
-                    b.HasIndex("TagName")
-                        .IsUnique();
-
-                    b.ToTable("Tags");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.PetKindEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("PetKindName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PetKindName")
+                    b.HasIndex("NormalizedPetKindName")
                         .IsUnique();
 
                     b.ToTable("PetKinds");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.ProductSlotEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.SellingSlotEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -442,191 +693,48 @@ namespace ZooStores.Web.Migrations
                     b.Property<decimal>("Discount")
                         .HasColumnType("numeric");
 
-                    b.Property<bool>("IsAvaibable")
-                        .HasColumnType("boolean");
-
                     b.Property<Guid>("ProductId")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("VetStoreEntityId")
+                    b.Property<decimal>("ResultPrice")
+                        .HasColumnType("numeric");
+
+                    b.Property<Guid>("SellerCompanyId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
 
-                    b.HasIndex("VetStoreEntityId");
+                    b.HasIndex("SellerCompanyId");
 
                     b.ToTable("SellingSlots");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.ProductTypeEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.SellingsInformation.DeliveryOptionEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("CategoryId")
+                    b.Property<Guid>("DeliveryAreaId")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Information")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("Name")
-                        .IsUnique();
-
-                    b.ToTable("ProductTypes");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Clinics.VetClinicEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Info")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("locationId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("ownerCompanyId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("locationId");
-
-                    b.HasIndex("ownerCompanyId");
-
-                    b.ToTable("VetClinics");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Companies.CompanyEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("ContactInfo")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Companies");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.EntityComponents.LocationEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("text");
-
-                    b.Property<string>("City")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("text");
-
-                    b.Property<double?>("Latitude")
-                        .HasColumnType("double precision");
-
-                    b.Property<double?>("Longitude")
-                        .HasColumnType("double precision");
-
-                    b.Property<string>("Region")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LocationEntity");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Categories.ProductCategoryEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("CategoryName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryName")
-                        .IsUnique();
-
-                    b.ToTable("ProductCategories");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Delivery.DeliveryOptionEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Polygon>("Area")
-                        .IsRequired()
-                        .HasColumnType("geometry");
-
-                    b.Property<decimal>("DeliveryCost")
+                    b.Property<decimal>("DeliveryPrice")
                         .HasColumnType("numeric");
 
-                    b.Property<TimeSpan>("DeliveryTime")
-                        .HasColumnType("interval");
-
-                    b.Property<List<string>>("PaymentTypes")
-                        .IsRequired()
-                        .HasColumnType("text[]");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("DeliveryAreaId");
 
                     b.ToTable("DeliveryOptions");
                 });
 
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Delivery.SelfPickupOptionEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.SellingsInformation.SelfPickupOptionEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
-
-                    b.Property<long?>("AvaibableInPlace")
-                        .HasColumnType("bigint");
 
                     b.Property<decimal>("DeliveryToPointCost")
                         .HasColumnType("numeric");
@@ -634,12 +742,11 @@ namespace ZooStores.Web.Migrations
                     b.Property<TimeSpan>("DeliveryToPointTime")
                         .HasColumnType("interval");
 
-                    b.Property<bool>("IsAvaibableToBook")
+                    b.Property<bool>("IsAvaibableOnlinePayment")
                         .HasColumnType("boolean");
 
-                    b.Property<string[]>("PaymentTypes")
-                        .IsRequired()
-                        .HasColumnType("text[]");
+                    b.Property<bool>("IsAvaibableToBook")
+                        .HasColumnType("boolean");
 
                     b.Property<Guid>("PickupPointLocationId")
                         .HasColumnType("uuid");
@@ -651,463 +758,152 @@ namespace ZooStores.Web.Migrations
                     b.ToTable("SelfPickupOptions");
                 });
 
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Stores.VetStoreEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Identity.Users.AdminUser", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
+                    b.HasBaseType("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser");
 
-                    b.Property<string>("Info")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("LocationId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("ownerCompanyId")
-                        .HasColumnType("uuid");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LocationId");
-
-                    b.HasIndex("ownerCompanyId");
-
-                    b.ToTable("VetStores");
+                    b.HasDiscriminator().HasValue("Admin");
                 });
 
-            modelBuilder.Entity("DeliveryOptionEntityProductSlotEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Identity.Users.CustomerUser", b =>
                 {
-                    b.HasOne("ZooStores.Application.DtoTypes.Products.Delivery.DeliveryOptionEntity", null)
+                    b.HasBaseType("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser");
+
+                    b.Property<int>("BornYear")
+                        .HasColumnType("integer");
+
+                    b.HasDiscriminator().HasValue("Customer");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Identity.Users.OrganisationUser", b =>
+                {
+                    b.HasBaseType("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser");
+
+                    b.HasDiscriminator().HasValue("Organisation");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.FoodProductEntity.FoodProductEntity", b =>
+                {
+                    b.HasBaseType("Zoobee.Domain.DataEntities.Products.BaseProductEntity");
+
+                    b.Property<int>("FoodType")
+                        .HasColumnType("integer");
+
+                    b.Property<decimal>("ProductWeightGramms")
+                        .HasColumnType("numeric");
+
+                    b.HasDiscriminator().HasValue("FoodProductEntity");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.ToiletProductEntity.ToiletProductEntity", b =>
+                {
+                    b.HasBaseType("Zoobee.Domain.DataEntities.Products.BaseProductEntity");
+
+                    b.Property<int>("ToiletType")
+                        .HasColumnType("integer");
+
+                    b.Property<float?>("VolumeLiters")
+                        .HasColumnType("real");
+
+                    b.HasDiscriminator().HasValue("ToiletProductEntity");
+                });
+
+            modelBuilder.Entity("DeliveryOptionEntitySellingSlotEntity", b =>
+                {
+                    b.HasOne("Zoobee.Domain.DataEntities.SellingsInformation.DeliveryOptionEntity", null)
                         .WithMany()
                         .HasForeignKey("DeliveryOptionsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.ProductSlotEntity", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.SellingSlotEntity", null)
                         .WithMany()
                         .HasForeignKey("ProductSlotsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Role.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Identity.TestUser", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Identity.TestUser", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Role.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ZooStorages.Domain.DataEntities.Identity.TestUser", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Identity.TestUser", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Users.BaseApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ProductSlotEntitySelfPickupOptionEntity", b =>
+            modelBuilder.Entity("SelfPickupOptionEntitySellingSlotEntity", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.ProductSlotEntity", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.SellingSlotEntity", null)
                         .WithMany()
                         .HasForeignKey("ProductSlotsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ZooStores.Application.DtoTypes.Products.Delivery.SelfPickupOptionEntity", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.SellingsInformation.SelfPickupOptionEntity", null)
                         .WithMany()
                         .HasForeignKey("SelfPickupOptionsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Media.MediaFileEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Catalog.Reviews.ReviewEntity", b =>
                 {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("MediaFileEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("MediaFileEntityId");
-
-                            b1.ToTable("MediaFiles");
-
-                            b1.WithOwner()
-                                .HasForeignKey("MediaFileEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("MediaFileEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("MediaFileEntityId");
-
-                            b1.ToTable("MediaFiles");
-
-                            b1.WithOwner()
-                                .HasForeignKey("MediaFileEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes.ProductAttributeTypeEntity", b =>
-                {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("ProductAttributeTypeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("ProductAttributeTypeEntityId");
-
-                            b1.ToTable("ExtAttributesTypes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductAttributeTypeEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("ProductAttributeTypeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("ProductAttributeTypeEntityId");
-
-                            b1.ToTable("ExtAttributesTypes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductAttributeTypeEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.ExtendedAttributes.ProductAttributeEntity", b =>
-                {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes.ProductAttributeTypeEntity", "AttributeType")
-                        .WithMany("AttributesOfType")
-                        .HasForeignKey("AttributeTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", "Product")
-                        .WithMany("ExtendedAttributes")
-                        .HasForeignKey("ProductId");
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("ProductAttributeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("ProductAttributeEntityId");
-
-                            b1.ToTable("ExtAttributes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductAttributeEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("ProductAttributeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("ProductAttributeEntityId");
-
-                            b1.ToTable("ExtAttributes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductAttributeEntityId");
-                        });
-
-                    b.Navigation("AttributeType");
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", b =>
-                {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.ProductTypeEntity", "ProductType")
-                        .WithMany("ProductsOfType")
-                        .HasForeignKey("ProductTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Products.Components.Attributes.ManufactureAttributes", "ManufactureAttributes", b1 =>
-                        {
-                            b1.Property<Guid>("ProductEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<string>("Brand")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("CreatorCountry")
-                                .HasColumnType("text");
-
-                            b1.Property<string>("EAN_Code")
-                                .IsRequired()
-                                .HasMaxLength(13)
-                                .HasColumnType("character varying(13)");
-
-                            b1.Property<string>("UPC_Code")
-                                .IsRequired()
-                                .HasMaxLength(12)
-                                .HasColumnType("character varying(12)");
-
-                            b1.HasKey("ProductEntityId");
-
-                            b1.ToTable("Products");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Products.Components.Attributes.PetProductAttributes", "PetInfoAttributes", b1 =>
-                        {
-                            b1.Property<Guid>("ProductEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<long?>("PetAgeWeeksMax")
-                                .HasColumnType("bigint");
-
-                            b1.Property<long?>("PetAgeWeeksMin")
-                                .HasColumnType("bigint");
-
-                            b1.Property<int?>("PetGender")
-                                .HasColumnType("integer");
-
-                            b1.Property<Guid>("PetKindId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<int?>("PetSize")
-                                .HasColumnType("integer");
-
-                            b1.HasKey("ProductEntityId");
-
-                            b1.HasIndex("PetKindId");
-
-                            b1.ToTable("Products");
-
-                            b1.HasOne("ZooStorages.Domain.DataEntities.Products.PetKindEntity", "PetKind")
-                                .WithMany()
-                                .HasForeignKey("PetKindId")
-                                .OnDelete(DeleteBehavior.Cascade)
-                                .IsRequired();
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductEntityId");
-
-                            b1.Navigation("PetKind");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Products.Components.Attributes.PhysicalAttributes", "PhysicalAttributes", b1 =>
-                        {
-                            b1.Property<Guid>("ProductEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<string>("Color")
-                                .HasColumnType("text");
-
-                            b1.Property<int>("ContentMeasurementsUnits")
-                                .HasColumnType("integer");
-
-                            b1.Property<List<string>>("Materials")
-                                .HasColumnType("text[]");
-
-                            b1.Property<decimal?>("WeightOfProducts")
-                                .HasColumnType("numeric");
-
-                            b1.HasKey("ProductEntityId");
-
-                            b1.ToTable("Products");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductEntityId");
-
-                            b1.OwnsOne("ZooStorages.Domain.DataEntities.Products.Components.Dimensions.ProductDimensions", "Dimensions", b2 =>
-                                {
-                                    b2.Property<Guid>("PhysicalAttributesProductEntityId")
-                                        .HasColumnType("uuid");
-
-                                    b2.Property<decimal?>("Heigth")
-                                        .HasColumnType("numeric");
-
-                                    b2.Property<decimal?>("Length")
-                                        .HasColumnType("numeric");
-
-                                    b2.Property<decimal?>("Width")
-                                        .HasColumnType("numeric");
-
-                                    b2.HasKey("PhysicalAttributesProductEntityId");
-
-                                    b2.ToTable("Products");
-
-                                    b2.WithOwner()
-                                        .HasForeignKey("PhysicalAttributesProductEntityId");
-                                });
-
-                            b1.Navigation("Dimensions");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("ProductEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("ProductEntityId");
-
-                            b1.ToTable("Products");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("ProductEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("ProductEntityId");
-
-                            b1.ToTable("Products");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("ManufactureAttributes")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-
-                    b.Navigation("PetInfoAttributes")
-                        .IsRequired();
-
-                    b.Navigation("PhysicalAttributes")
-                        .IsRequired();
-
-                    b.Navigation("ProductType");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.Reviews.ReviewEntity", b =>
-                {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.BaseProductEntity", "ReviewedProduct")
                         .WithMany("Reviews")
-                        .HasForeignKey("ProductEntityId");
+                        .HasForeignKey("ReviewedProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.HasOne("Zoobee.Domain.DataEntities.Identity.Users.CustomerUser", "ReviewerUser")
+                        .WithMany()
+                        .HasForeignKey("ReviewerUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
                             b1.Property<Guid>("ReviewEntityId")
                                 .HasColumnType("uuid");
@@ -1126,7 +922,7 @@ namespace ZooStores.Web.Migrations
                                 .HasForeignKey("ReviewEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
                             b1.Property<Guid>("ReviewEntityId")
                                 .HasColumnType("uuid");
@@ -1150,15 +946,19 @@ namespace ZooStores.Web.Migrations
 
                     b.Navigation("Metadata")
                         .IsRequired();
+
+                    b.Navigation("ReviewedProduct");
+
+                    b.Navigation("ReviewerUser");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.Tags.TagEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Catalog.Tags.TagEntity", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", null)
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.BaseProductEntity", null)
                         .WithMany("Tags")
-                        .HasForeignKey("ProductEntityId");
+                        .HasForeignKey("BaseProductEntityId");
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
                             b1.Property<Guid>("TagEntityId")
                                 .HasColumnType("uuid");
@@ -1177,7 +977,7 @@ namespace ZooStores.Web.Migrations
                                 .HasForeignKey("TagEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
                             b1.Property<Guid>("TagEntityId")
                                 .HasColumnType("uuid");
@@ -1203,9 +1003,596 @@ namespace ZooStores.Web.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.PetKindEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Creators.BrandEntity", b =>
                 {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("BrandEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("BrandEntityId");
+
+                            b1.ToTable("Brands");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BrandEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("BrandEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("BrandEntityId");
+
+                            b1.ToTable("Brands");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BrandEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Creators.CreatorCountryEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("CreatorCountryEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("CreatorCountryEntityId");
+
+                            b1.ToTable("CreatorCountries");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CreatorCountryEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("CreatorCountryEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("CreatorCountryEntityId");
+
+                            b1.ToTable("CreatorCountries");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CreatorCountryEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Geography.DeliveryAreaEntity", b =>
+                {
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.SellerCompanyEntity", "SellerCompany")
+                        .WithMany()
+                        .HasForeignKey("SellerCompanyId");
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("DeliveryAreaEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("DeliveryAreaEntityId");
+
+                            b1.ToTable("DeliveryAreas");
+
+                            b1.WithOwner()
+                                .HasForeignKey("DeliveryAreaEntityId");
+                        });
+
+                    b.OwnsMany("Zoobee.Domain.DataEntities.Environment.Geography.GeoPoint", "GeoArea", b1 =>
+                        {
+                            b1.Property<Guid>("DeliveryAreaEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<int>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("integer");
+
+                            NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b1.Property<int>("Id"));
+
+                            b1.Property<double>("Latitude")
+                                .HasColumnType("double precision");
+
+                            b1.Property<double>("Longitude")
+                                .HasColumnType("double precision");
+
+                            b1.HasKey("DeliveryAreaEntityId", "Id");
+
+                            b1.ToTable("DeliveryAreas_GeoArea");
+
+                            b1.WithOwner()
+                                .HasForeignKey("DeliveryAreaEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("DeliveryAreaEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("DeliveryAreaEntityId");
+
+                            b1.ToTable("DeliveryAreas");
+
+                            b1.WithOwner()
+                                .HasForeignKey("DeliveryAreaEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("GeoArea");
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+
+                    b.Navigation("SellerCompany");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Geography.LocationEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("LocationEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("LocationEntityId");
+
+                            b1.ToTable("Locations");
+
+                            b1.WithOwner()
+                                .HasForeignKey("LocationEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Environment.Geography.GeoPoint", "GeoPoint", b1 =>
+                        {
+                            b1.Property<Guid>("LocationEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<double>("Latitude")
+                                .HasColumnType("double precision");
+
+                            b1.Property<double>("Longitude")
+                                .HasColumnType("double precision");
+
+                            b1.HasKey("LocationEntityId");
+
+                            b1.ToTable("Locations");
+
+                            b1.WithOwner()
+                                .HasForeignKey("LocationEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("LocationEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("LocationEntityId");
+
+                            b1.ToTable("Locations");
+
+                            b1.WithOwner()
+                                .HasForeignKey("LocationEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("GeoPoint")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.CreatorCompanyEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("CreatorCompanyEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("CreatorCompanyEntityId");
+
+                            b1.ToTable("CreatorCompanies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CreatorCompanyEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("CreatorCompanyEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("CreatorCompanyEntityId");
+
+                            b1.ToTable("CreatorCompanies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("CreatorCompanyEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.ProductLineupEntity", b =>
+                {
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Creators.BrandEntity", "Brand")
+                        .WithMany("BrandsLineups")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("ProductLineupEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("ProductLineupEntityId");
+
+                            b1.ToTable("ProductsLineups");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ProductLineupEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("ProductLineupEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("ProductLineupEntityId");
+
+                            b1.ToTable("ProductsLineups");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ProductLineupEntityId");
+                        });
+
+                    b.Navigation("Brand");
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.SellerCompanyEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("SellerCompanyEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("SellerCompanyEntityId");
+
+                            b1.ToTable("SellerCompanies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("SellerCompanyEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("SellerCompanyEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("SellerCompanyEntityId");
+
+                            b1.ToTable("SellerCompanies");
+
+                            b1.WithOwner()
+                                .HasForeignKey("SellerCompanyEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Manufactures.ZooStoreEntity", b =>
+                {
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Geography.LocationEntity", "Location")
+                        .WithMany()
+                        .HasForeignKey("LocationId");
+
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.SellerCompanyEntity", "SellerCompany")
+                        .WithMany()
+                        .HasForeignKey("SellerCompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("ZooStoreEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("ZooStoreEntityId");
+
+                            b1.ToTable("ZooStores");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ZooStoreEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("ZooStoreEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("ZooStoreEntityId");
+
+                            b1.ToTable("ZooStores");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ZooStoreEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Location");
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+
+                    b.Navigation("SellerCompany");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Media.MediaFileEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("MediaFileEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("MediaFileEntityId");
+
+                            b1.ToTable("MediaFiles");
+
+                            b1.WithOwner()
+                                .HasForeignKey("MediaFileEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("MediaFileEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("MediaFileEntityId");
+
+                            b1.ToTable("MediaFiles");
+
+                            b1.WithOwner()
+                                .HasForeignKey("MediaFileEntityId");
+                        });
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.BaseProductEntity", b =>
+                {
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Creators.BrandEntity", "Brand")
+                        .WithMany()
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.CreatorCompanyEntity", "CreatorCompany")
+                        .WithMany()
+                        .HasForeignKey("CreatorCompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Creators.CreatorCountryEntity", "CreatorCountry")
+                        .WithMany()
+                        .HasForeignKey("CreatorCountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.PetKindEntity", "PetKind")
+                        .WithMany()
+                        .HasForeignKey("PetKindId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.ProductLineupEntity", "ProductLineUp")
+                        .WithMany()
+                        .HasForeignKey("ProductLineUpId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                        {
+                            b1.Property<Guid>("BaseProductEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("DeletedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<bool>("IsDeleted")
+                                .HasColumnType("boolean");
+
+                            b1.HasKey("BaseProductEntityId");
+
+                            b1.ToTable("Products");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BaseProductEntityId");
+                        });
+
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                        {
+                            b1.Property<Guid>("BaseProductEntityId")
+                                .HasColumnType("uuid");
+
+                            b1.Property<DateTimeOffset?>("CreatedAt")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.Property<DateTimeOffset?>("LastModified")
+                                .HasColumnType("timestamp with time zone");
+
+                            b1.HasKey("BaseProductEntityId");
+
+                            b1.ToTable("Products");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BaseProductEntityId");
+                        });
+
+                    b.Navigation("Brand");
+
+                    b.Navigation("CreatorCompany");
+
+                    b.Navigation("CreatorCountry");
+
+                    b.Navigation("DeleteData")
+                        .IsRequired();
+
+                    b.Navigation("Metadata")
+                        .IsRequired();
+
+                    b.Navigation("PetKind");
+
+                    b.Navigation("ProductLineUp");
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.PetKindEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
                             b1.Property<Guid>("PetKindEntityId")
                                 .HasColumnType("uuid");
@@ -1224,7 +1611,7 @@ namespace ZooStores.Web.Migrations
                                 .HasForeignKey("PetKindEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
                             b1.Property<Guid>("PetKindEntityId")
                                 .HasColumnType("uuid");
@@ -1250,21 +1637,23 @@ namespace ZooStores.Web.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.ProductSlotEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.SellingSlotEntity", b =>
                 {
-                    b.HasOne("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", "Product")
+                    b.HasOne("Zoobee.Domain.DataEntities.Products.BaseProductEntity", "Product")
                         .WithMany("SellingSlots")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ZooStores.Application.DtoTypes.Stores.VetStoreEntity", null)
-                        .WithMany("avaibabProducts")
-                        .HasForeignKey("VetStoreEntityId");
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.SellerCompanyEntity", "SellerCompany")
+                        .WithMany()
+                        .HasForeignKey("SellerCompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
-                            b1.Property<Guid>("ProductSlotEntityId")
+                            b1.Property<Guid>("SellingSlotEntityId")
                                 .HasColumnType("uuid");
 
                             b1.Property<DateTimeOffset?>("DeletedAt")
@@ -1273,17 +1662,17 @@ namespace ZooStores.Web.Migrations
                             b1.Property<bool>("IsDeleted")
                                 .HasColumnType("boolean");
 
-                            b1.HasKey("ProductSlotEntityId");
+                            b1.HasKey("SellingSlotEntityId");
 
                             b1.ToTable("SellingSlots");
 
                             b1.WithOwner()
-                                .HasForeignKey("ProductSlotEntityId");
+                                .HasForeignKey("SellingSlotEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
-                            b1.Property<Guid>("ProductSlotEntityId")
+                            b1.Property<Guid>("SellingSlotEntityId")
                                 .HasColumnType("uuid");
 
                             b1.Property<DateTimeOffset?>("CreatedAt")
@@ -1292,12 +1681,12 @@ namespace ZooStores.Web.Migrations
                             b1.Property<DateTimeOffset?>("LastModified")
                                 .HasColumnType("timestamp with time zone");
 
-                            b1.HasKey("ProductSlotEntityId");
+                            b1.HasKey("SellingSlotEntityId");
 
                             b1.ToTable("SellingSlots");
 
                             b1.WithOwner()
-                                .HasForeignKey("ProductSlotEntityId");
+                                .HasForeignKey("SellingSlotEntityId");
                         });
 
                     b.Navigation("DeleteData")
@@ -1307,270 +1696,19 @@ namespace ZooStores.Web.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+
+                    b.Navigation("SellerCompany");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.ProductTypeEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.SellingsInformation.DeliveryOptionEntity", b =>
                 {
-                    b.HasOne("ZooStores.Application.DtoTypes.Products.Categories.ProductCategoryEntity", "Category")
-                        .WithMany("ProductTypes")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("ProductTypeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("ProductTypeEntityId");
-
-                            b1.ToTable("ProductTypes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductTypeEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("ProductTypeEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("ProductTypeEntityId");
-
-                            b1.ToTable("ProductTypes");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductTypeEntityId");
-                        });
-
-                    b.Navigation("Category");
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Clinics.VetClinicEntity", b =>
-                {
-                    b.HasOne("ZooStores.Application.DtoTypes.EntityComponents.LocationEntity", "location")
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Geography.DeliveryAreaEntity", "DeliveryArea")
                         .WithMany()
-                        .HasForeignKey("locationId")
+                        .HasForeignKey("DeliveryAreaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ZooStores.Application.DtoTypes.Companies.CompanyEntity", "ownerCompany")
-                        .WithMany("ownedClinics")
-                        .HasForeignKey("ownerCompanyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("VetClinicEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("VetClinicEntityId");
-
-                            b1.ToTable("VetClinics");
-
-                            b1.WithOwner()
-                                .HasForeignKey("VetClinicEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("VetClinicEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("VetClinicEntityId");
-
-                            b1.ToTable("VetClinics");
-
-                            b1.WithOwner()
-                                .HasForeignKey("VetClinicEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-
-                    b.Navigation("location");
-
-                    b.Navigation("ownerCompany");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Companies.CompanyEntity", b =>
-                {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("CompanyEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("CompanyEntityId");
-
-                            b1.ToTable("Companies");
-
-                            b1.WithOwner()
-                                .HasForeignKey("CompanyEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("CompanyEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("CompanyEntityId");
-
-                            b1.ToTable("Companies");
-
-                            b1.WithOwner()
-                                .HasForeignKey("CompanyEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.EntityComponents.LocationEntity", b =>
-                {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("LocationEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("LocationEntityId");
-
-                            b1.ToTable("LocationEntity");
-
-                            b1.WithOwner()
-                                .HasForeignKey("LocationEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("LocationEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("LocationEntityId");
-
-                            b1.ToTable("LocationEntity");
-
-                            b1.WithOwner()
-                                .HasForeignKey("LocationEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Categories.ProductCategoryEntity", b =>
-                {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
-                        {
-                            b1.Property<Guid>("ProductCategoryEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
-
-                            b1.HasKey("ProductCategoryEntityId");
-
-                            b1.ToTable("ProductCategories");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductCategoryEntityId");
-                        });
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
-                        {
-                            b1.Property<Guid>("ProductCategoryEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.HasKey("ProductCategoryEntityId");
-
-                            b1.ToTable("ProductCategories");
-
-                            b1.WithOwner()
-                                .HasForeignKey("ProductCategoryEntityId");
-                        });
-
-                    b.Navigation("DeleteData")
-                        .IsRequired();
-
-                    b.Navigation("Metadata")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Delivery.DeliveryOptionEntity", b =>
-                {
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
                             b1.Property<Guid>("DeliveryOptionEntityId")
                                 .HasColumnType("uuid");
@@ -1589,7 +1727,7 @@ namespace ZooStores.Web.Migrations
                                 .HasForeignKey("DeliveryOptionEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
                             b1.Property<Guid>("DeliveryOptionEntityId")
                                 .HasColumnType("uuid");
@@ -1611,19 +1749,21 @@ namespace ZooStores.Web.Migrations
                     b.Navigation("DeleteData")
                         .IsRequired();
 
+                    b.Navigation("DeliveryArea");
+
                     b.Navigation("Metadata")
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Delivery.SelfPickupOptionEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.SellingsInformation.SelfPickupOptionEntity", b =>
                 {
-                    b.HasOne("ZooStores.Application.DtoTypes.EntityComponents.LocationEntity", "PickupPointLocation")
+                    b.HasOne("Zoobee.Domain.DataEntities.Environment.Manufactures.ZooStoreEntity", "PickupPointLocation")
                         .WithMany()
                         .HasForeignKey("PickupPointLocationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
                         {
                             b1.Property<Guid>("SelfPickupOptionEntityId")
                                 .HasColumnType("uuid");
@@ -1642,7 +1782,7 @@ namespace ZooStores.Web.Migrations
                                 .HasForeignKey("SelfPickupOptionEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
                         {
                             b1.Property<Guid>("SelfPickupOptionEntityId")
                                 .HasColumnType("uuid");
@@ -1670,105 +1810,95 @@ namespace ZooStores.Web.Migrations
                     b.Navigation("PickupPointLocation");
                 });
 
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Stores.VetStoreEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.FoodProductEntity.FoodProductEntity", b =>
                 {
-                    b.HasOne("ZooStores.Application.DtoTypes.EntityComponents.LocationEntity", "Location")
-                        .WithMany()
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ZooStores.Application.DtoTypes.Companies.CompanyEntity", "ownerCompany")
-                        .WithMany("ownedStores")
-                        .HasForeignKey("ownerCompanyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.SoftDelete.ISoftDeletableEntity+SoftDeleteData", "DeleteData", b1 =>
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Data_Primitives.PetAgeRange", "PetAgeRange", b1 =>
                         {
-                            b1.Property<Guid>("VetStoreEntityId")
+                            b1.Property<Guid>("FoodProductEntityId")
                                 .HasColumnType("uuid");
 
-                            b1.Property<DateTimeOffset?>("DeletedAt")
-                                .HasColumnType("timestamp with time zone");
+                            b1.Property<long>("PetAgeWeeksMax")
+                                .ValueGeneratedOnUpdateSometimes()
+                                .HasColumnType("bigint");
 
-                            b1.Property<bool>("IsDeleted")
-                                .HasColumnType("boolean");
+                            b1.Property<long>("PetAgeWeeksMin")
+                                .ValueGeneratedOnUpdateSometimes()
+                                .HasColumnType("bigint");
 
-                            b1.HasKey("VetStoreEntityId");
+                            b1.HasKey("FoodProductEntityId");
 
-                            b1.ToTable("VetStores");
+                            b1.ToTable("Products");
 
                             b1.WithOwner()
-                                .HasForeignKey("VetStoreEntityId");
+                                .HasForeignKey("FoodProductEntityId");
                         });
 
-                    b.OwnsOne("ZooStorages.Domain.DataEntities.Base.IEntityMetadata+EntityMetadata", "Metadata", b1 =>
+                    b.Navigation("PetAgeRange")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.ToiletProductEntity.ToiletProductEntity", b =>
+                {
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Data_Primitives.SizeDimensions", "Dimensions", b1 =>
                         {
-                            b1.Property<Guid>("VetStoreEntityId")
+                            b1.Property<Guid>("ToiletProductEntityId")
                                 .HasColumnType("uuid");
 
-                            b1.Property<DateTimeOffset?>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
+                            b1.Property<float>("X")
+                                .HasColumnType("real");
 
-                            b1.Property<DateTimeOffset?>("LastModified")
-                                .HasColumnType("timestamp with time zone");
+                            b1.Property<float>("Y")
+                                .HasColumnType("real");
 
-                            b1.HasKey("VetStoreEntityId");
+                            b1.Property<float>("Z")
+                                .HasColumnType("real");
 
-                            b1.ToTable("VetStores");
+                            b1.HasKey("ToiletProductEntityId");
+
+                            b1.ToTable("Products");
 
                             b1.WithOwner()
-                                .HasForeignKey("VetStoreEntityId");
+                                .HasForeignKey("ToiletProductEntityId");
                         });
 
-                    b.Navigation("DeleteData")
-                        .IsRequired();
+                    b.OwnsOne("Zoobee.Domain.DataEntities.Data_Primitives.PetAgeRange", "PetAgeRange", b1 =>
+                        {
+                            b1.Property<Guid>("ToiletProductEntityId")
+                                .HasColumnType("uuid");
 
-                    b.Navigation("Location");
+                            b1.Property<long>("PetAgeWeeksMax")
+                                .ValueGeneratedOnUpdateSometimes()
+                                .HasColumnType("bigint");
 
-                    b.Navigation("Metadata")
-                        .IsRequired();
+                            b1.Property<long>("PetAgeWeeksMin")
+                                .ValueGeneratedOnUpdateSometimes()
+                                .HasColumnType("bigint");
 
-                    b.Navigation("ownerCompany");
+                            b1.HasKey("ToiletProductEntityId");
+
+                            b1.ToTable("Products");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ToiletProductEntityId");
+                        });
+
+                    b.Navigation("Dimensions");
+
+                    b.Navigation("PetAgeRange");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes.ProductAttributeTypeEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Environment.Creators.BrandEntity", b =>
                 {
-                    b.Navigation("AttributesOfType");
+                    b.Navigation("BrandsLineups");
                 });
 
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.Components.ProductEntity", b =>
+            modelBuilder.Entity("Zoobee.Domain.DataEntities.Products.BaseProductEntity", b =>
                 {
-                    b.Navigation("ExtendedAttributes");
-
                     b.Navigation("Reviews");
 
                     b.Navigation("SellingSlots");
 
                     b.Navigation("Tags");
-                });
-
-            modelBuilder.Entity("ZooStorages.Domain.DataEntities.Products.ProductTypeEntity", b =>
-                {
-                    b.Navigation("ProductsOfType");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Companies.CompanyEntity", b =>
-                {
-                    b.Navigation("ownedClinics");
-
-                    b.Navigation("ownedStores");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Products.Categories.ProductCategoryEntity", b =>
-                {
-                    b.Navigation("ProductTypes");
-                });
-
-            modelBuilder.Entity("ZooStores.Application.DtoTypes.Stores.VetStoreEntity", b =>
-                {
-                    b.Navigation("avaibabProducts");
                 });
 #pragma warning restore 612, 618
         }

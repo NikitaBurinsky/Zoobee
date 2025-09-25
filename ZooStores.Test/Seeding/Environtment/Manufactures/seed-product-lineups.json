@@ -1,0 +1,62 @@
+[
+  {
+    "Id": null,
+    "BrandName": "PetLove",
+    "LineupName": "EcoCare",
+    "LineupDescription": "Экологичные корма и аксессуары из натуральных материалов"
+  },
+  {
+    "Id": null,
+    "BrandName": "ZooFamily",
+    "LineupName": "FamilyChoice",
+    "LineupDescription": "Бюджетные товары для всей семьи питомцев"
+  },
+  {
+    "Id": null,
+    "BrandName": "AquaPro",
+    "LineupName": "AquaExpert",
+    "LineupDescription": "Профессиональное оборудование для аквариумов"
+  },
+  {
+    "Id": null,
+    "BrandName": "BirdHappy",
+    "LineupName": "ParadiseBirds",
+    "LineupDescription": "Премиум корма и просторные клетки для птиц"
+  },
+  {
+    "Id": null,
+    "BrandName": "CatComfort",
+    "LineupName": "UltraComfort",
+    "LineupDescription": "Инновационные лежаки и когтеточки для кошек"
+  },
+  {
+    "Id": null,
+    "BrandName": "DogExpert",
+    "LineupName": "ActiveLife",
+    "LineupDescription": "Товары для активных собак: игрушки, корма, аксессуары"
+  },
+  {
+    "Id": null,
+    "BrandName": "EcoPet",
+    "LineupName": "GreenLine",
+    "LineupDescription": "Биоразлагаемые наполнители и экологичные корма"
+  },
+  {
+    "Id": null,
+    "BrandName": "RodentWorld",
+    "LineupName": "SmallWorld",
+    "LineupDescription": "Комплексы и корма для грызунов и мелких животных"
+  },
+  {
+    "Id": null,
+    "BrandName": "VetLine",
+    "LineupName": "HealthPro",
+    "LineupDescription": "Ветеринарные препараты и средства гигиены"
+  },
+  {
+    "Id": null,
+    "BrandName": "PlayTime",
+    "LineupName": "InteractiveFun",
+    "LineupDescription": "Развивающие игрушки и игровые комплексы"
+  }
+]

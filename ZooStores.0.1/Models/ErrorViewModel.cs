@@ -1,4 +1,4 @@
-namespace ZooStores.Web.Models
+namespace Zoobee.Web.Models
 {
 	public class ErrorViewModel
 	{

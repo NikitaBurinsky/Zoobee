@@ -1,55 +1,42 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ZooStores.Application.DtoTypes.Clinics;
-using ZooStores.Application.DtoTypes.Companies;
-using ZooStores.Application.DtoTypes.Stores;
-using ZooStores.Application.DtoTypes.Products.Categories;
-using ZooStores.Application.DtoTypes.Products.Delivery;
-using ZooStorages.Domain.DataEntities.Products.Components;
-using ZooStorages.Domain.DataEntities.Base.SoftDelete;
-using ZooStorages.Domain.DataEntities.Products;
-using ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes;
-using ZooStorages.Domain.DataEntities.Products.Components.ExtendedAttributes;
-using ZooStorages.Domain.DataEntities.Products.Components.Reviews;
-using ZooStorages.Domain.DataEntities.Products.Components.Tags;
-using ZooStores.Application.DtoTypes.Base;
-using ZooStorages.Domain.DataEntities.Media;
-using ZooStorages.Application.Interfaces.DbContext;
+using Microsoft.AspNetCore.Identity;
+using Zoobee.Domain.DataEntities.Base.SoftDelete;
+using Zoobee.Domain.DataEntities.Products;
+using Zoobee.Application.DtoTypes.Base;
+using Zoobee.Domain.DataEntities.Media;
+using Zoobee.Domain.DataEntities.Catalog.Reviews;
+using Zoobee.Domain.DataEntities.SellingsInformation;
+using Zoobee.Domain.DataEntities.Catalog.Tags;
+using Zoobee.Domain.DataEntities.Environment.Creators;
+using Zoobee.Domain.DataEntities.Environment.Manufactures;
+using Zoobee.Domain.DataEntities.Environment.Geography;
+using Zoobee.Application.Interfaces.DbContext;
+using Zoobee.Domain.DataEntities.Identity.Users;
+using Zoobee.Domain.DataEntities.Identity.Role;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using ZooStorages.Domain.DataEntities.Identity;
 
-namespace ZooStores.Infrastructure.Repositoties
+namespace Zoobee.Infrastructure.Repositoties
 {
-	public class ZooStoresDbContext : IdentityDbContext<TestUser>, IApplicationDbContext 
+    public class ZooStoresDbContext : IdentityDbContext<BaseApplicationUser, ApplicationRole, Guid>, IApplicationDbContext
 	{
-		public DbSet<VetStoreEntity> VetStores { get; set; }
-		public DbSet<VetClinicEntity> VetClinics { get; set; }
-		public DbSet<CompanyEntity> Companies { get; set; }
 
 		//Configured (для верхних конфигураторов еще нет) TODO
-
-		public DbSet<ProductEntity> Products { get; set; }
-
-		public DbSet<ProductTypeEntity> ProductTypes { get; set; }
-
-		public DbSet<ProductCategoryEntity> ProductCategories { get; set; }
-
-		public DbSet<PetKindEntity> PetKinds { get; set; }
-
-		public DbSet<ProductSlotEntity> SellingSlots { get; set; }
-
+		public DbSet<BaseProductEntity> Products { get; set; }
+		public DbSet<SellingSlotEntity> SellingSlots { get; set; }
 		public DbSet<DeliveryOptionEntity> DeliveryOptions { get; set; }
-
 		public DbSet<SelfPickupOptionEntity> SelfPickupOptions { get; set; }
-
-		public DbSet<ProductAttributeTypeEntity> ExtAttributesTypes { get; set; }
-
-		public DbSet<ProductAttributeEntity> ExtAttributes { get; set; }
-
 		public DbSet<ReviewEntity> Reviews { get; set; }
-
 		public DbSet<TagEntity> Tags { get; set; }
-		public DbSet<MediaFileEntity> MediaFiles { get; set; }
-
+		public DbSet<LocationEntity> Locations { get; set; }
+		public DbSet<PetKindEntity> PetKinds { get; set; }
+		public DbSet<BrandEntity> Brands { get; set; }
+		public DbSet<CreatorCountryEntity> CreatorCountries { get; set; }
+		public DbSet<CreatorCompanyEntity> CreatorCompanies { get; set; }
+		public DbSet<ProductLineupEntity> ProductsLineups { get; set; }
+		public DbSet<SellerCompanyEntity> SellerCompanies { get; set; }
+		public DbSet<ZooStoreEntity> ZooStores { get; set; }
+		public DbSet<DeliveryAreaEntity> DeliveryAreas { get; set; }
+		public DbSet<MediaFileEntity> MediaFiles { get; set; }//+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
@@ -60,19 +47,24 @@ namespace ZooStores.Infrastructure.Repositoties
 		{
 			builder.ApplyConfiguration(new TagEntityConfigurator());
 			builder.ApplyConfiguration(new ReviewEntityConfigurator());
-			builder.ApplyConfiguration(new ProductEntityConfigurator());
-			builder.ApplyConfiguration(new ProductTypeEntityConfigurator());
-			builder.ApplyConfiguration(new ProductCategoryEntityConfigurator());
+			builder.ApplyConfiguration(new BaseProductEntityConfigurator());
 			builder.ApplyConfiguration(new PetKindEntityConfigurator());
 			builder.ApplyConfiguration(new ProductSlotEntityConfigurator());
 			builder.ApplyConfiguration(new DeliveryOptionEntityConfigurator());
 			builder.ApplyConfiguration(new SelfPickupOptionEntityConfigurator());
-			builder.ApplyConfiguration(new ProductAttributeEntityConfigurator());
-			builder.ApplyConfiguration(new ProductAttributeTypeEntityConfigurator());
 			builder.ApplyConfiguration(new MediaFileEntityConfigurator());
 
+			builder.ApplyConfiguration(new AdminUserEntityConfigurator());
+			builder.ApplyConfiguration(new OrganisationUserEntityConfigurator());
+			builder.ApplyConfiguration(new CustomerUserEntityConfigurator());
+
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseEntity).Assembly);
-	}
+			builder.ApplyConfigurationsFromAssembly(typeof(BaseApplicationUser).Assembly);
+			builder.ApplyConfigurationsFromAssembly(typeof(BaseProductEntity).Assembly);
+
+
+
+		}
 
 		public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
 		{
@@ -89,14 +81,12 @@ namespace ZooStores.Infrastructure.Repositoties
 
 			foreach (var entry in entries)
 			{
-				var entity = (BaseEntity)entry.Entity;
+				var Entity = (BaseEntity)entry.Entity;
 
 				if (entry.State == EntityState.Added)
-				{
-					entity.Metadata.CreatedAt = now;
-				}
+					Entity.Metadata.CreatedAt = now;
 
-				entity.Metadata.LastModified = now;
+				Entity.Metadata.LastModified = now;
 			}
 
 			// Обработка мягкого удаления
@@ -106,13 +96,14 @@ namespace ZooStores.Infrastructure.Repositoties
 			foreach (var entry in deletedEntries)
 			{
 				entry.State = EntityState.Modified;
-				var entity = (ISoftDeletableEntity)entry.Entity;
-				entity.DeleteData.IsDeleted = true;
-				entity.DeleteData.DeletedAt = now;
+				var Entity = (ISoftDeletableEntity)entry.Entity;
+				Entity.DeleteData.IsDeleted = true;
+				Entity.DeleteData.DeletedAt = now;
 			}
 		}
 
-		public ZooStoresDbContext(DbContextOptions<ZooStoresDbContext> options) : base(options){
+		public ZooStoresDbContext(DbContextOptions<ZooStoresDbContext> options) : base(options)
+		{
 			Database.EnsureCreated();
 		}
 	}

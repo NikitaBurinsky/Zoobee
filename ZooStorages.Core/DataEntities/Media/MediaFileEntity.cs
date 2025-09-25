@@ -1,13 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZooStores.Application.DtoTypes.Base;
+using Zoobee.Application.DtoTypes.Base;
 
-namespace ZooStorages.Domain.DataEntities.Media
+namespace Zoobee.Domain.DataEntities.Media
 {
 	public enum MediaType { Image, Video, Document, Other , NONE}
 	public class MediaFileEntity : BaseEntity
@@ -23,7 +18,6 @@ namespace ZooStorages.Domain.DataEntities.Media
 		public string FileLocalURL { get; set; } 
 		public MediaType Type { get; set; }
 		public long Size { get; set; } //Размер файла в байтах
-	
 	}
 
 	public class MediaFileEntityConfigurator : IEntityTypeConfiguration<MediaFileEntity>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ZooStorages.Domain.DataEntities.Base.SoftDelete
+namespace Zoobee.Domain.DataEntities.Base.SoftDelete
 {
 	public interface ISoftDeletableEntity
     {

@@ -4,57 +4,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZooStorages.Domain.DataEntities.Products;
-using ZooStorages.Domain.DataEntities.Products.Components;
-using ZooStorages.Domain.DataEntities.Products.Components.Dimensions;
-using ZooStorages.Domain.DataEntities.Products.Components.DynamicAttributes;
-using ZooStorages.Domain.DataEntities.Products.Components.ExtendedAttributes;
-using ZooStorages.Domain.DataEntities.Products.Components.Reviews;
-using ZooStorages.Domain.DataEntities.Products.Components.Tags;
-using ZooStores.Application.DtoTypes.Clinics;
-using ZooStores.Application.DtoTypes.Companies;
-using ZooStores.Application.DtoTypes.Products.Categories;
-using ZooStores.Application.DtoTypes.Products.Delivery;
-using ZooStores.Application.DtoTypes.Stores;
+using Zoobee.Domain.DataEntities.Catalog.Reviews;
+using Zoobee.Domain.DataEntities.Catalog.Tags;
+using Zoobee.Domain.DataEntities.Environment.Creators;
+using Zoobee.Domain.DataEntities.Environment.Geography;
+using Zoobee.Domain.DataEntities.Environment.Manufactures;
+using Zoobee.Domain.DataEntities.Media;
+using Zoobee.Domain.DataEntities.Products;
+using Zoobee.Domain.DataEntities.SellingsInformation;
 
-namespace ZooStorages.Application.Interfaces.DbContext
+namespace Zoobee.Application.Interfaces.DbContext
 {
-    public interface IApplicationDbContext 
+    public interface IApplicationDbContext
     {
-        /// 
-        /// Companies, Stores, Clinics
-        DbSet<VetStoreEntity> VetStores { get; }
-        DbSet<VetClinicEntity> VetClinics { get; }
-        DbSet<CompanyEntity> Companies { get; }
-
-        /// 
-        ///Products
-
-        DbSet<ProductEntity> Products { get; }
-        DbSet<ProductTypeEntity> ProductTypes { get; }
-        DbSet<ProductCategoryEntity> ProductCategories { get; }
-        DbSet<PetKindEntity> PetKinds { get; }
-
-        ///
-        ///Selling Product Slots
-        DbSet<ProductSlotEntity> SellingSlots { get; }
-        DbSet<DeliveryOptionEntity> DeliveryOptions { get; }
-        DbSet<SelfPickupOptionEntity> SelfPickupOptions { get; }
-
-        ///
-        ///Dynamic Attributes
-        DbSet<ProductAttributeTypeEntity> ExtAttributesTypes { get; }
-        DbSet<ProductAttributeEntity> ExtAttributes { get; }
-
-        /// 
-        /// Reviews
-        DbSet<ReviewEntity> Reviews { get; }
-
-        /// 
-        /// Tags
-        DbSet<TagEntity> Tags { get; }
-
-
+        public DbSet<BaseProductEntity> Products { get; set; }
+        public DbSet<SellingSlotEntity> SellingSlots { get; set; }
+        public DbSet<DeliveryOptionEntity> DeliveryOptions { get; set; }
+        public DbSet<SelfPickupOptionEntity> SelfPickupOptions { get; set; }
+        public DbSet<ReviewEntity> Reviews { get; set; }
+        public DbSet<TagEntity> Tags { get; set; }
+        public DbSet<LocationEntity> Locations { get; set; }
+        public DbSet<PetKindEntity> PetKinds { get; set; }
+        public DbSet<BrandEntity> Brands { get; set; }
+        public DbSet<CreatorCountryEntity> CreatorCountries { get; set; }
+        public DbSet<CreatorCompanyEntity> CreatorCompanies { get; set; }
+        public DbSet<ProductLineupEntity> ProductsLineups { get; set; }
+        public DbSet<SellerCompanyEntity> SellerCompanies { get; set; }
+        public DbSet<ZooStoreEntity> ZooStores { get; set; }
+        public DbSet<DeliveryAreaEntity> DeliveryAreas { get; set; }
+        public DbSet<MediaFileEntity> MediaFiles { get; set; }
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }

@@ -6,14 +6,14 @@ using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-using ZooStorages.Application.Interfaces.Repositories.FileStorage;
-using ZooStorages.Core;
-using ZooStorages.Core.Errors;
-using ZooStorages.Domain.DataEntities.Media;
+using Zoobee.Application.Interfaces.Repositories.FileStorage;
+using Zoobee.Core.Errors;
+using Zoobee.Domain;
+using Zoobee.Domain.DataEntities.Media;
 
-namespace ZooStorages.Infrastructure.Repositoties.MediaStorage
+namespace Zoobee.Infrastructure.Repositoties.MediaStorage
 {
-	public class FileStorageRepository : IFileStorageRepository
+    public class FileStorageRepository : IFileStorageRepository
 	{
 		public uint MaxFileSize { get; }
 		public IStringLocalizer<Errors> Localizer { get; }
@@ -34,7 +34,7 @@ namespace ZooStorages.Infrastructure.Repositoties.MediaStorage
 		public async Task<Stream> GetFileAsync(string fullPath)
 		{
 			Stream fileStream = new FileStream(fullPath, FileMode.Open, FileAccess.Read);
-			return fileStream;	
+			return fileStream;
 		}
 
 
@@ -44,7 +44,7 @@ namespace ZooStorages.Infrastructure.Repositoties.MediaStorage
 			var fileSize = fileStream.Length;
 			if (File.Exists(fullpath))
 				return OperationResult<MediaFileEntity>.Error(Localizer["Error.FileStorage.SimilarNameExists"], HttpStatusCode.BadRequest);
-			
+
 			FileStream stream = new FileStream(fullpath, FileMode.CreateNew);
 			if (stream != null && stream.CanWrite)
 			{

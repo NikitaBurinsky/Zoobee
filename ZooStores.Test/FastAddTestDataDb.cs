@@ -1,18 +1,9 @@
-using Microsoft.AspNetCore.Mvc.Testing;
-using Xunit;
-using System.Net;
 using System.Net.Http.Json;
-using ZooStorages.Application.Features.Products.Products.Commands;
-using ZooStorages.Domain.DataEntities.Products.Components.Attributes;
-using ZooStorages.Domain.Enums;
-using ZooStorages.Domain.DataEntities.Products.Components.Dimensions;
-using ZooStorages.Domain.DataEntities.Products;
 using ZooStorages.Application.Features.Catalog_Features.PetKinds;
 using System.Text.Json;
-using Microsoft.VisualStudio.TestPlatform.ObjectModel.Client;
 using Xunit.Abstractions;
 
-namespace ZooStores.Test
+namespace Zoobee.Test
 {
 	public class ApiTest 
 	{
@@ -30,9 +21,9 @@ namespace ZooStores.Test
 		[Fact]
 		public async void InitializeDatabase()
 		{
-			await AddPetKinds("C:\\Users\\Formatis\\Documents\\GitHub\\Code_Projects\\ZooStores.Test\\TestData\\petkinds.json");
-			await AddCategories("C:\\Users\\Formatis\\Documents\\GitHub\\Code_Projects\\ZooStores.Test\\TestData\\productcategories.json");
-			await AddTypes("C:\\Users\\Formatis\\Documents\\GitHub\\Code_Projects\\ZooStores.Test\\TestData\\producttypes.json");
+			await AddPetKinds("C:\\Users\\Formatis\\Documents\\GitHub\\Zoobee\\ZooStores.Test\\TestData\\petkinds.json");
+			await AddCategories("C:\\Users\\Formatis\\Documents\\GitHub\\Zoobee\\ZooStores.Test\\TestData\\productcategories.json");
+			await AddTypes("C:\\Users\\Formatis\\Documents\\GitHub\\Zoobee\\ZooStores.Test\\TestData\\producttypes.json");
 			//await AddProducts("C:\\Users\\Formatis\\Documents\\GitHub\\Code_Projects\\ZooStores.Test\\TestData\\products.json");
 		}
 
@@ -47,7 +38,7 @@ namespace ZooStores.Test
 		{
 			var json = File.ReadAllText(file);
 			var testData = JsonSerializer.Deserialize<PetKindTestData>(json).ValidCommands;
-
+			
 			foreach(var req in testData)
 			{
 				var res = await client.PostAsJsonAsync("admin/pet-kinds/add", req);
@@ -90,19 +81,19 @@ namespace ZooStores.Test
 		}
 		public async void AddProductsMedia(string file)
 		{
-			throw new NotImplementedException();
+			throw LocationNotFoundmentedException();
 		}
 		public async void AddProducSlots(string file)
 		{
-			throw new NotImplementedException();
+			throw LocationNotFoundmentedException();
 		}
 		public async void AddDeliveryOptions(string file)
 		{
-			throw new NotImplementedException();
+			throw LocationNotFoundmentedException();
 		}
 		public async void AddSelfPickupOptions(string file)
 		{
-			throw new NotImplementedException();
+			throw LocationNotFoundmentedException();
 		}
 	}
 }

@@ -1,9 +1,9 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using ZooStorages.Domain.Localization;
-using ZooStores.Web.Area.Identity.Registration.Models;
+using Zoobee.Domain.Localization;
+using ZooStores.Web.Area.Identity.Autorization.Models;
 
-namespace ZooStores.Web.Area.Identity.Accounts.Validation
+namespace ZooStores.Web.Area.Identity.Autorization.Validation
 {
     public class RegistrationRequestValidator : AbstractValidator<RegistrationRequestModel>
     {

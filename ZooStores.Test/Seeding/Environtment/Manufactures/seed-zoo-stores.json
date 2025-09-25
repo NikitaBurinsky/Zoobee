@@ -1,0 +1,132 @@
+[
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "пр-т Независимости, 58",
+      "City": "Минск",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "Zoobazar",
+    "Name": "Zoobazar Минск Центр",
+    "OpeningTime": "09:00:00",
+    "ClosingTime": "22:00:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Бобруйская, 15",
+      "City": "Минск",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "Petshop.by",
+    "Name": "Petshop.by ТЦ Корона",
+    "OpeningTime": "10:00:00",
+    "ClosingTime": "21:00:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Советская, 25",
+      "City": "Гродно",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "ZooMarket",
+    "Name": "ZooMarket Гродно",
+    "OpeningTime": "09:30:00",
+    "ClosingTime": "20:30:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "пр-т Мира, 12",
+      "City": "Гомель",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "PetCare",
+    "Name": "PetCare Гомель",
+    "OpeningTime": "08:45:00",
+    "ClosingTime": "21:15:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Ленина, 8",
+      "City": "Брест",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "AnimalWorld",
+    "Name": "AnimalWorld Брест",
+    "OpeningTime": "09:00:00",
+    "ClosingTime": "20:00:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "пр-т Фрунзе, 33",
+      "City": "Витебск",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "ZooLavka",
+    "Name": "ZooLavka Витебск",
+    "OpeningTime": "10:00:00",
+    "ClosingTime": "21:00:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Первомайская, 17",
+      "City": "Могилев",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "PetExpress",
+    "Name": "PetExpress Могилев",
+    "OpeningTime": "08:30:00",
+    "ClosingTime": "20:30:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Кирова, 42",
+      "City": "Бобруйск",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "FourPaws",
+    "Name": "FourPaws Бобруйск",
+    "OpeningTime": "09:15:00",
+    "ClosingTime": "19:45:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Советская, 3",
+      "City": "Барановичи",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "ZooDom",
+    "Name": "ZooDom Барановичи",
+    "OpeningTime": "09:00:00",
+    "ClosingTime": "20:00:00"
+  },
+  {
+    "Id": null,
+    "StoreType": 0,
+    "Location": {
+      "Address": "ул. Ленинская, 56",
+      "City": "Солигорск",
+      "GeoPoint": null
+    },
+    "SellerCompanyName": "AnimalKingdom",
+    "Name": "AnimalKingdom Солигорск",
+    "OpeningTime": "10:00:00",
+    "ClosingTime": "21:00:00"
+  }
+]

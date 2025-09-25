@@ -1,4 +1,4 @@
-﻿namespace ZooStorages.Domain.Enums
+﻿namespace Zoobee.Domain.Enums
 {
 	public enum PetSize { XS = 0, S, M, L, XL, MaximalValue }
 	public enum PetGender { Unisex, Males, Females, MaximalValue};

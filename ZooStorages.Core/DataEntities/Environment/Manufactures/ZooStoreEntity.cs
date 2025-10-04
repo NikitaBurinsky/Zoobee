@@ -41,9 +41,6 @@ namespace Zoobee.Domain.DataEntities.Environment.Manufactures
 			builder.Property(e => e.NormalizedName)
 				.HasMaxLength(60)
 				.IsRequired(true);
-			builder.HasIndex(e => e.NormalizedName)
-				.IsUnique(true);
 		}
 	}
-
 }

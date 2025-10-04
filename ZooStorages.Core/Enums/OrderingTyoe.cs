@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Zoobee.Application.DtoTypes.Base;
 
-namespace Zoobee.Application.Interfaces.DTOs
+namespace Zoobee.Domain.Enums
 {
+    public enum OrderingType
+    {
+		None, 
+		OrderBy,
+		OrderByDescending
+    }
 }

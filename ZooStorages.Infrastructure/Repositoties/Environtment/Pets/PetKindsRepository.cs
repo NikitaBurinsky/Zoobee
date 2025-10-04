@@ -42,5 +42,10 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Pets
 
 		public bool IsEntityExists(string petKindName) => 
 			dbContext.PetKinds.Any(e => e.NormalizedPetKindName == NormalizeString(petKindName));
+
+		public PetKindEntity Get(string petKindName)
+		{
+			return dbContext.PetKinds.FirstOrDefault(e => e.NormalizedPetKindName == NormalizeString(petKindName));
+		}
 	}
 }

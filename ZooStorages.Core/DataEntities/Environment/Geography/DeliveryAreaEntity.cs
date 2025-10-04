@@ -17,6 +17,7 @@ namespace Zoobee.Domain.DataEntities.Environment.Geography
         /// Обязательно для шаблонов доставки
         /// </summary>
         public string AreaName { get; set; }
+		public string NormalizedAreaName { get; set; }
         public List<GeoPoint> GeoArea { get; set; }
 		/// <summary>
 		/// Является ли область шаблонной

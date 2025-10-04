@@ -18,7 +18,7 @@ namespace Zoobee.Domain.DataEntities.Products
         public string Name { get; set; }
         public string NormalizedName { get; set; }
         public string Description { get; set; }
-        public string Article { get; set; }
+        public string Article { get; set; } //TODO Присваивание
         public string UPC { get; set; }
         public string EAN { get; set; }
         public float Rating { get; set; }
@@ -26,7 +26,7 @@ namespace Zoobee.Domain.DataEntities.Products
         public decimal MaxPrice { get; set; }
         public CreatorCountryEntity CreatorCountry { get; set; }
         public BrandEntity Brand { get; set; }
-        public ProductLineupEntity ProductLineUp { get; set; }
+        public ProductLineupEntity ProductLineup { get; set; }
         public CreatorCompanyEntity CreatorCompany { get; set; }
         public ICollection<TagEntity> Tags;
         public PetKindEntity PetKind { get; set; }
@@ -54,7 +54,7 @@ namespace Zoobee.Domain.DataEntities.Products
             builder.HasOne(x => x.CreatorCountry);
             builder.HasOne(x => x.Brand);
             builder.HasOne(x => x.PetKind);
-            builder.HasOne(x => x.ProductLineUp);
+            builder.HasOne(x => x.ProductLineup);
             builder.HasMany(x => x.Tags);
             builder.HasMany(x => x.SellingSlots)
                 .WithOne(e => e.Product);

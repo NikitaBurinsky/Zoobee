@@ -24,6 +24,10 @@ namespace Zoobee.Infrastructure.Repositoties.Sellings
 			var res = await dbContext.SellingSlots.AddAsync(newSellingSlotEntity);
 			if (res == null)
 				return OperationResult<Guid>.Error(localizer["Error.SellingsSlots.WriteDbError"], HttpStatusCode.InternalServerError);
+			var productUpdate = dbContext.Update(res.Entity.Product);
+			productUpdate.Entity.MaxPrice = productUpdate.Entity.SellingSlots.Select(r => r.ResultPrice).Max();
+			productUpdate.Entity.MinPrice = productUpdate.Entity.SellingSlots.Select(r => r.ResultPrice).Min();
+
 			return OperationResult<Guid>.Success(res.Entity.Id);
 		}
 

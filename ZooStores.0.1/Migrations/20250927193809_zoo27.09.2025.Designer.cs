@@ -13,8 +13,8 @@ using Zoobee.Infrastructure.Repositoties;
 namespace ZooStores.Web.Migrations
 {
     [DbContext(typeof(ZooStoresDbContext))]
-    [Migration("20250925062638_init2")]
-    partial class init2
+    [Migration("20250927193809_zoo27.09.2025")]
+    partial class zoo27092025
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -283,6 +283,10 @@ namespace ZooStores.Web.Migrations
                     b.Property<bool>("IsTemplate")
                         .HasColumnType("boolean");
 
+                    b.Property<string>("NormalizedAreaName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<Guid?>("SellerCompanyId")
                         .HasColumnType("uuid");
 
@@ -432,9 +436,6 @@ namespace ZooStores.Web.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("LocationId");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique();
 
                     b.HasIndex("SellerCompanyId");
 

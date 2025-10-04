@@ -11,20 +11,19 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.11" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-    <PackageReference Include="xunit" Version="2.5.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="NUnit" Version="4.4.0" />
+	  <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+	  <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZooStores.0.1\ZooStores.01_Web.csproj" />
-    <ProjectReference Include="..\ZooStorages.Application\ZooStorages.Application.csproj" />
-    <ProjectReference Include="..\ZooStorages.Infrastructure\ZooStorages.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Using Include="Xunit" />
+    <ProjectReference Include="..\ZooStorages.Application\Zoobee.Application.csproj" />
+    <ProjectReference Include="..\ZooStorages.Core\Zoobee.Domain.csproj" />
+    <ProjectReference Include="..\ZooStorages.Infrastructure\Zoobee.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZooStores.0.1\Zoobee.Web.csproj" />
   </ItemGroup>
 
 </Project>

@@ -21,19 +21,27 @@ using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
 using Zoobee.Infrastructure.Repositoties.UnitsOfWork;
 using Zoobee.Infrastructure.Repositoties.Products;
+using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
 
 namespace Zoobee.Infrastructure.ServiceCollectionExtensions
 {
-    public static class RepositoriesDIRegistrations
+    public static class AddRepositoriesBuildingExtension
 	{
 		public static void AddRepositories(this IServiceCollection services)
 		{
+			//Media Storage
 			services.AddScoped<IMediaFileRepository, MediaFileRepository>();
 			services.AddScoped<IFileStorageRepository, FileStorageRepository>();
 
+			//Products repositories
 			services.AddScoped<IBaseProductsRepository, BaseProductsRepository>();
 			services.AddScoped<IFoodProductsRepository, FoodProductRepository>();
+			services.AddScoped<IRepositoryBase<FoodProductEntity>, FoodProductRepository>();
 			services.AddScoped<IToiletProductsRepository, ToiletProductRepository>();
+			services.AddScoped<IRepositoryBase<ToiletProductEntity>, ToiletProductRepository>();
+
+			//Other 
 			services.AddScoped<IPetKindsRepository, PetKindsRepository>();
 			services.AddScoped<ILocationsRepository, LocationRepository>();
 			services.AddScoped<IReviewsRepository, ReviewsRepository>();

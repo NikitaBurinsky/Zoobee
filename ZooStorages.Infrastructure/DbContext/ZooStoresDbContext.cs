@@ -61,9 +61,12 @@ namespace Zoobee.Infrastructure.Repositoties
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseEntity).Assembly);
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseApplicationUser).Assembly);
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseProductEntity).Assembly);
+		}
 
-
-
+		public override int SaveChanges()
+		{
+			SetMetadata();
+			return base.SaveChanges();
 		}
 
 		public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Zoobee.Domain.DataEntities.Data_Primitives
 	/// <summary>
 	/// Weeks 
 	/// </summary>
+	[Owned]	
 	public class PetAgeRange
 	{
 		public uint PetAgeWeeksMin { get; set; }
@@ -20,6 +22,16 @@ namespace Zoobee.Domain.DataEntities.Data_Primitives
 		}
 		public PetAgeRange()
 		{
+		}
+		/// <summary>
+		/// Проверяет, входит ли текущий PetAgeRange в другой
+		/// </summary>
+		/// <param name="other"></param>
+		/// <returns></returns>
+		public bool IsRangeInsideOf(PetAgeRange other)
+		{
+			return PetAgeWeeksMin >= other.PetAgeWeeksMin 
+				&& PetAgeWeeksMax <= other.PetAgeWeeksMax;
 		}
 	}
 }

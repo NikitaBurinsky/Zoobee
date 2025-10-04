@@ -6,17 +6,21 @@ using Zoobee.Application.Interfaces.Services.GeoServices;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
 using Zoobee.Application.Interfaces.Services.MediaStorage;
+using Zoobee.Application.Interfaces.Services.Products.ProductsFinder;
+using Zoobee.Application.Interfaces.Services.ProductsMapperService;
 using Zoobee.Domain.DataEntities.Identity.Role;
 using Zoobee.Domain.DataEntities.Identity.Users;
 using Zoobee.Infrastructure.Repositoties;
+using Zoobee.Infrastructure.Services.DtoMappingService;
 using Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding;
 using Zoobee.Infrastructure.Services.GeoServices.CountryBordersService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
+using Zoobee.Infrastructure.Services.Products.ProductsFinder;
 
 namespace Zoobee.Application.ServiceCollectionExtensions
 {
-	public static class InfrastructureLayerDIRegistrations
+    public static class InfrastructureLayerDIRegistrations
 	{
 		public static void AddInfrastructureLayer(this IServiceCollection services, IConfiguration configuration)
 		{
@@ -51,6 +55,8 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 			services.AddScoped<IMediaStorageService, MediaStorageService>();
 			services.AddScoped<ICountryBorderService, CountryBorderService>();
 			services.AddScoped<IEnvirontmentDataSeedingService, EnvirontmentDataSeedingService>();
+			services.AddScoped<IProductsFinderService, ProductsFinderService>();
+			services.AddScoped<IDtoMappingService, DtoMappingService>();
 		}
 	}
 }

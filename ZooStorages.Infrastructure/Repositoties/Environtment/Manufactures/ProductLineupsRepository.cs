@@ -45,5 +45,11 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 			=> dbContext.ProductsLineups
 			.Any(e => e.Brand.NormalizedBrandName == NormalizeString(brandName)
 				&& e.NormalizedLineupName == NormalizeString(lineupName));
+
+		public ProductLineupEntity Get(string brandName, string lineupName)
+			=> dbContext.ProductsLineups
+			.FirstOrDefault(e => e.Brand.NormalizedBrandName == NormalizeString(brandName)
+				&& e.NormalizedLineupName == NormalizeString(lineupName));
+
 	}
 }

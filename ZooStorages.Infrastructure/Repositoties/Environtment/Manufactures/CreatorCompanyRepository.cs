@@ -12,7 +12,7 @@ using Zoobee.Infrastructure.Repositoties;
 
 namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 {
-    public class CreatorCompanyRepository : RepositoryBase, ICreatorCompaniesRepository
+	public class CreatorCompanyRepository : RepositoryBase, ICreatorCompaniesRepository
 	{
 		public CreatorCompanyRepository(ZooStoresDbContext dbContext, IStringLocalizer<Errors> localizer) : base(dbContext, localizer)
 		{ }
@@ -51,5 +51,8 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 
 		public bool IsEntityExists(string companyName)
 			=> dbContext.CreatorCompanies.Any(e => e.NormalizedCompanyName == NormalizeString(companyName));
+
+		public CreatorCompanyEntity Get(string companyName)
+			=> dbContext.CreatorCompanies.FirstOrDefault(e => e.NormalizedCompanyName == NormalizeString(companyName));
 	}
 }

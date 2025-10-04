@@ -18,7 +18,7 @@ namespace ZooStores.Web.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -280,6 +280,10 @@ namespace ZooStores.Web.Migrations
                     b.Property<bool>("IsTemplate")
                         .HasColumnType("boolean");
 
+                    b.Property<string>("NormalizedAreaName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<Guid?>("SellerCompanyId")
                         .HasColumnType("uuid");
 
@@ -429,9 +433,6 @@ namespace ZooStores.Web.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("LocationId");
-
-                    b.HasIndex("NormalizedName")
-                        .IsUnique();
 
                     b.HasIndex("SellerCompanyId");
 

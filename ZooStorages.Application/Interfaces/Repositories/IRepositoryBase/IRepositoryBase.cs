@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zoobee.Application.DTOs.Business_Items.Base;
 using Zoobee.Application.DtoTypes.Base;
 using Zoobee.Domain;
 

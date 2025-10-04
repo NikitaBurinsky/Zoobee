@@ -8,6 +8,8 @@ using Zoobee.Application.Interfaces.Repositories.Catalog;
 using System.Net;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 using Zoobee.Domain;
+using Zoobee.Domain.DataEntities.Products;
+using Zoobee.Application.DTOs.Business_Items.Base;
 
 namespace Zoobee.Application.Interfaces.Repositories.Catalog
 {
@@ -21,6 +23,8 @@ namespace Zoobee.Application.Interfaces.Repositories.Catalog
 			var res = await dbContext.Reviews.AddAsync(newReviewEntity);
 			if (res == null)
 				return OperationResult<Guid>.Error(localizer["Error.Reviews.WriteDbError"], HttpStatusCode.InternalServerError);
+			var productUpdate = dbContext.Update(res.Entity.ReviewedProduct);
+			productUpdate.Entity.Rating = productUpdate.Entity.Reviews.Average(x => x.Rating);
 			return OperationResult<Guid>.Success(res.Entity.Id);
 		}
 
@@ -41,7 +45,6 @@ namespace Zoobee.Application.Interfaces.Repositories.Catalog
 			action(entry.Entity);
 			return OperationResult.Success();
 		}
-
 		public bool IsEntityExists(Guid Id) => dbContext.Reviews.Any(e => e.Id == Id);
 	}
 }

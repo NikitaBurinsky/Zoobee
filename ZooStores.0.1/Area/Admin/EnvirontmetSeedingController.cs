@@ -104,7 +104,7 @@ namespace ZooStores.Web.Area.Admin
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
 
-			var res = await seedingService.JsonSeedCreatorCountries(creatorCompanies.OpenReadStream());
+			var res = await seedingService.JsonSeedCreatorCompanies(creatorCompanies.OpenReadStream());
 			return Ok(res);
 
 		}

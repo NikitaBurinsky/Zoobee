@@ -44,5 +44,8 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 
 		public bool IsEntityExists(string countryName)
 			=> dbContext.CreatorCountries.Any(e => e.NormalizedCountryName == NormalizeString(countryName));
+
+		public CreatorCountryEntity Get(string countryName)
+			=> dbContext.CreatorCountries.FirstOrDefault(e => e.NormalizedCountryName == NormalizeString(countryName));
 	}
 }

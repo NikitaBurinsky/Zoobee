@@ -1,0 +1,10 @@
+﻿using Zoobee.Application.Interfaces.Repositories.IRepositoryBase;
+using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+
+namespace Zoobee.Application.Interfaces.Repositories.Products_Repositories
+{
+	public interface IToiletProductsRepository : IRepositoryBase<ToiletProductEntity>
+	{
+
+	}
+}

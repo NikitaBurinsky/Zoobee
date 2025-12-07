@@ -54,7 +54,6 @@ docker-compose.override.yml
 *.sln.iml
 
 ## Игнорировать файлы манифеста ClickOnce
-*.application
 *.manifest
 *.publish
 

@@ -4,6 +4,7 @@ using Moq;
 using NUnit.Framework;
 using System;
 using System.Text.Json;
+using Zoobee.Infrastructure.Parsers.Old.Pipelines.Scraping.Parsers.Zoobazar.Client;
 using Zoobee.Infrastructure.Parsers.Storage.ParsedDataEntities.ParsedProductsModels.Zoobazar;
 
 namespace Zoobee.Infrastructure.Parsers.Pipelines.Scraping.Parsers.Zoobazar.Client.Tests

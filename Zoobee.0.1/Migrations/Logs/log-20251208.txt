@@ -1,0 +1,2 @@
+[12:20:02 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[12:20:09 INF] (Zoobee.Infrastructure.Parsers.Host.ZoobeeParsersWorker) Parsing queue executed

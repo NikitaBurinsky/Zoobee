@@ -26,9 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Pipelines\Transformation\" />
-    <Folder Include="ParsedDataStorage\Repositories\Zoobazar\" />
-    <Folder Include="Pipelines\Transformation\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,10 +1,11 @@
 using Zoobee.Application.ServiceCollectionExtensions;
 using Zoobee.Infrastructure.Parsers.Program_Configuration.Pipelines;
 using Zoobee.Infrastructure.ServiceCollectionExtensions;
-using Zoobee.Web.ProgramConfigurators.Building;
 using Zoobee.Web.ProgramConfigurators.Startup;
 using Serilog;
 using Serilog.Events;
+using Zoobee.Web.Views;
+using Zoobee.Infrastructure.Parsers.Program_Configuration.Building;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration, true);
-builder.Services.AddParsers(builder.Configuration, false);
+builder.Services.AddInfrastructureParsers(builder.Configuration, true);
 builder.Services.AddRepositories();
 builder.Services.AddPresentationLayer();
 

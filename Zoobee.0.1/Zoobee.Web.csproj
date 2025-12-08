@@ -30,6 +30,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Models\" />
+	  <Folder Include="ProgramConfigurators\Building\" />
 	  <Folder Include="wwwroot\Documents\" />
 	  <Folder Include="wwwroot\Other\" />
 	  <Folder Include="wwwroot\Videos\" />

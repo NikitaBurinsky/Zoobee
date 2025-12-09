@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Zoobee.Application\Zoobee.Application.csproj" />
     <ProjectReference Include="..\Zoobee.Core\Zoobee.Domain.csproj" />
   </ItemGroup>

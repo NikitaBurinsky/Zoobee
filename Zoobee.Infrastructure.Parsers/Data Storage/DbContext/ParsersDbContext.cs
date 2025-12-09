@@ -1,41 +1,49 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Core.Entities.Zoobee.Infrastructure.Parsers.Core.Entities;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 
 namespace Zoobee.Infrastructure.Parsers.Data
 {
 	public class ParsersDbContext : DbContext, IParsersDbContext
 	{
-		public ParsersDbContext(DbContextOptions<ParsersDbContext> options) : base(options)
-		{
-		}
+		public ParsersDbContext(DbContextOptions<ParsersDbContext> options) : base(options) { }
 
-		public DbSet<RawPageEntity> RawPages { get; set; }
+		// Старой таблицы RawPages больше нет
+		public DbSet<ScrapingTask> ScrapingTasks { get; set; }
+		public DbSet<ScrapingData> ScrapingDatas { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
 
-			// Конфигурация сущности RawPage
-			modelBuilder.Entity<RawPageEntity>(builder =>
+			// 1. Конфигурация Задачи (Task)
+			modelBuilder.Entity<ScrapingTask>(b =>
 			{
-				builder.HasKey(x => x.Id);
+				b.HasKey(x => x.Id);
+				b.Property(x => x.Url).IsRequired();
+				b.Property(x => x.SourceName).IsRequired();
 
-				builder.HasIndex(x => x.Url)
-					.IsUnique();
+				// Уникальный URL (мы не хотим дублей задач)
+				b.HasIndex(x => x.Url).IsUnique();
 
-				// Составной индекс для очереди задач.
-				// Самый частый запрос будет: "Дай мне Pending, у которых NextTryAt < Now"
-				builder.HasIndex(x => new { x.Status, x.NextTryAt });
+				// Индекс для очереди: ищем Pending задачи, время которых пришло
+				b.HasIndex(x => new { x.Status, x.NextTryAt });
+			});
 
-				// Настройки полей
-				builder.Property(x => x.Url).IsRequired().HasMaxLength(2048); // Стандартная длина URL
-				builder.Property(x => x.SourceName).HasMaxLength(100);
+			// 2. Конфигурация Истории (Data)
+			modelBuilder.Entity<ScrapingData>(b =>
+			{
+				b.HasKey(x => x.Id);
+				b.Property(x => x.Content).IsRequired(false); // Может быть пустым при ошибке
 
-				// Content может быть NULL (если статус Pending или Failed)
-				// Для Postgres используется text, для SQL Server - nvarchar(max)
-				builder.Property(x => x.Content);
+				// Связь "Один ко Многим"
+				b.HasOne(x => x.ScrapingTask)
+					.WithMany(x => x.History)
+					.HasForeignKey(x => x.ScrapingTaskId)
+					.OnDelete(DeleteBehavior.Cascade); // Удалил задачу -> удалил всю историю
+
+				// Индекс для быстрой выборки истории по задаче
+				b.HasIndex(x => x.ScrapingTaskId);
 			});
 		}
 	}

@@ -4,7 +4,7 @@ using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
 using Zoobee.Infrastructure.Repositoties.Products;
 using Zoobee.Infrastructure.Repositoties.UnitsOfWork;
 
-namespace ZooStores.Test.Tests.Services.IDtoMappingService
+namespace Zoobee.Test.UnitTests.Infrastructure.Services
 {
 	[TestFixture]
 	public class ProductsUnitOfWorkTest

@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Core.Entities.Zoobee.Infrastructure.Parsers.Core.Entities;
 
 namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 {
 	public interface IParsersDbContext
 	{
-		DbSet<RawPageEntity> RawPages { get; }
+		public DbSet<ScrapingData> ScrapingDatas { get; set; }
+		public DbSet<ScrapingTask> ScrapingTasks { get; set; }
 
 		// Метод сохранения изменений
 		Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);

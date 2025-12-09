@@ -1,92 +1,80 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Core.Entities.Zoobee.Infrastructure.Parsers.Core.Entities;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
-using static Zoobee.Domain.DataEntities.Base.IEntityMetadata;
+using Zoobee.Infrastructure.Parsers.Data; // Для ParsersDbContext
 
 namespace Zoobee.Infrastructure.Parsers.Services.Storage
 {
-	public class RawPageRepository : IRawPageRepository
+	public class ScrapingRepository : IScrapingRepository
 	{
 		private readonly IParsersDbContext _context;
 
-		public RawPageRepository(IParsersDbContext context)
+		public ScrapingRepository(IParsersDbContext context)
 		{
 			_context = context;
 		}
 
-		public async Task<List<RawPageEntity>> GetPendingPagesAsync(int batchSize, CancellationToken ct)
+		public async Task<List<ScrapingTask>> GetPendingTasksAsync(int batchSize, CancellationToken ct)
 		{
 			var now = DateTime.UtcNow;
 
-			return await _context.RawPages
-				.AsNoTracking() // Важно: AsNoTracking для чтения, чтобы не грузить ChangeTracker
-				.Where(p => p.Status == RawPageStatus.Pending && p.NextTryAt <= now)
-				.OrderBy(p => p.NextTryAt) // Приоритет тем, кто давно ждет
+			return await _context.ScrapingTasks
+				.AsNoTracking() // Читаем без трекинга для скорости
+				.Where(t => t.Status == RawPageStatus.Pending && t.NextTryAt <= now)
+				.OrderBy(t => t.NextTryAt) // Сначала самые старые долги
 				.Take(batchSize)
 				.ToListAsync(ct);
 		}
 
-		public async Task AddOrUpdateAsync(RawPageEntity page, CancellationToken ct)
+		public async Task SaveExecutionResultAsync(ScrapingTask task, ScrapingData data, CancellationToken ct)
 		{
-			// Если Id не установлен - это новая запись, иначе обновление
-			if (page.Id == Guid.Empty)
-			{
-				await _context.RawPages.AddAsync(page, ct);
-			}
-			else
-			{
-				_context.RawPages.Update(page);
-			}
+			// Мы выполняем это в одной транзакции (EF Core делает это автоматически при SaveChanges)
+
+			// 1. Добавляем запись в историю
+			await _context.ScrapingDatas.AddAsync(data, ct);
+
+			// 2. Обновляем статус задачи
+			// Так как мы читали Task через AsNoTracking, нам нужно явно приаттачить его
+			_context.ScrapingTasks.Update(task);
 
 			await _context.SaveChangesAsync(ct);
 		}
 
-		public async Task<bool> ExistsAsync(string url, CancellationToken ct)
+		public async Task BulkAddTasksAsync(IEnumerable<string> urls, string sourceName, CancellationToken ct)
 		{
-			return await _context.RawPages.AnyAsync(x => x.Url == url, ct);
-		}
-
-		public async Task BulkAddUrlsAsync(IEnumerable<string> urls, string sourceName, CancellationToken ct)
-		{
-			// 1. Находим те URL из списка, которых УЖЕ нет в базе.
-			// При большом количестве ссылок это лучше делать батчами, 
-			// но для старта подойдет простой подход.
-
 			var distinctUrls = urls.Distinct().ToList();
 			if (!distinctUrls.Any()) return;
 
-			// Выбираем из базы те URL, которые совпадают с нашими
-			var existingUrls = await _context.RawPages
-				.Where(p => distinctUrls.Contains(p.Url))
-				.Select(p => p.Url)
+			// Проверка существующих (чтобы не дублировать)
+			var existingUrls = await _context.ScrapingTasks
+				.Where(t => distinctUrls.Contains(t.Url))
+				.Select(t => t.Url)
 				.ToListAsync(ct);
 
-			// Оставляем только те, которых нет в базе (HashSet для скорости поиска)
-			var existingSet = new HashSet<string>(existingUrls);
-			var newUrls = distinctUrls.Where(u => !existingSet.Contains(u)).ToList();
-
+			var newUrls = distinctUrls.Except(existingUrls).ToList();
 			if (!newUrls.Any()) return;
 
-			//TODO Перенос логики Metadata в ParsersDbContext
-			// Создаем сущности
-			var newEntities = newUrls.Select(url => new RawPageEntity
+			var newTasks = newUrls.Select(url => new ScrapingTask
 			{
 				Id = Guid.NewGuid(),
 				Url = url,
 				SourceName = sourceName,
 				Status = RawPageStatus.Pending,
-				NextTryAt = DateTime.UtcNow,
-				Metadata = new EntityMetadata
+				NextTryAt = DateTime.UtcNow, // Качать сразу
+				Metadata = new Domain.DataEntities.Base.IEntityMetadata.EntityMetadata
 				{
-					 CreatedAt = DateTime.UtcNow,
-					 LastModified = DateTime.UtcNow,
-				}				
+					CreatedAt = DateTime.UtcNow,
+				}
 			});
 
-			await _context.RawPages.AddRangeAsync(newEntities, ct);
+			await _context.ScrapingTasks.AddRangeAsync(newTasks, ct);
 			await _context.SaveChangesAsync(ct);
+		}
+
+		public async Task<bool> TaskExistsAsync(string url, CancellationToken ct)
+		{
+			return await _context.ScrapingTasks.AnyAsync(t => t.Url == url, ct);
 		}
 	}
 }

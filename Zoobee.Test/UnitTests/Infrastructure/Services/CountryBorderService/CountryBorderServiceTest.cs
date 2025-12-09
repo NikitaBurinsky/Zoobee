@@ -4,7 +4,7 @@ using NUnit.Framework;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 using Zoobee.Infrastructure.Services.GeoServices.CountryBordersService;
 
-namespace ZooStores.Test.Tests.Services.CountryBorderServiceTest
+namespace Zoobee.Test.UnitTests.Infrastructure.Services
 {
 	[TestFixture]
 	public class CountryBorderServiceTest

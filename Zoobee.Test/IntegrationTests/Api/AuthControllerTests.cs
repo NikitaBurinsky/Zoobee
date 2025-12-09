@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zoobee.Infrastructure.Parsers.Hosts
+namespace Zoobee.Test.IntegrationTests.Api
 {
-	internal class TransformationWorker
+	internal class AuthControllerTests
 	{
 	}
 }

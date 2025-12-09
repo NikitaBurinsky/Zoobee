@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -23,6 +23,13 @@
     <ProjectReference Include="..\Zoobee.Application\Zoobee.Application.csproj" />
     <ProjectReference Include="..\Zoobee.Core\Zoobee.Domain.csproj" />
     <ProjectReference Include="..\Zoobee.Infrastructure\Zoobee.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\MockData\" />
+    <Folder Include="UnitTests\Application\Validators\" />
+    <Folder Include="UnitTests\Application\Services\" />
+    <Folder Include="UnitTests\Infrastructure\Services\CountryBorderService\NewFolder\" />
   </ItemGroup>
 
 </Project>

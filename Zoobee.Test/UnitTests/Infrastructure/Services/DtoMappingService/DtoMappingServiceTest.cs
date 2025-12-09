@@ -15,7 +15,7 @@ using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
 using Zoobee.Infrastructure.Services.DtoMappingService;
 
-namespace ZooStores.Test.Tests.Services.IDtoMappingService
+namespace Zoobee.Test.UnitTests.Infrastructure.Services
 {
 	[TestFixture]
 	public class DtoMappingServiceTest
@@ -89,7 +89,7 @@ namespace ZooStores.Test.Tests.Services.IDtoMappingService
 		[Test]
 		public void TestToiletProductMapping()
 		{
-			Zoobee.Domain.OperationResult<ToiletProductEntity> resEntity = null;
+			Domain.OperationResult<ToiletProductEntity> resEntity = null;
 			try
 			{
 				resEntity = mappingService.Map<ToiletProductDto, ToiletProductEntity>(MappableDto);

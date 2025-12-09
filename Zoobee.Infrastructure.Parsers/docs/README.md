@@ -18,6 +18,6 @@
 
 ## Документация
 Подробную информацию смотрите в папке [docs](./docs):
-* [Архитектура и Потоки данных](./docs/ARCHITECTURE_AND_FLOW.md)
-* [Руководство по конфигурации (Seeding)](./docs/CONFIGURATION_GUIDE.md)
-* [Модели данных и Статусы](./docs/DATABASE_MODELS.md)
+* [Архитектура и Потоки данных](./docs/ARCHITECTURE_FLOW.md)
+* [Руководство по конфигурации (Seeding)](./docs/CONFIGURATION.md)
+* [Модели данных и Статусы](./docs/DB_MODELS.md)

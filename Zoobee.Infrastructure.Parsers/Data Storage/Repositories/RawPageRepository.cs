@@ -41,34 +41,44 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 			await _context.SaveChangesAsync(ct);
 		}
 
-		public async Task BulkAddTasksAsync(IEnumerable<string> urls, string sourceName, CancellationToken ct)
+		public async Task BulkAddTasksAsync(IEnumerable<(string Url, ScrapingTaskType Type)> tasks, string sourceName, CancellationToken ct)
 		{
-			var distinctUrls = urls.Distinct().ToList();
-			if (!distinctUrls.Any()) return;
+			var tasksList = tasks.ToList();
+			if (!tasksList.Any()) return;
 
-			// Проверка существующих (чтобы не дублировать)
+			var distinctInputUrls = tasksList.Select(x => x.Url).Distinct().ToList();
+
+			// 1. Находим те URL, которые УЖЕ есть в базе
 			var existingUrls = await _context.ScrapingTasks
-				.Where(t => distinctUrls.Contains(t.Url))
+				.Where(t => distinctInputUrls.Contains(t.Url))
 				.Select(t => t.Url)
 				.ToListAsync(ct);
 
-			var newUrls = distinctUrls.Except(existingUrls).ToList();
-			if (!newUrls.Any()) return;
+			// 2. Отбираем только новые
+			var newItems = tasksList
+				.Where(t => !existingUrls.Contains(t.Url))
+				.GroupBy(x => x.Url) // На случай дублей внутри самого списка tasksList
+				.Select(g => g.First())
+				.ToList();
 
-			var newTasks = newUrls.Select(url => new ScrapingTask
+			if (!newItems.Any()) return;
+
+			// 3. Создаем сущности
+			var newEntities = newItems.Select(item => new ScrapingTask
 			{
 				Id = Guid.NewGuid(),
-				Url = url,
+				Url = item.Url,
 				SourceName = sourceName,
+				Type = item.Type, // <-- Записываем тип
 				Status = RawPageStatus.Pending,
-				NextTryAt = DateTime.UtcNow, // Качать сразу
+				NextTryAt = DateTime.UtcNow,
 				Metadata = new Domain.DataEntities.Base.IEntityMetadata.EntityMetadata
 				{
 					CreatedAt = DateTime.UtcNow,
 				}
 			});
 
-			await _context.ScrapingTasks.AddRangeAsync(newTasks, ct);
+			await _context.ScrapingTasks.AddRangeAsync(newEntities, ct);
 			await _context.SaveChangesAsync(ct);
 		}
 

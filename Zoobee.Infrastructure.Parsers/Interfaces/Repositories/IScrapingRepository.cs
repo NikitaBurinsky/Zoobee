@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
+using Zoobee.Infrastructure.Parsers.Core.Enums;
 
 namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 {
@@ -15,7 +16,7 @@ namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 		Task SaveExecutionResultAsync(ScrapingTask task, ScrapingData data, CancellationToken ct);
 
 		// Массовое добавление новых URL (сидинг)
-		Task BulkAddTasksAsync(IEnumerable<string> urls, string sourceName, CancellationToken ct);
+		public Task BulkAddTasksAsync(IEnumerable<(string Url, ScrapingTaskType Type)> tasks, string sourceName, CancellationToken ct);
 
 		// Проверка существования
 		Task<bool> TaskExistsAsync(string url, CancellationToken ct);

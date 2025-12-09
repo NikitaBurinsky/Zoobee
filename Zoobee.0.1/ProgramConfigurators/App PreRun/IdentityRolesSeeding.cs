@@ -2,7 +2,7 @@
 using Zoobee.Domain.DataEntities.Identity.Role;
 using Zoobee.Domain.DataEntities.Identity.Users;
 
-namespace Zoobee.Web.ProgramConfigurators.Startup
+namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 {
 	public static class IdentityRolesInitializer
 	{

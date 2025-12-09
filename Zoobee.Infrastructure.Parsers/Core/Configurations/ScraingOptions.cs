@@ -15,4 +15,3 @@
 		public int NoTasksDelayMs { get; set; } = 5000; // Задержка, если очередь пуста
 	}
 }
-}

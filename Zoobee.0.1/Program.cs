@@ -1,10 +1,11 @@
 using Zoobee.Application.ServiceCollectionExtensions;
 using Zoobee.Infrastructure.ServiceCollectionExtensions;
-using Zoobee.Web.ProgramConfigurators.Startup;
 using Serilog;
 using Serilog.Events;
 using Zoobee.Web.Views;
 using Zoobee.Infrastructure.Parsers.Program_Configuration.Building;
+using Zoobee.Web.ProgramConfigurators.AppPreRun;
+using Zoobee.Infrastructure.Parsers.ProgramConfigurators.AppPreRun;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,7 @@ app.UseAuthorization();
 app.UseCors("DevelopmentAllowAny");
 app.MapControllers();
 app.RolesSeeding();
+app.ScrapingUrlsSeeding();
 app.Run();
 
 public partial class Program { }

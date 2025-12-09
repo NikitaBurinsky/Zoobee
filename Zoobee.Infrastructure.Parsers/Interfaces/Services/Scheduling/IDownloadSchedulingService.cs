@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Core.Entities.Zoobee.Infrastructure.Parsers.Core.Entities;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 
 namespace Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling

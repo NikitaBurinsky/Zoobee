@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options; // <-- Добавляем для IOptions
 using Zoobee.Infrastructure.Parsers.Core.Configuration; // <-- Для ScrapingOptions
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Interfaces.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling;
 

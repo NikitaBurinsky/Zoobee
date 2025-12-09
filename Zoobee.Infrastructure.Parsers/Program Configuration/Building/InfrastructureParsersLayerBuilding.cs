@@ -8,13 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Configuration;
+using Zoobee.Infrastructure.Parsers.Core.Configurations;
 using Zoobee.Infrastructure.Parsers.Data;
 using Zoobee.Infrastructure.Parsers.Hosts;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling;
+using Zoobee.Infrastructure.Parsers.Interfaces.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 using Zoobee.Infrastructure.Parsers.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Services.Scheduling;
+using Zoobee.Infrastructure.Parsers.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Services.Storage;
 using Zoobee.Infrastructure.Parsers.Workers;
 
@@ -35,7 +38,9 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 		private static IServiceCollection AddConfigurations(IServiceCollection services, IConfiguration configuration)
 		{
 			services.Configure<ScrapingOptions>(
-			configuration.GetSection(ScrapingOptions.SectionName));
+				configuration.GetSection(ScrapingOptions.SectionName));
+			services.Configure<ScrapingSeedingOptions>(
+				configuration.GetSection("ScrapingSeeding"));
 			return services;
 		}
 
@@ -50,7 +55,7 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 		{
 			services.AddHttpClient<IHtmlDownloader, HttpHtmlDownloader>();
 			services.AddScoped<IDownloadSchedulingService, DownloadSchedulingService>();
-
+			services.AddScoped<IScrapingSeeder, ScrapingSeeder>();
 			return services;
 		}
 

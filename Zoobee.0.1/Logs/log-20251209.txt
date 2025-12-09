@@ -1,0 +1,10 @@
+[12:55:20 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[12:55:21 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[12:56:23 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[12:56:23 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[12:56:24 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[12:56:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[12:56:32 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/cats/food
+[12:56:34 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/cats/food
+[12:56:34 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/cats/food. Ошибка: Not Found
+[12:56:34 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/dogs/toys

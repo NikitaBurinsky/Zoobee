@@ -11,14 +11,18 @@ using Zoobee.Infrastructure.Parsers.Core.Configuration;
 using Zoobee.Infrastructure.Parsers.Core.Configurations;
 using Zoobee.Infrastructure.Parsers.Data;
 using Zoobee.Infrastructure.Parsers.Hosts;
+using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Seeding;
+using Zoobee.Infrastructure.Parsers.Interfaces.Services.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
+using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
 using Zoobee.Infrastructure.Parsers.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Services.Storage;
+using Zoobee.Infrastructure.Parsers.Services.Transformation;
 using Zoobee.Infrastructure.Parsers.Workers;
 
 namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
@@ -47,6 +51,7 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 		private static IServiceCollection AddHosts(IServiceCollection services)
 		{
 			services.AddHostedService<ScrapingWorker>();
+			services.AddHostedService<TransformationWorker>();
 
 			return services;
 		}
@@ -56,9 +61,9 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			services.AddHttpClient<IHtmlDownloader, HttpHtmlDownloader>();
 			services.AddScoped<IDownloadSchedulingService, DownloadSchedulingService>();
 			services.AddScoped<IScrapingSeeder, ScrapingSeeder>();
+			services.AddScoped<ITransformationService, TransformationService>();
 			return services;
 		}
-
 
 		private static IServiceCollection AddRepositories(IServiceCollection services)
 		{

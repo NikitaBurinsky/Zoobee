@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using Zoobee.Infrastructure.Parsers.Core.Configuration;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
+using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;

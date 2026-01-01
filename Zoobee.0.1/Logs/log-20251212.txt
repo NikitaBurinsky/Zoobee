@@ -1,0 +1,250 @@
+[23:03:08 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:03:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:03:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:03:09 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:03:11 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:03:12 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/cats/food
+[23:03:13 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/cats/food
+[23:03:13 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/cats/food. Ошибка: Not Found
+[23:03:13 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/dogs/toys
+[23:03:14 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:03:14 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:03:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/dogs/toys
+[23:03:15 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/dogs/toys. Ошибка: Not Found
+[23:03:15 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://wildberries.ru/catalog/
+[23:03:17 ERR] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP Error 498: https://wildberries.ru/catalog/
+[23:03:17 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://wildberries.ru/catalog/. Ошибка: HTTP Error: 498
+[23:03:18 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ОСТАНОВЛЕН.
+[23:04:19 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:04:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:06:30 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:06:32 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:07:47 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:09:39 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:14:23 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:15:19 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:15:23 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @SeededUrls
+[23:15:23 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @SeededSitemaps
+[23:16:33 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:16:33 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @SeededUrls
+[23:16:33 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @SeededSitemaps
+[23:16:33 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:16:33 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:16:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:16:35 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:16:35 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:16:36 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:17:14 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:17:14 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @SeededUrls
+[23:17:14 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @SeededSitemaps
+[23:17:14 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:17:14 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:17:14 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:17:16 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:17:16 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:17:18 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:19:44 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:19:46 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:19:46 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:19:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:19:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:19:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:19:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:19:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:29:06 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:29:10 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:29:11 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[23:30:13 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:30:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:31:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:34:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:34:48 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:34:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:35:08 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:35:09 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:35:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:35:21 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:35:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:22 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:35:25 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:35:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:35:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:35:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:35:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:35:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:39:59 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:40:00 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:40:00 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[23:40:00 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:40:00 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:40:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:40:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:40:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:40:04 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:40:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:10 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:10 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:10 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:10 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:15 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:25 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:25 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:25 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:25 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:30 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:40:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:40:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:40:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:06 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:06 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:06 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:06 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:11 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:11 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:11 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:11 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:16 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:16 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:16 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:16 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:21 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:41 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:51 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:41:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:41:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:41:56 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:02 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:07 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:07 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:07 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:07 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:12 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:12 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:12 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:12 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:22 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:22 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:22 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:22 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:27 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:27 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:27 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:27 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:32 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:32 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:32 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:32 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:37 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:37 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:37 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:37 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "Sitemap"
+[23:42:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:42:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformerResolver) No transformer found for Source: Zoobazar, Type: "ListingPage"
+[23:42:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformer not found for source Zoobazar. Skipping.
+[23:43:06 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:43:07 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:43:07 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[23:43:07 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:43:07 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:43:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:43:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:43:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:43:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:47:47 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:47:48 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:47:48 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[23:47:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:47:49 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:47:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap.xml (Status: 200)
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:49:04 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:50:19 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:53:44 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap-files.xml
+[23:53:44 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 8 new tasks from https://zoobazar.by/sitemap.xml
+[23:53:57 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap-files.xml (Status: 200)
+[23:53:57 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap-iblock-19.xml
+[23:54:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/sitemap-iblock-19.xml (Status: 200)

@@ -36,7 +36,6 @@ namespace Zoobee.Infrastructure.Parsers.Workers
 			{
 				try
 				{
-					// 1. Создаем Scope, так как Worker - Singleton, а сервисы БД - Scoped
 					using (var scope = _serviceProvider.CreateScope())
 					{
 						var scheduler = scope.ServiceProvider.GetRequiredService<IDownloadSchedulingService>();

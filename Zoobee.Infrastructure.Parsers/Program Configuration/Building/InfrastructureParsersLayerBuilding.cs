@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Configuration;
@@ -18,6 +19,8 @@ using Zoobee.Infrastructure.Parsers.Interfaces.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
+using Zoobee.Infrastructure.Parsers.Parsers.Zoobazar;
+using Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers;
 using Zoobee.Infrastructure.Parsers.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Services.Seeding;
@@ -61,7 +64,19 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			services.AddHttpClient<IHtmlDownloader, HttpHtmlDownloader>();
 			services.AddScoped<IDownloadSchedulingService, DownloadSchedulingService>();
 			services.AddScoped<IScrapingSeeder, ScrapingSeeder>();
+			
 			services.AddScoped<ITransformationService, TransformationService>();
+			services.AddScoped<ITransformerResolver, TransformerResolver>();
+
+			// IWebPageTransformers
+			services.AddScoped<IWebPageTransformer, ZoobazarTransformer>();
+
+
+			// IResourceHandlers
+			services.AddScoped<IResourceHandler, ZoobazarSitemapHandler>();
+
+
+
 			return services;
 		}
 

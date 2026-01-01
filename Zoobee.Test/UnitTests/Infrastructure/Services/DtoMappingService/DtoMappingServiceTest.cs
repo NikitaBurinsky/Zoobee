@@ -31,7 +31,7 @@ namespace Zoobee.Test.UnitTests.Infrastructure.Services
 		private ToiletProductDto MappableDto = new ToiletProductDto
 		{
 			Name = "TestProduct",
-			Article = "1234567890",
+			SiteArticles = new Dictionary<string, string>() { { "Zoobazar", "1234567890" } },
 			BrandName = "EcoPet",
 			ProductLineupName = "GreenLine",
 			Description = "TestDescriptionTestDescriptionTestDescription",

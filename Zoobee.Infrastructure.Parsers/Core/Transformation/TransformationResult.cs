@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using Zoobee.Application.DTOs.Business_Items.Sellings;
+using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 
 namespace Zoobee.Infrastructure.Parsers.Core.Transformation
@@ -17,6 +19,6 @@ namespace Zoobee.Infrastructure.Parsers.Core.Transformation
 		/// Извлеченные бизнес-данные.
 		/// Может быть BaseProductDto, FoodProductDto, List<TagDto> и т.д.
 		/// </summary>
-		public object? ExtractedData { get; set; }
+		public (BaseProductDto ProductInfo, SellingSlotDto? ProductSlot) ExtractedData { get; set; }
 	}
 }

@@ -14,7 +14,7 @@ namespace Zoobee.Infrastructure.Parsers.ProgramConfigurators.AppPreRun
 			using (var scope = app.Services.CreateScope())
 			{
 				var seeder = scope.ServiceProvider.GetRequiredService<IScrapingSeeder>();
-				await seeder.SeedAsync();
+					await seeder.SeedAsync();
 			}
 		}
 

@@ -9,10 +9,5 @@ namespace Zoobee.Application.Interfaces.Services.Products.ProductsStorage
 		public Task<OperationResult<Guid>> CreateProductAndSave<ProductDto, ProductEntity>(ProductDto dto)
 			where ProductDto : BaseProductDto
 			where ProductEntity : BaseProductEntity;
-
-
-
-
-
 	}
 }

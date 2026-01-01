@@ -28,7 +28,7 @@ namespace Zoobee.Domain.DataEntities.Products.FoodProductEntity
 	}
 	public class FoodProductEntity : BaseProductEntity
 	{
-		public PetFoodType FoodType { get; set; }
+		public PetFoodType? FoodType { get; set; }
 		public PetAgeRange? PetAgeRange { get; set; }
 		public decimal? ProductWeightGramms { get; set; }
 	}

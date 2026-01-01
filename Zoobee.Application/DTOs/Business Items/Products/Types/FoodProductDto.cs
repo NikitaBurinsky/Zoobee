@@ -6,9 +6,8 @@ namespace Zoobee.Application.DTOs.Products.Types
 {
 	public class FoodProductDto : BaseProductDto
 	{
-		public PetFoodType FoodType { get; set; }
+		public PetFoodType? FoodType { get; set; }
 		public PetAgeRange? PetAgeRange { get; set; }
 		public decimal? ProductWeightGrams { get; set; }
-
 	}
 }

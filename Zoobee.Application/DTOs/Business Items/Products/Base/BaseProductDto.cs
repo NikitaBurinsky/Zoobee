@@ -7,7 +7,7 @@ namespace Zoobee.Application.DTOs.Products.Base
 		public Guid Id { get; set; }
 		public string Name { get; set; }
 		public string Description { get; set; }
-		public string Article { get; set; }
+		public Dictionary<string, string> SiteArticles { get; set; } //Прим. Zoobazar - https://...product-url/
 		public string UPC { get; set; }
 		public string EAN { get; set; }
 		public float Rating { get; set; }

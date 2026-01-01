@@ -22,7 +22,6 @@
 
 
   <ItemGroup>
-    <Folder Include="DTOs\Business Items\Sellings\" />
     <Folder Include="Features\" />
     <Folder Include="Interfaces\Services\MappingService\" />
     <Folder Include="Validation\Products\" />

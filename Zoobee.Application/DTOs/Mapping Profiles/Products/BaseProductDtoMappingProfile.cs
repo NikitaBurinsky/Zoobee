@@ -53,7 +53,7 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 
 			entity.Name = from.Name;
 			entity.Description = from.Description;
-			entity.Article = from.Article;
+			entity.SiteArticles = from.SiteArticles;
 			entity.UPC = from.UPC;
 			entity.EAN = from.EAN;
 			entity.Rating = from.Rating;
@@ -74,7 +74,7 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 			dto.Id = from.Id;
 			dto.Name = from.Name;
 			dto.Description = from.Description;
-			dto.Article = from.Article;
+			dto.SiteArticles = from.SiteArticles;
 			dto.UPC = from.UPC;
 			dto.EAN = from.EAN;
 			dto.Rating = from.Rating;

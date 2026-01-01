@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
+using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
+using Zoobee.Domain.DataEntities.Products;
+using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
+using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
@@ -21,17 +25,20 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 		private readonly IProductsUnitOfWork _productsUnitOfWork;
 		private readonly ITransformerResolver _transformerResolver;
 		private readonly ILogger<TransformationService> _logger;
+		private readonly IProductsStorageService productsStorageService;
 
 		public TransformationService(
 			IScrapingRepository scrapingRepository,
 			IProductsUnitOfWork productsUnitOfWork,
 			ITransformerResolver transformerResolver,
+			IProductsStorageService productsStorage,
 			ILogger<TransformationService> logger)
 		{
 			_scrapingRepository = scrapingRepository;
 			_productsUnitOfWork = productsUnitOfWork;
 			_transformerResolver = transformerResolver;
 			_logger = logger;
+			productsStorageService = productsStorage;
 		}
 
 		public async Task ProcessPendingDataAsync(CancellationToken ct)
@@ -49,7 +56,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 				try
 				{
 					// 2. Находим нужный трансформер (Фасад для сайта)
-					var transformer = _transformerResolver.GetTransformer(task.SourceName.);
+					var transformer = _transformerResolver.GetTransformer(task.SourceName, task.Type);
 
 					if (transformer == null)
 					{
@@ -70,7 +77,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 						}
 
 						// 5. Обработка извлеченных данных (Полиморфное сохранение)
-						if (result.ExtractedData != null)
+						if (result.ExtractedData.ProductInfo != null && result.ExtractedData.ProductSlot != null)
 						{
 							await SaveExtractedDataAsync(result.ExtractedData, ct);
 						}
@@ -92,24 +99,25 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 			}
 		}
 
+		//TODO Разбить по типам товаров
 		private async Task SaveExtractedDataAsync(object data, CancellationToken ct)
 		{
 			// Используем Pattern Matching для маршрутизации по репозиториям
 			switch (data)
 			{
 				case FoodProductDto food:
-					await _productsUnitOfWork.FoodProducts.AddOrUpdateAsync(food, ct); // Предполагаем метод Upsert
+					await productsStorageService.CreateProductAndSave<FoodProductDto, FoodProductEntity>(food);
 					_logger.LogInformation("Upserted Food: {Name}", food.Name);
 					break;
 
 				case ToiletProductDto toilet:
-					await _productsUnitOfWork.ToiletProducts.AddOrUpdateAsync(toilet, ct);
+					await productsStorageService.CreateProductAndSave<ToiletProductDto, ToiletProductEntity>(toilet);
 					_logger.LogInformation("Upserted Toilet: {Name}", toilet.Name);
 					break;
 
 				case BaseProductDto baseProd:
 					// Если специфичный тип не определен, сохраняем в общую таблицу (если бизнес-логика позволяет)
-					await _productsUnitOfWork.BaseProducts.AddOrUpdateAsync(baseProd, ct);
+					await productsStorageService.CreateProductAndSave<BaseProductDto, BaseProductEntity>(baseProd);
 					_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", baseProd.Name);
 					break;
 
@@ -117,9 +125,6 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 					_logger.LogWarning("Unknown data type extracted: {Type}. No repository mapped.", data.GetType().Name);
 					break;
 			}
-
-			// Фиксируем изменения в основной БД товаров
-			await _productsUnitOfWork.SaveChangesAsync(ct);
 		}
 	}
 }

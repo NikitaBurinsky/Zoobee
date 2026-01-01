@@ -8,6 +8,7 @@ using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
 using Zoobee.Application.Interfaces.Services.MediaStorage;
 using Zoobee.Application.Interfaces.Services.Products.ProductsFinder;
+using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
 using Zoobee.Domain.DataEntities.Identity.Role;
 using Zoobee.Domain.DataEntities.Identity.Users;
 using Zoobee.Infrastructure.Repositoties;
@@ -17,6 +18,7 @@ using Zoobee.Infrastructure.Services.GeoServices.CountryBordersService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
 using Zoobee.Infrastructure.Services.Products.ProductsFinder;
+using Zoobee.Infrastructure.Services.Products.ProductsStorage;
 
 namespace Zoobee.Application.ServiceCollectionExtensions
 {
@@ -71,6 +73,7 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 		{
 			services.AddScoped<IGeoCoderApiClient, GeoCoderApiClient>();
 			services.AddScoped<IGeoLocationService, GeoLocationService>();
+			services.AddScoped<IProductsStorageService, ProductsStorageService>();
 			services.AddScoped<IMediaStorageService, MediaStorageService>();
 			services.AddScoped<ICountryBorderService, CountryBorderService>();
 			services.AddScoped<IEnvirontmentDataSeedingService, EnvirontmentDataSeedingService>();

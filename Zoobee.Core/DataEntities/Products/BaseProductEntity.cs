@@ -14,7 +14,7 @@ namespace Zoobee.Domain.DataEntities.Products
 		public string Name { get; set; }
 		public string NormalizedName { get; set; }
 		public string Description { get; set; }
-		public string Article { get; set; } //TODO Присваивание
+		public Dictionary<string,string> SiteArticles { get; set; } 
 		public string UPC { get; set; }
 		public string EAN { get; set; }
 		public float Rating { get; set; }
@@ -40,7 +40,7 @@ namespace Zoobee.Domain.DataEntities.Products
 				.IsUnique(true);
 			builder.Property(x => x.Description)
 				.HasMaxLength(400);
-			builder.Property(x => x.Article)
+			builder.Property(x => x.SiteArticles)
 				.HasMaxLength(10);
 			builder.Property(x => x.UPC)
 				.HasMaxLength(12);

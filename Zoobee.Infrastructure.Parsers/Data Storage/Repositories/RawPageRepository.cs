@@ -30,7 +30,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 			return await _context.ScrapingTasks
 				.AsNoTracking()
 				.Where(t => t.Status == RawPageStatus.Pending && t.NextTryAt <= now)
-				.OrderBy(t => t.NextTryAt) // FIFO: Сначала старые
+				.OrderBy(t => t.NextTryAt) // FIFO: Сначала самые старые долги
 				.Take(batchSize)
 				.ToListAsync(ct);
 		}
@@ -41,9 +41,24 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 			await _context.ScrapingDatas.AddAsync(data, ct);
 
 			// 2. Обновляем статус задачи
-			// Важно: Мы ставим статус Success, что является сигналом для TransformationWorker
-			task.Status = RawPageStatus.Downloaded;
-			task.AttemptCount = 0; // Сбрасываем счетчик ошибок при успехе
+			// Важно: Ставим Downloaded (1), чтобы TransformationWorker увидел эту задачу
+			if (data.HttpStatusCode >= 200 && data.HttpStatusCode < 300)
+			{
+				task.Status = RawPageStatus.Downloaded;
+				task.AttemptCount = 0; // Сбрасываем счетчик ошибок
+			}
+			else if (data.HttpStatusCode == 404)
+			{
+				task.Status = RawPageStatus.NotFound;
+				// Можно увеличить NextTryAt надолго, если товар пропал
+			}
+			else
+			{
+				task.Status = RawPageStatus.Failed;
+				task.AttemptCount++;
+				// Тут можно добавить логику откладывания (Backoff) для Failed
+			}
+
 			task.Metadata.LastModified = DateTime.UtcNow;
 
 			_context.ScrapingTasks.Update(task);
@@ -72,18 +87,19 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 
 			if (!newItems.Any()) return;
 
-			// 3. Маппим в сущности
+			// 3. Создаем сущности
 			var newEntities = newItems.Select(item => new ScrapingTask
 			{
 				Id = Guid.NewGuid(),
 				Url = item.Url,
 				SourceName = sourceName,
-				Type = item.Type, // <-- Сохраняем тип (Sitemap/Product)
+				Type = item.Type,
 				Status = RawPageStatus.Pending,
-				NextTryAt = DateTime.UtcNow, // Новые задачи качаем сразу
+				NextTryAt = DateTime.UtcNow, // Качаем сразу
 				Metadata = new Domain.DataEntities.Base.IEntityMetadata.EntityMetadata
 				{
 					CreatedAt = DateTime.UtcNow,
+					LastModified = DateTime.UtcNow
 				}
 			});
 
@@ -101,25 +117,23 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 
 		public async Task<List<(ScrapingTask Task, string Content)>> GetPendingTransformationTasksAsync(int batchSize, CancellationToken ct)
 		{
-			// Нам нужны задачи, которые успешно скачались (Success), но еще не обработаны.
-			// Мы берем HTML контент из последней записи в истории (History).
-
+			// Ищем задачи со статусом Downloaded (1)
 			var result = await _context.ScrapingTasks
 				.AsNoTracking()
-				.Where(t => t.Status == RawPageStatus.Success)
+				.Where(t => t.Status == RawPageStatus.Downloaded)
 				.Select(t => new
 				{
 					Task = t,
-					// Берем контент самой свежей записи ScrapingData для этой задачи
+					// Берем контент из последней успешной записи в истории
 					LatestContent = t.History
-						.OrderByDescending(h => h.CreatedAt) // Assuming CreatedAt is available via BaseEntity inheritance or Metadata
+						.OrderByDescending(h => h.Metadata.CreatedAt)
 						.Select(h => h.Content)
 						.FirstOrDefault()
 				})
 				.Take(batchSize)
 				.ToListAsync(ct);
 
-			// Возвращаем кортежи, фильтруя пустой контент
+			// Фильтруем пустой контент и возвращаем кортежи
 			return result
 				.Where(x => !string.IsNullOrEmpty(x.LatestContent))
 				.Select(x => (x.Task, x.LatestContent))
@@ -133,16 +147,16 @@ namespace Zoobee.Infrastructure.Parsers.Services.Storage
 
 			// Логика цикла:
 			// 1. Трансформация прошла успешно.
-			// 2. Переводим задачу обратно в Pending.
-			// 3. Планируем следующий запуск (NextTryAt) через N часов.
+			// 2. Переводим задачу обратно в Pending, чтобы она скачалась снова в будущем.
+			// 3. (Опционально) Можно использовать статус Processed, если скачивание одноразовое.
 
 			task.Status = RawPageStatus.Pending;
 
-			// Если частота не задана индивидуально, берем дефолт (например, 24 часа)
+			// Планируем следующий запуск
 			int frequency = task.CustomFrequencyHours ?? 24;
 			task.NextTryAt = DateTime.UtcNow.AddHours(frequency);
 
-			task.Metadata.UpdatedAt = DateTime.UtcNow;
+			task.Metadata.LastModified = DateTime.UtcNow;
 
 			_context.ScrapingTasks.Update(task);
 			await _context.SaveChangesAsync(ct);

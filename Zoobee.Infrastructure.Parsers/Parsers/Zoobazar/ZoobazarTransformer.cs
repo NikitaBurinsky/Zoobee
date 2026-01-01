@@ -11,7 +11,6 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar
 	public class ZoobazarTransformer : BaseWebPageTransformer
 	{
 		private readonly IEnumerable<IResourceHandler> _handlers;
-
 		public ZoobazarTransformer(
 			ILogger<ZoobazarTransformer> logger,
 			IEnumerable<IResourceHandler> handlers)

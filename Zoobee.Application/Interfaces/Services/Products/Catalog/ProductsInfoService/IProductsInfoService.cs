@@ -7,7 +7,7 @@ using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Domain;
 
-namespace Zoobee.Application.Interfaces.Services.Products.ProductsStorage
+namespace Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService
 {
 	/// <summary>
 	/// Сервис для записи и обновления в бд информации о продуктах с внешних источников. 

@@ -5,7 +5,7 @@ namespace Zoobee.Application.DTOs.Products.Base
 	public class BaseProductDto : BaseEntityItemDto
 	{
 		public Guid Id { get; set; }
-		public string Name { get; set; }
+		public string Name { get; set; } 
 		public string Description { get; set; }
 		public Dictionary<string, string> SiteArticles { get; set; } //Прим. Zoobazar - https://...product-url/
 		public string UPC { get; set; }
@@ -13,6 +13,8 @@ namespace Zoobee.Application.DTOs.Products.Base
 		public float Rating { get; set; }
 		public decimal MinPrice { get; set; }
 		public decimal MaxPrice { get; set; }
+
+
 		public string CreatorCountryName { get; set; }
 		public string BrandName { get; set; }
 		public string ProductLineupName { get; set; }

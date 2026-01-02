@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Text.Json;
 using Zoobee.Application.DtoTypes.Base;
 using Zoobee.Domain.DataEntities.Catalog.Reviews;
 using Zoobee.Domain.DataEntities.Catalog.Tags;
@@ -15,8 +17,8 @@ namespace Zoobee.Domain.DataEntities.Products
 		public string NormalizedName { get; set; }
 		public string Description { get; set; }
 		public Dictionary<string,string> SiteArticles { get; set; } 
-		public string UPC { get; set; }
-		public string EAN { get; set; }
+		public string? UPC { get; set; }
+		public string? EAN { get; set; }
 		public float Rating { get; set; }
 		public decimal MinPrice { get; set; }
 		public decimal MaxPrice { get; set; }
@@ -56,6 +58,17 @@ namespace Zoobee.Domain.DataEntities.Products
 				.WithOne(e => e.Product);
 			builder.HasMany(x => x.Reviews);
 			builder.PrimitiveCollection(x => x.MediaURI);
+
+			builder.Property(x => x.SiteArticles)
+			.HasConversion(
+				v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+				v => JsonSerializer.Deserialize<Dictionary<string, string>>(v, (JsonSerializerOptions)null) ?? new Dictionary<string, string>()
+			)
+			.Metadata.SetValueComparer(new ValueComparer<Dictionary<string, string>>(
+				(c1, c2) => c1.SequenceEqual(c2),
+				c => c.Aggregate(0, (a, v) => HashCode.Combine(a, v.GetHashCode())),
+				c => c.ToDictionary(entry => entry.Key, entry => entry.Value)
+			));
 		}
 	}
 }

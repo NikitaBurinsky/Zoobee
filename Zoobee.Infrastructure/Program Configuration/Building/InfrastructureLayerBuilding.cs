@@ -17,6 +17,10 @@ using Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding;
 using Zoobee.Infrastructure.Services.GeoServices.CountryBordersService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
+using Zoobee.Infrastructure.Services.Products.Matching;
+using Zoobee.Infrastructure.Services.Products.Matching.Attributes;
+using Zoobee.Infrastructure.Services.Products.Matching.Fingerprinting;
+using Zoobee.Infrastructure.Services.Products.Matching.Normalization;
 using Zoobee.Infrastructure.Services.Products.ProductsFinder;
 using Zoobee.Infrastructure.Services.Products.ProductsStorage;
 
@@ -79,6 +83,12 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 			services.AddScoped<IEnvirontmentDataSeedingService, EnvirontmentDataSeedingService>();
 			services.AddScoped<IProductsFinderService, ProductsFinderService>();
 			services.AddScoped<IMappingService, DtoMappingService>();
+
+
+			services.AddSingleton<StringNormalizer>();
+			services.AddSingleton<AttributeExtractor>();
+			services.AddTransient<FingerprintBuilder>();
+			services.AddScoped<ProductInfoMatcher>();
 		}
 	}
 }

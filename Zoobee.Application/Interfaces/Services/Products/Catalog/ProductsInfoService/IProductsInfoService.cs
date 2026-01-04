@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Domain;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService
 {
@@ -18,9 +19,8 @@ namespace Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoSe
 	/// </summary>
 	public interface IProductsInfoService
 	{
-		public OperationResult UpdateAddProductInfo(BaseProductDto dto);
-		public OperationResult UpdateAddProductInfo(FoodProductDto dto);
-		/// ...
-		/// TODO Далее добаляются новые типы продуктов
+		public OperationResult UpdateOrAddProductInfo<Entity, Dto>(Dto dto,	string sourceUrl = null)
+							where Entity : BaseProductEntity
+							where Dto : BaseProductDto;
 	}
 }

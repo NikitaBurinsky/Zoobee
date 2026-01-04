@@ -3,13 +3,16 @@ using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Zoobee.Application.DTOs.Business_Items.Sellings;
 using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
+using Zoobee.Application.Interfaces.Services.Products.Catalog;
+using Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
+using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
+using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
@@ -27,18 +30,24 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 		private readonly ILogger<TransformationService> _logger;
 		private readonly IProductsStorageService productsStorageService;
 
-		public TransformationService(
-			IScrapingRepository scrapingRepository,
-			IProductsUnitOfWork productsUnitOfWork,
-			ITransformerResolver transformerResolver,
-			IProductsStorageService productsStorage,
-			ILogger<TransformationService> logger)
+		private readonly IProductsInfoService productsInfoService;
+		private readonly ISellingSlotsInfoService sellingSlotsInfoService;
+		private readonly IProductTypeRegistryService _productRegistry;
+
+		public TransformationService(IScrapingRepository scrapingRepository,
+			IProductsUnitOfWork productsUnitOfWork, ITransformerResolver transformerResolver,
+			ILogger<TransformationService> logger, IProductsStorageService productsStorageService,
+			IProductsInfoService productsInfoService, ISellingSlotsInfoService sellingSlotsInfoService,
+			IProductTypeRegistryService productRegistry)
 		{
 			_scrapingRepository = scrapingRepository;
 			_productsUnitOfWork = productsUnitOfWork;
 			_transformerResolver = transformerResolver;
 			_logger = logger;
-			productsStorageService = productsStorage;
+			this.productsStorageService = productsStorageService;
+			this.productsInfoService = productsInfoService;
+			this.sellingSlotsInfoService = sellingSlotsInfoService;
+			_productRegistry = productRegistry;
 		}
 
 		public async Task ProcessPendingDataAsync(CancellationToken ct)
@@ -77,9 +86,9 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 						}
 
 						// 5. Обработка извлеченных данных (Полиморфное сохранение)
-						if (result.ExtractedData.ProductInfo != null && result.ExtractedData.ProductSlot != null)
+						if (result.ExtractedData.ProductInfo != null || result.ExtractedData.ProductSlot != null)
 						{
-							await SaveExtractedDataAsync(result.ExtractedData, ct);
+							await SaveExtractedDataAsync(result.ExtractedData.ProductInfo, result.ExtractedData.ProductSlot, ct);
 						}
 
 						// 6. Помечаем, что данные успешно обработаны (чтобы не брать их снова)
@@ -99,31 +108,56 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 			}
 		}
 
-		//TODO Разбить по типам товаров
-		private async Task SaveExtractedDataAsync(object data, CancellationToken ct)
+		private async Task SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct)
 		{
-			// Используем Pattern Matching для маршрутизации по репозиториям
-			switch (data)
+
+			//TODO 
+			//В будущем, добавим отдельные хранилища для обьектов, которые распарсились, но не удалось сохранить
+			if (productData != null)
 			{
-				case FoodProductDto food:
-					await productsStorageService.CreateProductAndSave<FoodProductDto, FoodProductEntity>(food);
-					_logger.LogInformation("Upserted Food: {Name}", food.Name);
-					break;
+				var productType = productData.GetType();
+				try
+				{
+					var mapping = _productRegistry.GetMappingOrDefault(productType);
 
-				case ToiletProductDto toilet:
-					await productsStorageService.CreateProductAndSave<ToiletProductDto, ToiletProductEntity>(toilet);
-					_logger.LogInformation("Upserted Toilet: {Name}", toilet.Name);
-					break;
+					var method = typeof(IProductsInfoService).GetMethod(nameof(IProductsInfoService.UpdateOrAddProductInfo));
+					var genericMethod = method.MakeGenericMethod(mapping.EntityType, mapping.DtoType);
 
-				case BaseProductDto baseProd:
-					// Если специфичный тип не определен, сохраняем в общую таблицу (если бизнес-логика позволяет)
-					await productsStorageService.CreateProductAndSave<BaseProductDto, BaseProductEntity>(baseProd);
-					_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", baseProd.Name);
-					break;
+					var res = (OperationResult)genericMethod.Invoke(productsInfoService, new object[] { productData, slotData.SellingUrl });
+					
+					if (res.Succeeded)
+						_logger.LogInformation("Saved product information: {@ProductData}", productData);
+					else
+						_logger.LogError("Failed to save selling slot: {@ProductData}.\nError: {@Res}", productData, res);
 
-				default:
-					_logger.LogWarning("Unknown data type extracted: {Type}. No repository mapped.", data.GetType().Name);
-					break;
+					if (productType == typeof(BaseProductDto))
+					{
+						_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", productData.Name);
+					}
+					else
+					{
+						_logger.LogInformation("Upserted {ProductType}: {Name}",
+							productType.Name.Replace("ProductDto", ""),
+							productData.Name);
+					}
+				}
+				catch (Exception ex)
+				{
+					_logger.LogError(ex, "Failed to save product {ProductName} of type {ProductType}",
+						productData.Name, productType.Name);
+					throw;
+				}
+				finally
+				{
+					if(slotData != null)
+					{
+						var res = sellingSlotsInfoService.MatchAndSaveSellingSlot(slotData);
+						if (res.Succeeded)
+							_logger.LogInformation("Saved selling slot: {@SlotData}", slotData);
+						else
+							_logger.LogError("Failed to save selling slot: {@SlotData}.\nError: {@Res}", slotData, res);
+					}
+				}
 			}
 		}
 	}

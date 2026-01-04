@@ -15,6 +15,7 @@ namespace Zoobee.Application.DTOs.Business_Items.Sellings
 	{
 		public Guid Id { get; set; }
 		public string SellingUrl { get; set; }
+		public float Rating { get; set; }
 		public string SellerCompanyName { get; set; }
 		/// <summary>
 		/// Базовая стоимость слота, без учета скидок

@@ -5,8 +5,7 @@ using System.Reflection;
 using Zoobee.Application.DTOs.Mapping_Profiles.Products;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.ServiceCollectionExtensions
 {

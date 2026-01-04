@@ -1,5 +1,5 @@
 ﻿using Zoobee.Application.DtoTypes.Base;
-using Zoobee.Application.Interfaces.Services;
+using Zoobee.Application.Interfaces.Services.MappingService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
 using Zoobee.Domain;
 

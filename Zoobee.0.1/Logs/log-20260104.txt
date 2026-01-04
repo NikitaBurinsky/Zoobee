@@ -1,0 +1,6 @@
+[03:57:02 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[03:57:02 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[03:57:02 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[03:57:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[03:57:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[03:57:03 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.

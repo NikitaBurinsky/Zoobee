@@ -1,6 +1,6 @@
 ﻿using Zoobee.Application.DTOs.Filters.Products.Base_Product;
 using Zoobee.Domain.DataEntities.Data_Primitives;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.DTOs.Filters.Products.Toilet_Product
 {

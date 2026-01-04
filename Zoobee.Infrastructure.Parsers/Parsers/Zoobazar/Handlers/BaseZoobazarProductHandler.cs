@@ -152,7 +152,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 			// 1. Основные данные (Приоритет: JSON-LD -> HTML)
 			dto.Name = GetName(doc);
 			dto.Description = GetDescription(doc);
-			dto.Rating = GetRating(doc);
+			dto.AverageRating = GetRating(doc);
 
 			// 2. Артикул
 			var article = GetZoobazarArticle(doc);

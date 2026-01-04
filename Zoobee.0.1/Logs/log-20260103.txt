@@ -1,0 +1,27 @@
+[13:16:50 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Проверка наличия всех UpdateProductSpecificProfiles...
+[13:16:50 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Найдено BaseProductEntity классов : 2
+[13:16:50 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Найдено BaseUpdateEntity классов : 0
+[13:16:50 ERR] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - ToiletProductEntity -> ToiletProductDto
+  - FoodProductEntity -> FoodProductDto
+[13:17:44 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Проверка наличия всех UpdateProductSpecificProfiles...
+[13:17:44 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Найдено BaseProductEntity классов : 2
+[13:17:44 INF] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Найдено BaseUpdateEntity классов : 0
+[13:17:45 ERR] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - ToiletProductEntity -> ToiletProductDto
+  - FoodProductEntity -> FoodProductDto
+[13:18:57 FTL] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - ToiletProductEntity -> ToiletProductDto
+  - FoodProductEntity -> FoodProductDto
+[13:20:48 FTL] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - ToiletProductEntity -> ToiletProductDto
+  - FoodProductEntity -> FoodProductDto
+[13:55:42 FTL] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - ToiletProductEntity -> ToiletProductDto
+  - FoodProductEntity -> FoodProductDto
+[16:23:12 FTL] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - FoodProductEntity -> FoodProductDto
+  - ToiletProductEntity -> ToiletProductDto
+[16:26:44 FTL] (Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.UpdateProfileValidationService) Missing UpdateProductSpecificProfile implementations:
+  - FoodProductEntity -> FoodProductDto
+  - ToiletProductEntity -> ToiletProductDto

@@ -19,7 +19,7 @@ namespace Zoobee.Domain.DataEntities.Products
 		public Dictionary<string,string> SiteArticles { get; set; } 
 		public string? UPC { get; set; }
 		public string? EAN { get; set; }
-		public float Rating { get; set; }
+		public float AverageRating { get; set; }
 		public decimal MinPrice { get; set; }
 		public decimal MaxPrice { get; set; }
 		public CreatorCountryEntity CreatorCountry { get; set; }

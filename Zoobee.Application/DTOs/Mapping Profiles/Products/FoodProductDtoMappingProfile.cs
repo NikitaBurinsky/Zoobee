@@ -4,7 +4,7 @@ using Zoobee.Application.Interfaces.Repositories.Catalog;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 {

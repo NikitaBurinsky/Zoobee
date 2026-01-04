@@ -1,4 +1,5 @@
 ﻿using Zoobee.Application.DTOs.Business_Items.Base;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.DTOs.Products.Base
 {
@@ -8,12 +9,11 @@ namespace Zoobee.Application.DTOs.Products.Base
 		public string Name { get; set; } 
 		public string Description { get; set; }
 		public Dictionary<string, string> SiteArticles { get; set; } //Прим. Zoobazar - https://...product-url/
-		public string UPC { get; set; }
-		public string EAN { get; set; }
-		public float Rating { get; set; }
-		public decimal MinPrice { get; set; }
-		public decimal MaxPrice { get; set; }
-
+		public string? UPC { get; set; }
+		public string? EAN { get; set; }
+		public float AverageRating { get; set; }
+		public decimal? MinPrice { get; set; }
+		public decimal? MaxPrice { get; set; }
 
 		public string CreatorCountryName { get; set; }
 		public string BrandName { get; set; }

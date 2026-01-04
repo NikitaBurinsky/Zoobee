@@ -3,7 +3,7 @@ using System.Net;
 using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Infrastructure.Repositoties.Products
 {

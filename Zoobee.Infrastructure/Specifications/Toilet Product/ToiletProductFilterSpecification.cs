@@ -1,6 +1,6 @@
 ﻿using LinqKit;
 using Zoobee.Application.DTOs.Filters.Products.Toilet_Product;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Specifications.Base;
 
 namespace Zoobee.Infrastructure.Specifications.Toilet_Product

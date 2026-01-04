@@ -4,7 +4,6 @@ using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
 
 namespace Zoobee.Infrastructure.Repositoties.Products
 {

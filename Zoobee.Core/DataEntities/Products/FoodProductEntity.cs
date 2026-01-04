@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Zoobee.Domain.DataEntities.Data_Primitives;
 
-namespace Zoobee.Domain.DataEntities.Products.FoodProductEntity
+namespace Zoobee.Domain.DataEntities.Products
 {
 	public enum PetFoodType
 	{

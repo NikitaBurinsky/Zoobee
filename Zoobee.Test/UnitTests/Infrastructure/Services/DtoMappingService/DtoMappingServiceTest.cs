@@ -12,7 +12,6 @@ using Zoobee.Domain.DataEntities.Data_Primitives;
 using Zoobee.Domain.DataEntities.Environment.Creators;
 using Zoobee.Domain.DataEntities.Environment.Manufactures;
 using Zoobee.Domain.DataEntities.Products;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
 using Zoobee.Infrastructure.Services.DtoMappingService;
 
 namespace Zoobee.Test.UnitTests.Infrastructure.Services
@@ -45,7 +44,7 @@ namespace Zoobee.Test.UnitTests.Infrastructure.Services
 			petAgeRange = new PetAgeRange(5, 15),
 			SizeDimensions = new SizeDimensions(14, 25, 32),
 			PetKind = "Кошки",
-			Rating = 152,
+			AverageRating = 152,
 			Tags = new List<string>(),
 			ToiletType = ToiletType.Diapers,
 			VolumeLiters = 3.3f

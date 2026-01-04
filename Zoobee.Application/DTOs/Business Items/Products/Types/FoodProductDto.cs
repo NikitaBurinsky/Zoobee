@@ -1,6 +1,6 @@
 ﻿using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Domain.DataEntities.Data_Primitives;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.DTOs.Products.Types
 {

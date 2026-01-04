@@ -5,6 +5,6 @@ namespace Zoobee.Application.Interfaces.Repositories.Catalog
 {
 	public interface ITagsRepository : IRepositoryBase<TagEntity>
 	{
-
+		public TagEntity Get(string tags);
 	}
 }

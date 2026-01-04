@@ -12,12 +12,15 @@ namespace Zoobee.Application.Interfaces.Services.Products.Catalog
 	/// Сервис для записи и обновления в бд информации о офферах с внешних источников. 
 	/// Ключевые задачи сводятся к преобразованию информации о слотах продажи.
 	/// </summary>
-	public interface ISellingSlotsStorageService
+	public interface ISellingSlotsInfoService
 	{
 		/// <summary>
 		/// Сохранение нового слота продажи с внешнего источника
+		/// Ищет продукт сперва по ProductId, иначе, по SellingUrl
 		/// </summary>
-		public OperationResult<Guid> SaveSellingSlot(SellingSlotDto dto);
+		public OperationResult<Guid> MatchAndSaveSellingSlot(SellingSlotDto dto);
+
+		public OperationResult<Guid> SaveSellingSlot(Guid productId, SellingSlotDto dto);
 
 	}
 }

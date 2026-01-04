@@ -56,9 +56,9 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 			entity.SiteArticles = from.SiteArticles;
 			entity.UPC = from.UPC;
 			entity.EAN = from.EAN;
-			entity.Rating = from.Rating;
-			entity.MinPrice = from.MinPrice;
-			entity.MaxPrice = from.MaxPrice;
+			entity.AverageRating = from.AverageRating;
+			entity.MinPrice = (decimal)from.MinPrice;
+			entity.MaxPrice = (decimal)from.MaxPrice;
 			entity.CreatorCountry = creatorCountry;
 			entity.CreatorCompany = creatorCompany;
 			entity.Brand = brand;
@@ -77,7 +77,7 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 			dto.SiteArticles = from.SiteArticles;
 			dto.UPC = from.UPC;
 			dto.EAN = from.EAN;
-			dto.Rating = from.Rating;
+			dto.AverageRating = from.AverageRating;
 			dto.MinPrice = from.MinPrice;
 			dto.MaxPrice = from.MaxPrice;
 			dto.CreatorCountryName = from.CreatorCountry.CountryName;

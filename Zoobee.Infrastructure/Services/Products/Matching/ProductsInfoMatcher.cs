@@ -35,7 +35,6 @@ namespace Zoobee.Infrastructure.Services.Products.Matching
 					dto.BrandName, dto.PetKind);
 				return null;
 			}
-
 			try
 			{
 				// 2. Создаем фингерпринт искомого товара

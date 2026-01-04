@@ -39,10 +39,10 @@ namespace Zoobee.Infrastructure.Repositoties.UnitsOfWork
 		}
 		private static bool IsRepositoryForEntity<TEntity>(Type repositoryType)
 		{
-			return repositoryType.GetInterfaces()
-				.Any(i => i.IsGenericType &&
-						 i.GetGenericTypeDefinition() == typeof(IRepositoryBase<>) &&
-						 i.GetGenericArguments()[0] == typeof(TEntity));
+		 	return repositoryType.GetInterfaces()
+		 		.Any(i => i.IsGenericType &&
+		 				 i.GetGenericTypeDefinition() == typeof(IRepositoryBase<>) &&
+		 				 i.GetGenericArguments()[0] == typeof(TEntity));
 		}
-	}
-}
+	}	 
+}		 

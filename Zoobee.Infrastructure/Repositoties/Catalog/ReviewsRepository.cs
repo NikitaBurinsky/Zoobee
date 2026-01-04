@@ -18,7 +18,7 @@ namespace Zoobee.Application.Interfaces.Repositories.Catalog
 			if (res == null)
 				return OperationResult<Guid>.Error(localizer["Error.Reviews.WriteDbError"], HttpStatusCode.InternalServerError);
 			var productUpdate = dbContext.Update(res.Entity.ReviewedProduct);
-			productUpdate.Entity.Rating = productUpdate.Entity.Reviews.Average(x => x.Rating);
+			productUpdate.Entity.AverageRating = productUpdate.Entity.Reviews.Average(x => x.Rating);
 			return OperationResult<Guid>.Success(res.Entity.Id);
 		}
 

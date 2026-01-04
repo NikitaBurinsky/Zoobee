@@ -21,6 +21,13 @@ namespace Zoobee.Infrastructure.Repositoties.Sellings
 			var productUpdate = dbContext.Update(res.Entity.Product);
 			productUpdate.Entity.MaxPrice = productUpdate.Entity.SellingSlots.Select(r => r.ResultPrice).Max();
 			productUpdate.Entity.MinPrice = productUpdate.Entity.SellingSlots.Select(r => r.ResultPrice).Min();
+			
+			productUpdate.Entity.AverageRating = productUpdate.Entity.SellingSlots
+				.GroupBy(slot => slot.SellerCompany)
+				.Select(group => group
+					.OrderByDescending(e => e.Metadata.CreatedAt)  
+					.First())  
+				.Average(slot => slot.Rating);  
 
 			return OperationResult<Guid>.Success(res.Entity.Id);
 		}

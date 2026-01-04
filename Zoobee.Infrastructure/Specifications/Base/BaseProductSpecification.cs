@@ -23,8 +23,8 @@ namespace Zoobee.Infrastructure.Specifications.Base
 			if (filter.RatingRange != null)
 			{
 				Criteria.And(ent =>
-				ent.Rating >= filter.RatingRange.Min
-				&& ent.Rating <= filter.RatingRange.Max);
+				ent.AverageRating >= filter.RatingRange.Min
+				&& ent.AverageRating <= filter.RatingRange.Max);
 			}
 			if (filter.FromCountries != null)
 			{

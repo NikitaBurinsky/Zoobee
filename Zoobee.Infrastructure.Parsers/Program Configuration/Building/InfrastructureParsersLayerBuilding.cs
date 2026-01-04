@@ -67,10 +67,11 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			
 			services.AddScoped<ITransformationService, TransformationService>();
 			services.AddScoped<ITransformerResolver, TransformerResolver>();
+			
 
 			// IWebPageTransformers
 			services.AddScoped<IWebPageTransformer, ZoobazarTransformer>();
-
+			
 
 			// IResourceHandlers
 			services.AddScoped<IResourceHandler, ZoobazarSitemapHandler>();

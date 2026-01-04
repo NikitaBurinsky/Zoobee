@@ -10,6 +10,7 @@ namespace Zoobee.Domain.DataEntities.Products
 	{
 		public Guid Id { get; set; }
 		public string SellingUrl { get; set; }
+		public float Rating { get; set; }
 		public SellerCompanyEntity SellerCompany { get; set; }
 		/// <summary>
 		/// Базовая стоимость слота, без учета скидок
@@ -36,7 +37,6 @@ namespace Zoobee.Domain.DataEntities.Products
 				.WithMany(x => x.ProductSlots);
 			builder.HasMany(e => e.SelfPickupOptions)
 				.WithMany(x => x.ProductSlots);
-
 		}
 	}
 }

@@ -40,5 +40,7 @@ namespace Zoobee.Infrastructure.Repositoties.Catalog
 		}
 
 		public bool IsEntityExists(Guid Id) => dbContext.Tags.Any(e => e.Id == Id);
+
+		public TagEntity Get(string tags) => dbContext.Tags.FirstOrDefault(e => e.TagName.Trim().ToLower() == tags.Trim().ToLower());
 	}
 }

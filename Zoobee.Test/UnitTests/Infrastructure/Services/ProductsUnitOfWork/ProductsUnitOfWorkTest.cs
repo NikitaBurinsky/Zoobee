@@ -1,6 +1,6 @@
 ﻿using Moq;
 using NUnit.Framework;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Repositoties.Products;
 using Zoobee.Infrastructure.Repositoties.UnitsOfWork;
 

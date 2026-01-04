@@ -5,12 +5,11 @@ using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Filtration.Base;
 using Zoobee.Application.Filtration.Food_Products;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
-using Zoobee.Application.Interfaces.Services;
+using Zoobee.Application.Interfaces.Services.MappingService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsFinder;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
-using Zoobee.Domain.DataEntities.Products.ToiletProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Specifications.Toilet_Product;
 
 namespace Zoobee.Infrastructure.Services.Products.ProductsFinder

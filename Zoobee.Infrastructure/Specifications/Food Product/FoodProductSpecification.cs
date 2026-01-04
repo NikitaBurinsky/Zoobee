@@ -1,6 +1,6 @@
 ﻿using LinqKit;
 using Zoobee.Application.DTOs.Filters;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity;
+using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Specifications.Base;
 
 namespace Zoobee.Application.Filtration.Food_Products

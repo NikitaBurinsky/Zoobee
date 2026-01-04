@@ -6,12 +6,11 @@ using Zoobee.Web.Views;
 using Zoobee.Infrastructure.Parsers.Program_Configuration.Building;
 using Zoobee.Web.ProgramConfigurators.AppPreRun;
 using Zoobee.Infrastructure.Parsers.ProgramConfigurators.AppPreRun;
+using Zoobee.Infrastructure.Program_Configuration.Assembly_Validation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
-	.WriteTo.Console(LogEventLevel.Information)
-	.WriteTo.File($"{builder.Configuration["Logging:LogsStorage:LogsFolderPath"]}/Logs/log-{DateTime.Now}.txt")
 	.ReadFrom.Configuration(builder.Configuration)
 	.CreateLogger();
 
@@ -31,6 +30,8 @@ builder.Services.AddCors(o =>
 
 // Build
 var app = builder.Build();
+app.InfrastructureAssemplyCheck();
+
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();

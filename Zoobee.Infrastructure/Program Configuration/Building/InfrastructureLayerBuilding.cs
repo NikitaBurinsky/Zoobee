@@ -1,28 +1,37 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Zoobee.Application.Interfaces.Services;
+using Zoobee.Application.DTOs.Products.Base;
+using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding;
 using Zoobee.Application.Interfaces.Services.GeoServices;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
+using Zoobee.Application.Interfaces.Services.MappingService;
 using Zoobee.Application.Interfaces.Services.MediaStorage;
+using Zoobee.Application.Interfaces.Services.Products.Catalog;
+using Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsFinder;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
+using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
 using Zoobee.Domain.DataEntities.Identity.Role;
 using Zoobee.Domain.DataEntities.Identity.Users;
+using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Repositoties;
 using Zoobee.Infrastructure.Services.DtoMappingService;
 using Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding;
 using Zoobee.Infrastructure.Services.GeoServices.CountryBordersService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService;
 using Zoobee.Infrastructure.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
+using Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService;
+using Zoobee.Infrastructure.Services.Products.Catalog.SellingSlotStorageService;
 using Zoobee.Infrastructure.Services.Products.Matching;
 using Zoobee.Infrastructure.Services.Products.Matching.Attributes;
 using Zoobee.Infrastructure.Services.Products.Matching.Fingerprinting;
 using Zoobee.Infrastructure.Services.Products.Matching.Normalization;
 using Zoobee.Infrastructure.Services.Products.ProductsFinder;
-using Zoobee.Infrastructure.Services.Products.ProductsStorage;
+using Zoobee.Infrastructure.Services.Products.ProductsInfoService;
+using Zoobee.Infrastructure.UpdateProductsSpecificInfoProfiles;
 
 namespace Zoobee.Application.ServiceCollectionExtensions
 {
@@ -35,8 +44,19 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 			AddDbContext(services, configuration, IsInMemoryDatabase);
 			AddInfrastructureServices(services, configuration);
 			AddConfigurationClasses(services, configuration);
+			AddProductInfoUpdateProfiles(services);
 			//TEST
 			AddIdentitySystem(services);
+		}
+
+		private static void AddProductInfoUpdateProfiles(IServiceCollection services)
+		{
+			services.AddScoped<IUpdateProductSpecificProfile<BaseProductDto, BaseProductEntity>, BaseProductUpdateSpecInfoProfile>();
+			services.AddScoped<IUpdateProductSpecificProfile<FoodProductDto, FoodProductEntity>, FoodProductUpdateSpecInfoProfile>();
+			services.AddScoped<IUpdateProductSpecificProfile<ToiletProductDto, ToiletProductEntity>, ToiletProductUpdateSpecInfoProfile>();
+
+			//... Other profiles
+
 		}
 
 		private static void AddIdentitySystem(IServiceCollection services)
@@ -83,7 +103,10 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 			services.AddScoped<IEnvirontmentDataSeedingService, EnvirontmentDataSeedingService>();
 			services.AddScoped<IProductsFinderService, ProductsFinderService>();
 			services.AddScoped<IMappingService, DtoMappingService>();
-
+			services.AddScoped<IProductsInfoService, ProductsInfoService>();
+			services.AddScoped<IProductsStorageService, ProductsStorageService>();
+			services.AddScoped<ISellingSlotsInfoService, SellingSlotsStorageService>();
+			services.AddScoped<IProductTypeRegistryService, ProductTypeRegistry>();
 
 			services.AddSingleton<StringNormalizer>();
 			services.AddSingleton<AttributeExtractor>();

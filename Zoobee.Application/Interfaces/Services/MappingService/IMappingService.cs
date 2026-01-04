@@ -1,7 +1,7 @@
 ﻿using Zoobee.Application.DtoTypes.Base;
 using Zoobee.Domain;
 
-namespace Zoobee.Application.Interfaces.Services
+namespace Zoobee.Application.Interfaces.Services.MappingService
 {
 	public interface IMappingService
 	{

@@ -1,11 +1,11 @@
 ﻿using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
-using Zoobee.Application.Interfaces.Services;
+using Zoobee.Application.Interfaces.Services.MappingService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 
-namespace Zoobee.Infrastructure.Services.Products.ProductsStorage
+namespace Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService
 {
 	public class ProductsStorageService : IProductsStorageService
 	{

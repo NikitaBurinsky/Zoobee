@@ -34,7 +34,7 @@ namespace Zoobee.Application.Validation.Catalog
 					.WithMessage(ValidationMessage("Text.MaxLength750"));
 
 			RuleFor(e => e.ReviewedProductId)
-				.Must(productRepository.IsProductExists)
+				.Must(productRepository.IsEntityExists)
 					.WithMessage(ValidationMessage("ReviewedProductId.ProductNotFound"));
 		}
 	}

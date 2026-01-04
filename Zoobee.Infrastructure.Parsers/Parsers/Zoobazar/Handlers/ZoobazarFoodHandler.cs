@@ -5,9 +5,10 @@ using Zoobee.Application.DTOs.Business_Items.Sellings;
 using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Domain.DataEntities.Data_Primitives;
-using Zoobee.Domain.DataEntities.Products.FoodProductEntity; // Пространство имен для PetAgeRange (из твоего примера)
-															 // Если PetFoodType лежит в другом месте, добавь соответствующий using, например:
-															 // using Zoobee.Core.Enums; 
+using Zoobee.Domain.DataEntities.Products;
+
+// Если PetFoodType лежит в другом месте, добавь соответствующий using, например:
+// using Zoobee.Core.Enums; 
 
 namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 {
@@ -62,7 +63,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 				SiteArticles = baseDto.SiteArticles,
 				UPC = baseDto.UPC,
 				EAN = baseDto.EAN,
-				Rating = baseDto.Rating,
+				AverageRating = baseDto.AverageRating,
 				MinPrice = baseDto.MinPrice,
 				MaxPrice = baseDto.MaxPrice,
 				CreatorCountryName = baseDto.CreatorCountryName,

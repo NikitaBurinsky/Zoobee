@@ -38,6 +38,8 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			AddRepositories(services);
 			AddParsersDbContext(services, configuration, UseInMemoryDataBase);
 			AddHosts(services);
+			AddSiteTransformers(services);
+			AddResourceHandlers(services);
 			AddConfigurations(services, configuration);
 			return services;
 		}
@@ -67,16 +69,25 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			
 			services.AddScoped<ITransformationService, TransformationService>();
 			services.AddScoped<ITransformerResolver, TransformerResolver>();
-			
+			return services;
+		}
 
+		private static IServiceCollection AddSiteTransformers(IServiceCollection services)
+		{
 			// IWebPageTransformers
 			services.AddScoped<IWebPageTransformer, ZoobazarTransformer>();
-			
 
-			// IResourceHandlers
+
+			return services;
+		}
+
+		private static IServiceCollection AddResourceHandlers(IServiceCollection services)
+		{
+			// IResourceHandlers ВАЖЕН ПОРЯДОК!
+			//Zoobazar
+			services.AddScoped<IResourceHandler, ZoobazarCatalogHandler>();
+			services.AddScoped<IResourceHandler, ZoobazarFoodHandler>();
 			services.AddScoped<IResourceHandler, ZoobazarSitemapHandler>();
-
-
 
 			return services;
 		}

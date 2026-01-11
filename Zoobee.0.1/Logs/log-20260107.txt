@@ -1,0 +1,895 @@
+[13:43:57 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[13:43:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[13:43:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[13:43:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[13:43:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[13:43:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[13:44:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[13:44:01 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[13:44:01 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[13:44:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[13:44:04 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[13:55:17 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[13:55:18 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[13:55:18 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[13:55:18 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[13:55:18 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[13:55:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[13:55:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[13:55:20 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[13:55:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[13:55:22 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[13:55:23 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[13:57:06 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[13:57:06 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[13:57:06 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[13:57:07 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[13:57:07 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[13:57:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[13:57:09 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[13:57:09 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[13:57:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[13:57:11 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:04:36 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:04:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:04:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:04:37 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:04:37 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:04:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:04:39 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:04:40 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:04:40 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:04:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:04:56 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:06:24 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:06:24 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:06:24 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:06:24 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:06:24 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:06:24 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:06:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:06:27 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:06:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:06:29 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:06:29 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:07:02 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:07:03 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:07:03 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:07:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:07:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:07:03 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:07:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:07:06 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:07:06 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:07:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:07:10 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:09:26 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:11:24 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:11:25 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:11:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:11:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:11:28 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:11:30 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:11:31 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:11:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:11:33 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:12:05 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:12:42 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:13:29 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:13:29 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:13:29 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:13:29 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:13:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:15:58 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:15:59 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:15:59 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml"]
+[14:15:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:15:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:15:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:16:01 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:16:01 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:16:01 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:16:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:16:04 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:21:26 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[14:21:27 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/?PAGEN_2=2","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[14:21:27 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/?PAGEN_2=2"]
+[14:21:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[14:21:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[14:21:28 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[14:21:29 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[14:21:30 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[14:21:30 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[14:21:33 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[14:21:33 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/?PAGEN_2=2
+[14:21:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:33 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:35 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/?PAGEN_2=2 (Status: 200)
+[14:21:35 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[14:21:37 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[14:21:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:38 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[14:21:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:43 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:43 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:48 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:48 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:53 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:53 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:58 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:58 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:21:58 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:21:58 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:03 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:03 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:08 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:08 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:13 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:13 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:18 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:18 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:23 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:23 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:28 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:28 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:28 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:28 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:33 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:33 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:38 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:43 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[14:22:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[14:22:43 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/catalog/koshki/?PAGEN_2=2: XML Error: An error occurred while parsing EntityName. Line 19, position 27.
+[23:13:46 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:13:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:13:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:13:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:13:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:13:48 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:13:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:13:50 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:13:50 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:13:53 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:13:53 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:13:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:13:53 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 34 new tasks from https://zoobazar.by/catalog/koshki/
+[23:13:55 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:13:55 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.googletagmanager.com
+[23:13:57 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://www.googletagmanager.com
+[23:13:57 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.googletagmanager.com. Ошибка: Not Found
+[23:13:57 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:13:58 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:13:58 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:13:58 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:14:00 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:14:00 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://api.mindbox.ru/scripts/v1/tracker.js
+[23:14:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://api.mindbox.ru/scripts/v1/tracker.js (Status: 200)
+[23:14:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://static.popmechanic.ru/service/loader.js?c=28301
+[23:14:03 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:03 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:03 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://static.popmechanic.ru/service/loader.js?c=28301 (Status: 200)
+[23:14:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://vk.com/rtrg?p=VK-RTRG-1534012-atwIb
+[23:14:05 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://vk.com/rtrg?p=VK-RTRG-1534012-atwIb (Status: 200)
+[23:14:05 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore
+[23:14:06 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore
+[23:14:06 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore. Ошибка: Not Found
+[23:14:06 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.googletagmanager.com/ns.html?id=GTM-KS6FJJV
+[23:14:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://www.googletagmanager.com/ns.html?id=GTM-KS6FJJV (Status: 200)
+[23:14:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки http://schema.org/WPHeader
+[23:14:46 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:14:46 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:14:46 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:14:46 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:14:47 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:14:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:14:48 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:14:48 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:14:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:14:51 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:14:51 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:14:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:14:52 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 18 new tasks from https://zoobazar.by/catalog/koshki/
+[23:14:53 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:14:53 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:14:54 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:14:54 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:14:56 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:14:56 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://vk.com/zoobazar_by
+[23:14:57 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:57 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:57 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:14:59 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://vk.com/zoobazar_by
+System.InvalidOperationException: The character set provided in ContentType is invalid. Cannot read content as string using an invalid character set.
+ ---> System.ArgumentException: 'windows-1251' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at System.Net.Http.HttpContent.ReadBufferAsString(ArraySegment`1 buffer, HttpContentHeaders headers)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpContent.ReadBufferAsString(ArraySegment`1 buffer, HttpContentHeaders headers)
+   at System.Net.Http.HttpContent.ReadBufferedContentAsString()
+   at System.Net.Http.HttpContent.WaitAndReturnAsync[TState,TResult](Task waitTask, TState state, Func`2 returnFunc)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 44
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:14:59 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://vk.com/zoobazar_by. Ошибка: The character set provided in ContentType is invalid. Cannot read content as string using an invalid character set.
+[23:14:59 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.facebook.com/zoobazar.by
+[23:15:01 ERR] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP Error 400: https://www.facebook.com/zoobazar.by
+[23:15:01 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.facebook.com/zoobazar.by. Ошибка: HTTP Error: 400
+[23:15:01 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.instagram.com/zoobazar.by/
+[23:15:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://www.instagram.com/zoobazar.by/ (Status: 200)
+[23:15:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.facebook.com\/zoobazar.by\u0022
+[23:15:05 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://www.facebook.com\/zoobazar.by\u0022
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString, UriKind uriKind)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, String requestUri)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 33
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:15:05 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.facebook.com\/zoobazar.by\u0022. Ошибка: Invalid URI: The hostname could not be parsed.
+[23:15:05 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.instagram.com\/zoobazar.by\/\u0022
+[23:15:06 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://www.instagram.com\/zoobazar.by\/\u0022
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString, UriKind uriKind)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, String requestUri)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 33
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:15:06 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.instagram.com\/zoobazar.by\/\u0022. Ошибка: Invalid URI: The hostname could not be parsed.
+[23:15:06 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://apps.apple.com/by/app/zoobazar-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B5%D0%B2/id6450260662
+[23:15:07 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://apps.apple.com/by/app/zoobazar-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B5%D0%B2/id6450260662 (Status: 200)
+[23:15:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://play.google.com/store/apps/details?id=com.zoobazar
+[23:15:11 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://play.google.com/store/apps/details?id=com.zoobazar (Status: 200)
+[23:15:11 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/
+[23:15:12 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:12 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:12 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/ (Status: 200)
+[23:15:12 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/local/templates/main/assets/img/logo.svg
+[23:15:14 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/local/templates/main/assets/img/logo.svg (Status: 200)
+[23:15:17 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:17 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:32 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:15:32 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:15:32 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:15:32 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:15:32 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:15:32 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:15:34 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:15:34 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:15:34 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:15:36 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:15:36 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:15:37 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:15:37 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 17 new tasks from https://zoobazar.by/catalog/koshki/
+[23:15:38 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:15:38 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:15:40 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:15:40 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:15:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:15:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://vk.com/zoobazar_by
+[23:15:42 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:42 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:42 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:44 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://vk.com/zoobazar_by
+System.InvalidOperationException: The character set provided in ContentType is invalid. Cannot read content as string using an invalid character set.
+ ---> System.ArgumentException: 'windows-1251' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at System.Net.Http.HttpContent.ReadBufferAsString(ArraySegment`1 buffer, HttpContentHeaders headers)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpContent.ReadBufferAsString(ArraySegment`1 buffer, HttpContentHeaders headers)
+   at System.Net.Http.HttpContent.ReadBufferedContentAsString()
+   at System.Net.Http.HttpContent.WaitAndReturnAsync[TState,TResult](Task waitTask, TState state, Func`2 returnFunc)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 44
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:15:45 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://vk.com/zoobazar_by. Ошибка: The character set provided in ContentType is invalid. Cannot read content as string using an invalid character set.
+[23:15:45 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.facebook.com/zoobazar.by
+[23:15:46 ERR] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP Error 400: https://www.facebook.com/zoobazar.by
+[23:15:46 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.facebook.com/zoobazar.by. Ошибка: HTTP Error: 400
+[23:15:46 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.instagram.com/zoobazar.by/
+[23:15:49 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://www.instagram.com/zoobazar.by/ (Status: 200)
+[23:15:49 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.facebook.com\/zoobazar.by\u0022
+[23:15:50 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://www.facebook.com\/zoobazar.by\u0022
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString, UriKind uriKind)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, String requestUri)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 33
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:15:50 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.facebook.com\/zoobazar.by\u0022. Ошибка: Invalid URI: The hostname could not be parsed.
+[23:15:50 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://www.instagram.com\/zoobazar.by\/\u0022
+[23:15:52 ERR] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Ошибка внутри Downloader для https://www.instagram.com\/zoobazar.by\/\u0022
+System.UriFormatException: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString, UriKind uriKind)
+   at System.Net.Http.HttpRequestMessage..ctor(HttpMethod method, String requestUri)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 33
+   at Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Hosts\ScrapingWorker.cs:line 65
+[23:15:52 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://www.instagram.com\/zoobazar.by\/\u0022. Ошибка: Invalid URI: The hostname could not be parsed.
+[23:15:52 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://apps.apple.com/by/app/zoobazar-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B5%D0%B2/id6450260662
+[23:15:52 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:15:54 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://apps.apple.com/by/app/zoobazar-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%B8%D1%82%D0%BE%D0%BC%D1%86%D0%B5%D0%B2/id6450260662 (Status: 200)
+[23:15:54 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/
+[23:16:08 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:16:08 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:16:08 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:16:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:16:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:16:08 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:16:10 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:16:10 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:16:10 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:16:12 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:16:12 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:16:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:16:13 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 8 new tasks from https://zoobazar.by/catalog/koshki/
+[23:16:14 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:16:14 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:16:16 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:16:16 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:16:17 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:16:17 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/
+[23:16:18 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:16:18 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:16:18 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:16:19 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/ (Status: 200)
+[23:16:19 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/local/templates/main/assets/img/logo.svg
+[23:16:21 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/local/templates/main/assets/img/logo.svg (Status: 200)
+[23:16:23 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:16:23 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:44:56 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:44:56 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:44:56 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:44:56 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:44:56 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:44:56 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:44:58 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:44:58 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:44:58 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:45:01 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:45:01 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:45:01 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarSitemapHandler
+[23:45:01 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 8 new tasks from https://zoobazar.by/catalog/koshki/
+[23:45:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:45:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:45:04 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:45:04 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:45:06 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:45:06 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/
+[23:45:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:07 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:45:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/ (Status: 200)
+[23:45:08 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/local/templates/main/assets/img/logo.svg
+[23:45:08 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:45:08 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:45:08 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:45:08 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:45:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:08 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:45:08 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:45:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/local/templates/main/assets/img/logo.svg (Status: 200)
+[23:45:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:13 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:45:13 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:45:13 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:45:13 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:45:13 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:45:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:13 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:45:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:13 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:45:13 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:45:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:18 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:45:18 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:45:18 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:45:18 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:45:18 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:45:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:18 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:45:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:18 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:45:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:23 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:45:23 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:45:23 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:45:23 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:45:23 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:45:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:24 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:45:24 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:24 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:45:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:29 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:45:29 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:45:29 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:45:29 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:45:29 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:45:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:29 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:45:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating to handler: ZoobazarFoodHandler
+[23:45:29 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:46:15 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:46:15 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:46:15 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:46:15 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:46:15 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:46:15 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:46:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:46:17 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:46:17 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:46:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:46:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:46:20 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarSitemapHandler
+[23:46:20 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 8 new tasks from https://zoobazar.by/catalog/koshki/
+[23:46:22 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:46:22 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by
+[23:46:23 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by (Status: 200)
+[23:46:23 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/logo.png?v=17062021
+[23:46:25 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/logo.png?v=17062021 (Status: 200)
+[23:46:25 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/
+[23:46:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:26 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:26 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:26 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:26 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:26 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:26 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:26 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:46:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/ (Status: 200)
+[23:46:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/local/templates/main/assets/img/logo.svg
+[23:46:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/local/templates/main/assets/img/logo.svg (Status: 200)
+[23:46:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:31 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:31 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:31 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:31 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:31 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/" to handler: ZoobazarFoodHandler
+[23:46:31 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:46:31 WRN] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) No handler found for TaskType: "ProductPage"
+[23:46:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:36 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:36 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:36 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:36 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:36 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:36 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/" to handler: ZoobazarFoodHandler
+[23:46:37 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:46:42 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:42 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:42 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:42 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:42 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:42 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:42 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:42 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/" to handler: ZoobazarFoodHandler
+[23:46:42 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:46:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:47 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:47 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:47 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:47 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:47 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/" to handler: ZoobazarFoodHandler
+[23:46:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:46:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler
+[23:46:52 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[23:46:52 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[23:46:52 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save product Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г of type FoodProductDto
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+[23:46:52 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":15,"ResultPrice":1.18,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[23:46:52 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Critical error processing task https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.)
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService.ProductsStorageService.CreateProductAndSave[ProductDto,ProductEntity](ProductDto dto)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Zoobee.Infrastructure.Services.Products.ProductsInfoService.ProductsInfoService.UpdateOrAddProductInfo[Entity,Dto](Dto dto, String sourceUrl) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure\Services\Products\ProductsInfoUpdateService\ProductsInfoService.cs:line 57
+   at InvokeStub_IProductsInfoService.UpdateOrAddProductInfo(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 153
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 124
+   at Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService.ProcessPendingDataAsync(CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Transformation\TransformationService.cs:line 94
+[23:46:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by" to handler: ZoobazarFoodHandler
+[23:46:52 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by: Failed to parse product name
+[23:46:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/" to handler: ZoobazarFoodHandler
+[23:46:52 WRN] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Transformation failed for https://zoobazar.by/: Failed to parse product name
+[23:48:35 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:49:01 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:49:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:49:07 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:49:07 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:49:07 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:49:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:49:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:49:11 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:49:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarCatalogHandler
+[23:49:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/
+[23:49:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/koshki/ завершена.
+[23:49:11 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 1 new tasks from https://zoobazar.by/catalog/koshki/
+[23:49:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarCatalogHandler
+[23:49:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:49:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ завершена.
+[23:49:12 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 1 new tasks from https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/

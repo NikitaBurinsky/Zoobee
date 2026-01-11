@@ -1,0 +1,141 @@
+[23:17:14 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:17:15 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:17:15 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:17:15 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:17:15 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:17:15 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:17:17 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:17:17 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:17:17 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:17:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:17:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:18:21 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:18:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:18:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:18:22 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:18:22 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:18:22 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:18:24 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:18:25 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:18:25 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:18:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:18:27 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:18:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:19:43 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:19:43 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:19:43 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:19:43 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:19:44 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:19:46 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:19:46 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:19:46 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:19:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:19:48 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:19:52 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:23:44 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:23:44 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:23:44 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:23:44 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:23:45 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:23:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:23:47 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:23:47 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:23:47 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:23:50 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:23:50 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:23:55 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:30:36 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:30:36 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:30:36 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:30:36 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:30:37 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:30:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:30:39 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:30:39 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:30:39 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:30:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:30:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:30:47 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:31:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarSitemapHandler
+[23:39:47 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:39:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:39:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:39:47 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:39:47 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:39:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:39:50 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:39:50 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:39:50 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:39:52 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:39:52 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:43:17 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:43:17 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:43:17 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:43:17 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:43:18 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:43:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:43:20 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:43:20 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:43:20 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:43:23 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:43:23 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:43:57 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:43:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:43:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:43:58 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:43:58 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:43:58 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:44:00 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:44:00 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:44:00 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:44:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:44:03 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:44:05 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:44:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarCatalogHandler
+[23:44:16 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/
+[23:47:01 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:47:02 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:47:02 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:47:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:47:02 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:47:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:47:05 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:47:05 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:47:05 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:47:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:47:09 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:47:10 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:47:16 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarCatalogHandler
+[23:47:16 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/
+[23:47:37 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:47:38 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:47:38 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:47:38 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:47:38 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:47:38 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:47:40 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:47:41 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:47:41 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:47:43 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:47:43 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:47:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarCatalogHandler
+[23:47:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/
+[23:47:56 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:51:25 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[23:51:26 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[23:51:26 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[23:51:26 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[23:51:26 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/sitemap.xml
+[23:51:26 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[23:51:28 WRN] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) HTTP 404 Not Found: https://zoobazar.by/sitemap.xml
+[23:51:28 WRN] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/sitemap.xml. Ошибка: Not Found
+[23:51:28 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/
+[23:51:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/ (Status: 200)
+[23:51:31 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[23:51:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/" to handler: ZoobazarCatalogHandler
+[23:51:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/koshki/
+[23:51:38 INF] (Zoobee.Infrastructure.Parsers.Workers.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[23:54:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/koshki/ завершена.
+[23:54:11 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 502 new tasks from https://zoobazar.by/catalog/koshki/
+[23:54:16 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.ZoobazarTransformer) Delegating "https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/" to handler: ZoobazarFoodHandler

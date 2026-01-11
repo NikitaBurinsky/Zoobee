@@ -26,7 +26,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar
 		{
 			// Ищем подходящего исполнителя
 			// Важно: порядок регистрации или проверки может иметь значение, если условия пересекаются
-			var handler = _handlers.FirstOrDefault(h => h.CanHandle(taskType, content));
+			var handler = _handlers.FirstOrDefault(h => h.CanHandle(taskType, content, url));
 
 			if (handler == null)
 			{
@@ -39,7 +39,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar
 				};
 			}
 
-			_logger.LogInformation("Delegating to handler: {Handler}", handler.GetType().Name);
+			_logger.LogInformation("Delegating \"{Url}\" to handler: {Handler}", url,handler.GetType().Name);
 			return await handler.HandleAsync(content, url);
 		}
 	}

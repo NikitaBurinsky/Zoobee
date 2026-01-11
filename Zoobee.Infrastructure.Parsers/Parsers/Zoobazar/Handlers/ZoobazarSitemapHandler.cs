@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
+using Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services;
 
 namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 {
@@ -12,27 +14,25 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 	{
 		public string TargetSourceName => "Zoobazar";
 
-		public bool CanHandle(ScrapingTaskType taskType, string content)
+		public bool CanHandle(ScrapingTaskType taskType, string content, string url)
 		{
-			return taskType == ScrapingTaskType.Sitemap;
+			return url.Contains("sitemap") || taskType == ScrapingTaskType.Sitemap;
 		}
 
-		public Task<TransformationResult> HandleAsync(string content, string url)
+		public async Task<TransformationResult> HandleAsync(string content, string url)
 		{
 			var result = new TransformationResult();
 			try
 			{
-				var xDoc = XDocument.Parse(content);
-				var ns = xDoc.Root.Name.Namespace;
-				var isIndex = xDoc.Root.Name.LocalName.Equals("sitemapindex", StringComparison.OrdinalIgnoreCase);
-
-				var links = xDoc.Descendants(ns + "loc").Select(x => x.Value).ToList();
-
+				var links = await ZoobazarLinksExtractor.ExtractLinksAsync(content, url);
 				foreach (var link in links)
 				{
-					// Если это индекс -> создаем задачи типа Sitemap, иначе -> ProductPage
-					var type = isIndex ? ScrapingTaskType.Sitemap : ScrapingTaskType.ProductPage;
-					result.NewTasks.Add((link, type));
+					if (link.Contains("://zoobazar"))
+					{
+						bool isSitemap = link.Contains("sitemap");
+						var type = isSitemap ? ScrapingTaskType.Sitemap : ScrapingTaskType.ProductPage;
+						result.NewTasks.Add((link, type));
+					}
 				}
 			}
 			catch (Exception ex)
@@ -41,7 +41,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 				result.ErrorMessage = $"XML Error: {ex.Message}";
 			}
 
-			return Task.FromResult(result);
+			return result;
 		}
 	}
 }

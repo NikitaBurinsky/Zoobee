@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using HtmlAgilityPack;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
 
@@ -11,9 +13,10 @@ namespace Zoobee.Infrastructure.Parsers.Interfaces.Transformation
 
 		// Метод проверки: подходит ли этот хендлер для текущей задачи и контента?
 		// Мы передаем и тип задачи (из БД), и контент (для анализа HTML)
-		bool CanHandle(ScrapingTaskType taskType, string content);
+		bool CanHandle(ScrapingTaskType taskType, string content, string url);
 
 		// Основная логика обработки
 		Task<TransformationResult> HandleAsync(string content, string url);
+		
 	}
 }

@@ -16,18 +16,17 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 	{
 		protected override bool IsMatch(HtmlDocument doc)
 		{
-			// Проверяем, содержит ли страница признаки еды (Корм или Лакомства)
-			// Проверяем Breadcrumbs или заголовок
-			var breadcrumbs = doc.DocumentNode.SelectSingleNode("//div[contains(@class, 'bx-breadcrumb')]")?.InnerText ?? "";
-			var title = doc.DocumentNode.SelectSingleNode("//h1")?.InnerText ?? "";
-
-			// Собираем весь значимый текст для проверки
-			var checkText = (breadcrumbs + " " + title).ToLower();
-
-			return checkText.Contains("корм")
-				   || checkText.Contains("лакомств")
-				   || checkText.Contains("паштет")
-				   || checkText.Contains("консерв");
+			var checkText = doc.Text.ToLower();
+			List<string> strings = new List<string>
+			{
+				"корм",
+				"лакомст",
+				"паштет",
+				"консерв",
+				"пауч",
+				"korm"
+			};
+			return strings.Any(checkText.Contains);
 		}
 		protected override BaseProductDto ParseSpecificData(HtmlDocument doc, BaseProductDto baseDto)
 		{

@@ -15,6 +15,7 @@ using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
+using Zoobee.Infrastructure.Parsers.Data;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
@@ -33,6 +34,8 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 		private readonly IProductsInfoService productsInfoService;
 		private readonly ISellingSlotsInfoService sellingSlotsInfoService;
 		private readonly IProductTypeRegistryService _productRegistry;
+
+
 
 		public TransformationService(IScrapingRepository scrapingRepository,
 			IProductsUnitOfWork productsUnitOfWork, ITransformerResolver transformerResolver,
@@ -118,28 +121,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 				var productType = productData.GetType();
 				try
 				{
-					var mapping = _productRegistry.GetMappingOrDefault(productType);
-
-					var method = typeof(IProductsInfoService).GetMethod(nameof(IProductsInfoService.UpdateOrAddProductInfo));
-					var genericMethod = method.MakeGenericMethod(mapping.EntityType, mapping.DtoType);
-
-					var res = (OperationResult)genericMethod.Invoke(productsInfoService, new object[] { productData, slotData.SellingUrl });
-					
-					if (res.Succeeded)
-						_logger.LogInformation("Saved product information: {@ProductData}", productData);
-					else
-						_logger.LogError("Failed to save selling slot: {@ProductData}.\nError: {@Res}", productData, res);
-
-					if (productType == typeof(BaseProductDto))
-					{
-						_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", productData.Name);
-					}
-					else
-					{
-						_logger.LogInformation("Upserted {ProductType}: {Name}",
-							productType.Name.Replace("ProductDto", ""),
-							productData.Name);
-					}
+					MapAndSaveProductInfo(productData, slotData, productType);
 				}
 				catch (Exception ex)
 				{
@@ -158,6 +140,32 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 							_logger.LogError("Failed to save selling slot: {@SlotData}.\nError: {@Res}", slotData, res);
 					}
 				}
+			}
+		}
+
+		private void MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType)
+		{
+			var mapping = _productRegistry.GetMappingOrDefault(productType);
+
+			var method = typeof(IProductsInfoService).GetMethod(nameof(IProductsInfoService.UpdateOrAddProductInfo));
+			var genericMethod = method.MakeGenericMethod(mapping.EntityType, mapping.DtoType);
+
+			var res = (OperationResult)genericMethod.Invoke(productsInfoService, new object[] { productData, slotData.SellingUrl });
+
+			if (res.Succeeded)
+				_logger.LogInformation("Saved product information: {@ProductData}", productData);
+			else
+				_logger.LogError("Failed to save selling slot: {@ProductData}.\nError: {@Res}", productData, res);
+
+			if (productType == typeof(BaseProductDto))
+			{
+				_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", productData.Name);
+			}
+			else
+			{
+				_logger.LogInformation("Upserted {ProductType}: {Name}",
+					productType.Name.Replace("ProductDto", ""),
+					productData.Name);
 			}
 		}
 	}

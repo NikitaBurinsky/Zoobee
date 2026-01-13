@@ -11,6 +11,10 @@ namespace Zoobee.Infrastructure.Parsers.Core.Transformation
 		public string ErrorMessage { get; set; }
 
 		/// <summary>
+		/// В случае, если тип задачи был определен или изменен в процессе трансформации.
+		/// </summary>
+		public ScrapingTaskType? UpdatedTaskType { get; set; }
+		/// <summary>
 		/// Новые задачи для краулера (например, найденные ссылки в sitemap или пагинации).
 		/// </summary>
 		public List<(string Url, ScrapingTaskType Type)> NewTasks { get; set; } = new();

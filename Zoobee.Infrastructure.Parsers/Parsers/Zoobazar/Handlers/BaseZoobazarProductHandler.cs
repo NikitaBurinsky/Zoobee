@@ -16,11 +16,11 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 
 		public bool CanHandle(ScrapingTaskType taskType, string content, string url)
 		{
-			if (taskType != ScrapingTaskType.ProductPage) return false;
+			if (taskType != ScrapingTaskType.ProductPage && taskType != ScrapingTaskType.Unknown) return false;
 
 			var doc = new HtmlDocument();
 			doc.LoadHtml(content);
-			return IsMatch(doc);
+			return IsMatch(doc, url);
 		}
 
 		public Task<TransformationResult> HandleAsync(string content, string url)
@@ -36,7 +36,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 				return Task.FromResult(new TransformationResult
 				{
 					IsSuccess = false,
-					ErrorMessage = "Failed to parse product name"
+					ErrorMessage = "Failed to parse product name",
 				});
 			}
 
@@ -45,11 +45,12 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 
 			return Task.FromResult(new TransformationResult
 			{
-				ExtractedData = new(finalDto, sellingData)
+				ExtractedData = new(finalDto, sellingData),
+				UpdatedTaskType = ScrapingTaskType.ProductPage
 			});
 		}
 
-		protected abstract bool IsMatch(HtmlDocument doc);
+		protected abstract bool IsMatch(HtmlDocument doc, string url);
 		protected abstract BaseProductDto ParseSpecificData(HtmlDocument doc, BaseProductDto baseDto);
 		protected virtual SellingSlotDto ParseSellingSlot(HtmlDocument doc, string url)
 		{

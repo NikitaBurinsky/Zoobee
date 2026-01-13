@@ -14,7 +14,8 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 		public IQueryable<CreatorCountryEntity> GetAll() => dbContext.CreatorCountries;
 		public async Task<OperationResult<Guid>> CreateAsync(CreatorCountryEntity newCreatorCountryEntity)
 		{
-			newCreatorCountryEntity.NormalizedCountryName = NormalizeString(newCreatorCountryEntity.CountryName);
+			newCreatorCountryEntity.NormalizedCountryNameEng = NormalizeString(newCreatorCountryEntity.CountryNameEng);
+			newCreatorCountryEntity.NormalizedCountryNameRus = NormalizeString(newCreatorCountryEntity.CountryNameRus);
 			var res = await dbContext.CreatorCountries.AddAsync(newCreatorCountryEntity);
 			if (res == null)
 				return OperationResult<Guid>.Error(localizer["Error.CreatorCountries.WriteDbError"], HttpStatusCode.InternalServerError);
@@ -43,9 +44,15 @@ namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
 			=> dbContext.CreatorCountries.Any(e => e.Id == Id);
 
 		public bool IsEntityExists(string countryName)
-			=> dbContext.CreatorCountries.Any(e => e.NormalizedCountryName == NormalizeString(countryName));
+		{
+			string nname = NormalizeString(countryName);
+			return dbContext.CreatorCountries.Any(e => e.NormalizedCountryNameEng == nname || e.NormalizedCountryNameRus == nname);
+		}
 
 		public CreatorCountryEntity Get(string countryName)
-			=> dbContext.CreatorCountries.FirstOrDefault(e => e.NormalizedCountryName == NormalizeString(countryName));
+		{
+			string nname = NormalizeString(countryName);
+			return dbContext.CreatorCountries.FirstOrDefault(e => e.NormalizedCountryNameEng == nname || e.NormalizedCountryNameRus == nname);	
+		}
 	}
 }

@@ -1,0 +1,802 @@
+[00:00:25 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:00:27 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:00:28 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:00:28 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:00:28 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/publications/
+[00:00:28 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:00:30 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/feedback/
+[00:01:45 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:01:46 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:01:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:01:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:01:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:01:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/publications/
+[00:01:49 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/feedback/
+[00:02:45 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:02:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:02:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:02:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/publications/
+[00:02:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:02:47 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:02:48 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/feedback/
+[00:04:29 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:04:30 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:04:30 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:04:31 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:04:31 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:04:31 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/publications/
+[00:04:32 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/feedback/
+[00:10:35 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:10:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:10:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:10:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/publications/
+[00:10:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:10:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:10:38 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/feedback/
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/fishki/
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/fishki/
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 374 для Url: https://zoobazar.by/catalog/fishki/
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/fishki/?PAGEN_2=2
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/fishki/ завершена. Время выполнения: 100 ms. Всего задач: 372
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/publications/ (Status: 200)
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/josera/?sort=sale&order=desc
+[00:10:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 372 new tasks from https://zoobazar.by/catalog/fishki/
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/podarki/
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/podarki/
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/catalog/podarki/
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/podarki/?PAGEN_2=2
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/podarki/ завершена. Время выполнения: 83 ms. Всего задач: 373
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/catalog/podarki/
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=2
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=2
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 451 для Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=2
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=3
+[00:10:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=2 завершена. Время выполнения: 76 ms. Всего задач: 449
+[00:10:41 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 449 new tasks from https://zoobazar.by/catalog/sobaki/sukhie_korma/?PAGEN_2=2
+[00:10:42 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/josera/?sort=sale&order=desc (Status: 200)
+[00:10:42 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/
+[00:10:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/ (Status: 200)
+[00:10:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/publications/
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc (Status: 200)
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/josera/?sort=sale&order=desc
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/josera/?sort=sale&order=desc
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 383 для Url: https://zoobazar.by/brands/josera/?sort=sale&order=desc
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/josera/?sort=sale&order=desc&PAGEN_2=2
+[00:10:47 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/josera/?sort=sale&order=desc завершена. Время выполнения: 43 ms. Всего задач: 381
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 381 new tasks from https://zoobazar.by/brands/josera/?sort=sale&order=desc
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 429 для Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/?PAGEN_2=2
+[00:10:48 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/ завершена. Время выполнения: 25 ms. Всего задач: 427
+[00:10:49 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 427 new tasks from https://zoobazar.by/catalog/sobaki/sukhie_korma/josera/
+[00:10:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc (Status: 200)
+[00:10:50 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc
+[00:10:52 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc (Status: 200)
+[00:10:53 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/about/
+[00:10:54 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/about/ (Status: 200)
+[00:10:54 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/kong/?sort=price&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc&PAGEN_2=2
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc завершена. Время выполнения: 36 ms. Всего задач: 373
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 378 для Url: https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc&PAGEN_2=2
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc завершена. Время выполнения: 29 ms. Всего задач: 376
+[00:10:56 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/kong/?sort=price&order=desc (Status: 200)
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 376 new tasks from https://zoobazar.by/brands/joyser/?sort=best_sale&order=desc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?sort=sale&order=desc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 394 для Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc&PAGEN_2=2
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc завершена. Время выполнения: 24 ms. Всего задач: 392
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 392 new tasks from https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/?sort=price&order=asc
+[00:10:57 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/about/
+[00:10:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?sort=sale&order=desc (Status: 200)
+[00:10:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc
+[00:11:03 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/kong/?sort=price&order=desc
+[00:11:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/kong/?sort=price&order=desc
+[00:11:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/kong/?sort=price&order=desc
+[00:11:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/kong/?sort=price&order=desc&PAGEN_2=2
+[00:11:03 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/kong/?sort=price&order=desc завершена. Время выполнения: 18 ms. Всего задач: 373
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/kong/?sort=price&order=desc
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?sort=sale&order=desc
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?sort=sale&order=desc
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?sort=sale&order=desc
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?sort=sale&order=desc&PAGEN_2=2
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?sort=sale&order=desc завершена. Время выполнения: 22 ms. Всего задач: 373
+[00:11:04 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?sort=sale&order=desc
+[00:11:09 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc (Status: 200)
+[00:11:09 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/kong/about/
+[00:11:10 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc
+[00:11:10 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc
+[00:11:10 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 417 для Url: https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc
+[00:11:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc&PAGEN_2=2
+[00:11:11 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc завершена. Время выполнения: 23 ms. Всего задач: 415
+[00:11:11 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/kong/about/ (Status: 200)
+[00:11:11 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?sort=price&order=desc
+[00:11:11 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 415 new tasks from https://zoobazar.by/catalog/sobaki/igrushki/?sort=price&order=desc
+[00:11:13 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?sort=price&order=desc (Status: 200)
+[00:11:13 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/kong/?sort=price&order=asc
+[00:11:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/kong/?sort=price&order=asc (Status: 200)
+[00:11:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?PAGEN_3=2
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/kong/about/
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?sort=price&order=desc
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?sort=price&order=desc
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?sort=price&order=desc
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?sort=price&order=desc&PAGEN_2=2
+[00:11:17 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?sort=price&order=desc завершена. Время выполнения: 27 ms. Всего задач: 373
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?PAGEN_3=2 (Status: 200)
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?sort=price&order=desc
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/kong/publications/
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/kong/?sort=price&order=asc
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/kong/?sort=price&order=asc
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/kong/?sort=price&order=asc
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/kong/?sort=price&order=asc&PAGEN_2=2
+[00:11:18 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/kong/?sort=price&order=asc завершена. Время выполнения: 32 ms. Всего задач: 373
+[00:11:19 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/kong/?sort=price&order=asc
+[00:11:19 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/kong/publications/ (Status: 200)
+[00:11:19 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc
+[00:11:23 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc (Status: 200)
+[00:11:24 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?sort=price&order=asc
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?PAGEN_3=2
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?PAGEN_3=2
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?PAGEN_3=2
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?PAGEN_3=2&PAGEN_2=2
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?PAGEN_3=2 завершена. Время выполнения: 13 ms. Всего задач: 373
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?PAGEN_3=2
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/kong/publications/
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?sort=price&order=asc (Status: 200)
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/profilakticheskie_lakomstva_/derevenskie_lakomstva_dlya_sobak_mini_porod_kaltsievaya_kostochka_s_kuritsey_55_g/
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc
+[00:11:25 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 400 для Url: https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc
+[00:11:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc&PAGEN_2=2
+[00:11:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc завершена. Время выполнения: 27 ms. Всего задач: 398
+[00:11:26 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 398 new tasks from https://zoobazar.by/catalog/ptitsy/?sort=price&order=asc
+[00:11:27 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/profilakticheskie_lakomstva_/derevenskie_lakomstva_dlya_sobak_mini_porod_kaltsievaya_kostochka_s_kuritsey_55_g/ (Status: 200)
+[00:11:27 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/myagkie_tekstilnye/igrushka_slon_dlya_sobak_toy_dog_kong_knots_carnival_eleph_m_l/
+[00:11:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/myagkie_tekstilnye/igrushka_slon_dlya_sobak_toy_dog_kong_knots_carnival_eleph_m_l/ (Status: 200)
+[00:11:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/kong/?sort=hit&order=desc
+[00:11:31 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/kong/?sort=hit&order=desc (Status: 200)
+[00:11:31 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/tseosan/?sort=hit&order=desc
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?sort=price&order=asc
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?sort=price&order=asc
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?sort=price&order=asc
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?sort=price&order=asc&PAGEN_2=2
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?sort=price&order=asc завершена. Время выполнения: 19 ms. Всего задач: 373
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?sort=price&order=asc
+[00:11:32 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/profilakticheskie_lakomstva_/derevenskie_lakomstva_dlya_sobak_mini_porod_kaltsievaya_kostochka_s_kuritsey_55_g/
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/myagkie_tekstilnye/igrushka_slon_dlya_sobak_toy_dog_kong_knots_carnival_eleph_m_l/
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/kong/?sort=hit&order=desc
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/kong/?sort=hit&order=desc
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/kong/?sort=hit&order=desc
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/kong/?sort=hit&order=desc&PAGEN_2=2
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/kong/?sort=hit&order=desc завершена. Время выполнения: 33 ms. Всего задач: 373
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/kong/?sort=hit&order=desc
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/tseosan/?sort=hit&order=desc (Status: 200)
+[00:11:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc
+[00:11:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc (Status: 200)
+[00:11:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/
+[00:11:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/brands/tseosan/?sort=hit&order=desc
+[00:11:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/brands/tseosan/?sort=hit&order=desc
+[00:11:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/brands/tseosan/?sort=hit&order=desc
+[00:11:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/brands/tseosan/?sort=hit&order=desc&PAGEN_2=2
+[00:11:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/brands/tseosan/?sort=hit&order=desc завершена. Время выполнения: 16 ms. Всего задач: 373
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/brands/tseosan/?sort=hit&order=desc
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 400 для Url: https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc&PAGEN_2=2
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc завершена. Время выполнения: 28 ms. Всего задач: 398
+[00:11:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 398 new tasks from https://zoobazar.by/catalog/ptitsy/?sort=best_sale&order=desc
+[00:11:42 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/ (Status: 200)
+[00:11:42 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_monoproteinovyy_s_myasom_dikogo_kabana_i_pasternakom_410_g/
+[00:11:44 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_monoproteinovyy_s_myasom_dikogo_kabana_i_pasternakom_410_g/ (Status: 200)
+[00:11:44 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/
+[00:11:46 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/
+[00:11:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/
+[00:11:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 419 для Url: https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/
+[00:11:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/?PAGEN_2=2
+[00:11:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/ завершена. Время выполнения: 28 ms. Всего задач: 417
+[00:11:47 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 417 new tasks from https://zoobazar.by/catalog/sobaki/lakomstva/lakomstva-dlya-sobak-s-govyadinoj/
+[00:11:47 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_monoproteinovyy_s_myasom_dikogo_kabana_i_pasternakom_410_g/
+[00:11:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/ (Status: 200)
+[00:11:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_remennoy_siniy_new_classic_somrast_5_m/
+[00:11:51 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_remennoy_siniy_new_classic_somrast_5_m/ (Status: 200)
+[00:11:52 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/super_premium_klassa_5/korm_premil_special_superpremium_dlya_vzroslykh_sobak_vsekh_porod_gipoallergennyy_15_kg/
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/?PAGEN_2=2
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/ завершена. Время выполнения: 27 ms. Всего задач: 373
+[00:11:53 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/catalog/sobaki/lezhaki_i_domiki/kovriki_podstilki_matrasy/
+[00:11:54 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_remennoy_siniy_new_classic_somrast_5_m/
+[00:11:54 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/super_premium_klassa_5/korm_premil_special_superpremium_dlya_vzroslykh_sobak_vsekh_porod_gipoallergennyy_15_kg/ (Status: 200)
+[00:11:55 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_trosovyy_rozovyy_3_m/
+[00:11:57 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_trosovyy_rozovyy_3_m/ (Status: 200)
+[00:11:57 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/
+[00:12:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/super_premium_klassa_5/korm_premil_special_superpremium_dlya_vzroslykh_sobak_vsekh_porod_gipoallergennyy_15_kg/
+[00:12:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/ (Status: 200)
+[00:12:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_trosovyy_rozovyy_3_m/
+[00:12:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/
+[00:12:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/ (Status: 200)
+[00:12:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 380 для Url: https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/?PAGEN_2=2
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/ завершена. Время выполнения: 29 ms. Всего задач: 378
+[00:12:06 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 378 new tasks from https://zoobazar.by/catalog/sobaki/gruming/kogterezy_pilki_nozhnitsy/
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 390 для Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/?PAGEN_2=2
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/ завершена. Время выполнения: 30 ms. Всего задач: 388
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/ (Status: 200)
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/
+[00:12:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 388 new tasks from https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/
+[00:12:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/ (Status: 200)
+[00:12:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:12:47 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:12:48 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:12:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:12:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:12:49 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:12:49 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:12:50 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/
+[00:12:50 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/
+[00:12:50 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 383 для Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/
+[00:13:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/?PAGEN_2=2
+[00:13:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/ завершена. Время выполнения: 9646 ms. Всего задач: 381
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 381 new tasks from https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/pelenki/
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 385 для Url: https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/?PAGEN_2=2
+[00:13:01 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/ завершена. Время выполнения: 80 ms. Всего задач: 383
+[00:13:02 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 383 new tasks from https://zoobazar.by/catalog/sobaki/igrushki/interaktivnye_razvivayushchie_/
+[00:13:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/ (Status: 200)
+[00:13:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_srednikh_porod/korm_premil_maxi_basic_premium_dlya_sobak_vsekh_porod_s_normalnoy_aktivnostyu_i_sklonnykh_k_naboru_v_2/
+[00:13:05 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_srednikh_porod/korm_premil_maxi_basic_premium_dlya_sobak_vsekh_porod_s_normalnoy_aktivnostyu_i_sklonnykh_k_naboru_v_2/ (Status: 200)
+[00:13:05 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/shampun_doctor_vic_dlya_sobak_i_koshek_s_beloy_sherstyu_250_ml/
+[00:13:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/shampun_doctor_vic_dlya_sobak_i_koshek_s_beloy_sherstyu_250_ml/ (Status: 200)
+[00:13:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/
+[00:13:08 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:13:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:13:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 378 для Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:13:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/?PAGEN_2=2
+[00:13:08 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/ завершена. Время выполнения: 70 ms. Всего задач: 376
+[00:13:09 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 376 new tasks from https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_kostey_i_sustavov_1/
+[00:13:09 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_srednikh_porod/korm_premil_maxi_basic_premium_dlya_sobak_vsekh_porod_s_normalnoy_aktivnostyu_i_sklonnykh_k_naboru_v_2/
+[00:13:09 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/shampuni_konditsionery/shampun_doctor_vic_dlya_sobak_i_koshek_s_beloy_sherstyu_250_ml/
+[00:13:09 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/ (Status: 200)
+[00:13:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/vetapteka/ot_glistov_i_parazitov/tabletki_milprazon_ot_glistov_dlya_sobak_krupnykh_porod_1_tab/
+[00:13:12 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/vetapteka/ot_glistov_i_parazitov/tabletki_milprazon_ot_glistov_dlya_sobak_krupnykh_porod_1_tab/ (Status: 200)
+[00:13:12 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/v_forme_edy/igrushka_beeztees_rozhdestvenskiy_ponchik_dlya_koshek_plyushevyy_10_sm/
+[00:13:14 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/v_forme_edy/igrushka_beeztees_rozhdestvenskiy_ponchik_dlya_koshek_plyushevyy_10_sm/ (Status: 200)
+[00:13:14 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 376 для Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/?PAGEN_2=2
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/ завершена. Время выполнения: 34 ms. Всего задач: 374
+[00:13:15 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 374 new tasks from https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/dvoynye_miski_1/
+[00:13:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/ (Status: 200)
+[00:13:16 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/vetapteka/ot_glistov_i_parazitov/tabletki_milprazon_ot_glistov_dlya_sobak_krupnykh_porod_1_tab/
+[00:13:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/
+[00:13:16 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/v_forme_edy/igrushka_beeztees_rozhdestvenskiy_ponchik_dlya_koshek_plyushevyy_10_sm/
+[00:13:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/ (Status: 200)
+[00:13:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/
+[00:13:20 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/ (Status: 200)
+[00:13:20 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_remennoy_chernyy_5m_50_kg/
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 376 для Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/?PAGEN_2=2
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/ завершена. Время выполнения: 41 ms. Всего задач: 374
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_remennoy_chernyy_5m_50_kg/ (Status: 200)
+[00:13:22 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 374 new tasks from https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/salfetki_polotentsa/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 377 для Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/?PAGEN_2=2
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/ завершена. Время выполнения: 50 ms. Всего задач: 375
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 375 new tasks from https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/kovriki_pod_misku_2/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/
+[00:13:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 381 для Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/
+[00:13:24 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/?PAGEN_2=2
+[00:13:24 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/ завершена. Время выполнения: 39 ms. Всего задач: 379
+[00:13:24 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 379 new tasks from https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/korrektsiya_povedeniya_3/
+[00:13:26 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/ (Status: 200)
+[00:13:26 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc
+[00:13:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc (Status: 200)
+[00:13:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:13:30 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_remennoy_chernyy_5m_50_kg/
+[00:14:32 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:14:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:14:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:14:34 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:14:34 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:14:34 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:14:35 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/povodki_ruletki/ruletki/povodok_ruletka_flexi_black_design_remennoy_chernyy_5m_50_kg/
+[00:14:36 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/
+[00:14:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/
+[00:14:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/
+[00:14:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:36 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/ завершена. Время выполнения: 216 ms. Всего задач: 396
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc&PAGEN_2=2
+[00:14:37 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc завершена. Время выполнения: 94 ms. Всего задач: 499
+[00:14:38 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 499 new tasks from https://zoobazar.by/catalog/sobaki/?sort=sale&order=desc
+[00:14:38 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/ (Status: 200)
+[00:14:38 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc
+[00:14:41 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc (Status: 200)
+[00:14:41 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc
+[00:14:44 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:14:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:14:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 400 для Url: https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:14:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/?PAGEN_2=2
+[00:14:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/ завершена. Время выполнения: 37 ms. Всего задач: 398
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 398 new tasks from https://zoobazar.by/catalog/sobaki/lakomstva/sushenye_naturalnye/
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc (Status: 200)
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc&PAGEN_2=2
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc завершена. Время выполнения: 55 ms. Всего задач: 396
+[00:14:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=asc
+[00:14:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2 (Status: 200)
+[00:14:49 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc&PAGEN_2=2
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc завершена. Время выполнения: 54 ms. Всего задач: 396
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc (Status: 200)
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc
+[00:14:52 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=hit&order=desc
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 399 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=3
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2 завершена. Время выполнения: 31 ms. Всего задач: 397
+[00:14:53 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 397 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?PAGEN_2=2
+[00:14:55 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc (Status: 200)
+[00:14:55 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc (Status: 200)
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_dlya_sobak_golubaya_diametr_15_sm/
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc&PAGEN_2=2
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc завершена. Время выполнения: 32 ms. Всего задач: 396
+[00:14:59 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=price&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc&PAGEN_2=2
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc завершена. Время выполнения: 53 ms. Всего задач: 396
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=best_sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_dlya_sobak_golubaya_diametr_15_sm/ (Status: 200)
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc&PAGEN_2=2
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc завершена. Время выполнения: 56 ms. Всего задач: 396
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/lakomstvo_derevenskie_lakomstva_vita_ugoshchenie_dlya_udobnogo_priyema_tabletok_dlya_sobak_govyadina/
+[00:15:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_melkikh_porod_1/?sort=sale&order=desc
+[00:15:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/lakomstvo_derevenskie_lakomstva_vita_ugoshchenie_dlya_udobnogo_priyema_tabletok_dlya_sobak_govyadina/ (Status: 200)
+[00:15:02 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_hunter_belyy_lev_collar_convenience_refl_glow_55_m_l/
+[00:15:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_hunter_belyy_lev_collar_convenience_refl_glow_55_m_l/ (Status: 200)
+[00:15:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/
+[00:15:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/ (Status: 200)
+[00:15:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_dlya_sobak_golubaya_diametr_15_sm/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/lakomstvo_derevenskie_lakomstva_vita_ugoshchenie_dlya_udobnogo_priyema_tabletok_dlya_sobak_govyadina/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_hunter_belyy_lev_collar_convenience_refl_glow_55_m_l/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 374 для Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/?PAGEN_2=2
+[00:15:07 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/ завершена. Время выполнения: 37 ms. Всего задач: 372
+[00:15:08 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 372 new tasks from https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_priveredlivykh_1/
+[00:15:08 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/ (Status: 200)
+[00:15:08 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/
+[00:15:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/ (Status: 200)
+[00:15:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/
+[00:15:12 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/ (Status: 200)
+[00:15:12 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 377 для Url: https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/?PAGEN_2=2
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/ завершена. Время выполнения: 22 ms. Всего задач: 375
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 375 new tasks from https://zoobazar.by/catalog/sobaki/lakomstva/dolgoigrayushchie_lakomstva/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/ (Status: 200)
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 386 для Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/?PAGEN_2=2
+[00:15:14 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/ завершена. Время выполнения: 22 ms. Всего задач: 384
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 384 new tasks from https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/namordniki_nedouzdki/
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 374 для Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/?PAGEN_2=2
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/ завершена. Время выполнения: 27 ms. Всего задач: 372
+[00:15:15 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 372 new tasks from https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/nabory_dlya_vskarmlivaniya/
+[00:15:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/ (Status: 200)
+[00:15:18 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/
+[00:15:20 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/ (Status: 200)
+[00:15:20 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/?sort=price&order=desc
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 378 для Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/?PAGEN_2=2
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/ завершена. Время выполнения: 28 ms. Всего задач: 376
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 376 new tasks from https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_ushami/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 405 для Url: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/?PAGEN_2=2
+[00:15:22 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/ завершена. Время выполнения: 33 ms. Всего задач: 403
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 403 new tasks from https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/?sort=price&order=desc (Status: 200)
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 376 для Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/?PAGEN_2=2
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/ завершена. Время выполнения: 28 ms. Всего задач: 374
+[00:15:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 374 new tasks from https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/popony_zhiletki/
+[00:15:25 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/ (Status: 200)
+[00:15:25 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/
+[00:15:27 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/ (Status: 200)
+[00:15:27 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/
+[00:15:29 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?sort=price&order=desc
+[00:15:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?sort=price&order=desc
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?sort=price&order=desc
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?sort=price&order=desc&PAGEN_2=2
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?sort=price&order=desc завершена. Время выполнения: 33 ms. Всего задач: 499
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 499 new tasks from https://zoobazar.by/catalog/sobaki/?sort=price&order=desc
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/ (Status: 200)
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 385 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/?PAGEN_2=2
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/ завершена. Время выполнения: 21 ms. Всего задач: 383
+[00:15:30 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 383 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_shchenkov_1/
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/?PAGEN_2=2
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/ завершена. Время выполнения: 21 ms. Всего задач: 373
+[00:15:31 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/catalog/sobaki/tualety_pelenki_pakety/pakety_dlya_vygula/
+[00:15:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc (Status: 200)
+[00:15:33 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/ganteli/
+[00:15:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/ganteli/ (Status: 200)
+[00:15:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/myachi/
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 398 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/?PAGEN_2=2
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/ завершена. Время выполнения: 28 ms. Всего задач: 396
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 396 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_gigantskikh_porod_1/
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc&PAGEN_2=2
+[00:15:38 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc завершена. Время выполнения: 31 ms. Всего задач: 499
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 499 new tasks from https://zoobazar.by/catalog/sobaki/?sort=hit&order=desc
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/igrushki/myachi/ (Status: 200)
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/ganteli/
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/igrushki/ganteli/
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 383 для Url: https://zoobazar.by/catalog/sobaki/igrushki/ganteli/
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/igrushki/ganteli/?PAGEN_2=2
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/igrushki/ganteli/ завершена. Время выполнения: 32 ms. Всего задач: 381
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:15:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 381 new tasks from https://zoobazar.by/catalog/sobaki/igrushki/ganteli/
+[00:15:43 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/?PAGEN_2=2 (Status: 200)
+[00:15:44 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/ (Status: 200)
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/myachi/
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/igrushki/myachi/
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 400 для Url: https://zoobazar.by/catalog/sobaki/igrushki/myachi/
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/igrushki/myachi/?PAGEN_2=2
+[00:15:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/igrushki/myachi/ завершена. Время выполнения: 24 ms. Всего задач: 398
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 398 new tasks from https://zoobazar.by/catalog/sobaki/igrushki/myachi/
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?PAGEN_2=3
+[00:15:46 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?PAGEN_2=2 завершена. Время выполнения: 33 ms. Всего задач: 499
+[00:16:30 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:16:31 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:16:31 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:16:32 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:16:32 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:16:32 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?PAGEN_2=3
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?PAGEN_2=2 завершена. Время выполнения: 251 ms. Всего задач: 499
+[00:16:52 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 499 new tasks from https://zoobazar.by/catalog/sobaki/?PAGEN_2=2
+[00:16:59 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/
+[00:16:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/
+[00:16:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 374 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/
+[00:16:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/?PAGEN_2=2
+[00:16:59 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/ завершена. Время выполнения: 70 ms. Всего задач: 372
+[00:17:00 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 372 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_kontrolya_vesa_1/
+[00:17:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/ (Status: 200)
+[00:17:00 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/
+[00:17:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/ (Status: 200)
+[00:17:04 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/
+[00:17:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/ (Status: 200)
+[00:17:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/
+[00:17:09 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:17:09 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:17:09 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 399 для Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:17:09 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/?PAGEN_2=2
+[00:17:09 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/ завершена. Время выполнения: 69 ms. Всего задач: 397
+[00:17:10 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 397 new tasks from https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/miski/
+[00:17:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/ (Status: 200)
+[00:17:10 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/
+[00:17:13 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/
+[00:17:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/
+[00:17:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 400 для Url: https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/
+[00:17:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/?PAGEN_2=2
+[00:17:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/ завершена. Время выполнения: 128 ms. Всего задач: 398
+[00:17:14 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 398 new tasks from https://zoobazar.by/catalog/sobaki/lakomstva/povsednevnye_lakomstva/
+[00:17:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/ (Status: 200)
+[00:17:16 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/
+[00:17:19 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/ (Status: 200)
+[00:17:19 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 377 для Url: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/?PAGEN_2=2
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/ завершена. Время выполнения: 66 ms. Всего задач: 375
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 375 new tasks from https://zoobazar.by/catalog/sobaki/kosmetika_i_ukhod/ukhod_za_lapami_1/
+[00:17:23 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/ (Status: 200)
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 376 для Url: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/?PAGEN_2=2
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/ завершена. Время выполнения: 37 ms. Всего задач: 374
+[00:17:26 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 374 new tasks from https://zoobazar.by/catalog/sobaki/sukhie_korma/dlya_beremennykh_kormyashchikh/
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 387 для Url: https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/?PAGEN_2=2
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/ завершена. Время выполнения: 38 ms. Всего задач: 385
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 385 new tasks from https://zoobazar.by/catalog/sobaki/lakomstva/podushechki_krokety/
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/ (Status: 200)
+[00:17:29 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_pushistoe_schaste_one_line_dlya_sobak_25_40_sm_1/
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 408 для Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/?PAGEN_2=2
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/ завершена. Время выполнения: 29 ms. Всего задач: 406
+[00:17:31 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 406 new tasks from https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/
+[00:17:32 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_pushistoe_schaste_one_line_dlya_sobak_25_40_sm_1/ (Status: 200)
+[00:17:32 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc
+[00:17:35 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc (Status: 200)
+[00:17:35 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/
+[00:17:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/ (Status: 200)
+[00:17:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/
+[00:17:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/
+[00:17:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/
+[00:17:39 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 383 для Url: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/
+[00:17:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/?PAGEN_2=2
+[00:17:40 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/ завершена. Время выполнения: 86 ms. Всего задач: 381
+[00:17:40 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/ (Status: 200)
+[00:17:40 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 381 new tasks from https://zoobazar.by/catalog/sobaki/odezhda_aksessuary/kombinezony/
+[00:17:40 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_spiral_dlya_sobak_zelenaya_diametr_19_sm/
+[00:17:51 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:19:35 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:19:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:19:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:19:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_2_kh_proteinovyy_s_utkoy_kurinymi_serdechkami_i_ovoshchami_410_g/
+[00:19:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:19:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:20:20 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:20:21 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:20:21 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:20:22 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_2_kh_proteinovyy_s_utkoy_kurinymi_serdechkami_i_ovoshchami_410_g/
+[00:20:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:20:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:20:33 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:21:55 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:21:57 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:21:57 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:21:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:21:58 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:21:58 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_2_kh_proteinovyy_s_utkoy_kurinymi_serdechkami_i_ovoshchami_410_g/
+[00:23:28 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:23:36 ERR] (Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader) Network Error downloading https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_2_kh_proteinovyy_s_utkoy_kurinymi_serdechkami_i_ovoshchami_410_g/
+System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение..
+ ---> System.Net.Sockets.SocketException (10053): Программа на вашем хост-компьютере разорвала установленное подключение.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.CreateException(SocketError error, Boolean forAsyncThrow)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.SendAsyncForNetworkStream(Socket socket, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.SendAsyncForNetworkStream(ReadOnlyMemory`1 buffer, SocketFlags socketFlags, CancellationToken cancellationToken)
+   at System.Net.Sockets.NetworkStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteSingleChunk[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnection.WriteToStreamAsync(ReadOnlyMemory`1 source, Boolean async)
+   at System.Net.Http.HttpConnection.FlushAsync(Boolean async)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(Action action, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(Action action, Boolean allowInlining)
+   at System.Threading.Tasks.Task.RunContinuations(Object continuationObject)
+   at System.Threading.Tasks.Task`1.TrySetResult(TResult result)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1 task, TResult result)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Threading.Tasks.AwaitTaskContinuation.System.Threading.IThreadPoolWorkItem.Execute()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading.PortableThreadPool.WorkerThread.WorkerThreadStart()
+--- End of stack trace from previous location ---
+
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.<WriteSingleChunk>g__CompleteWriteAsync|157_1[TIOAdapter](ValueTask writeTask, Byte[] bufferToReturn)
+   at System.Net.Security.SslStream.WriteAsyncInternal[TIOAdapter](ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendCoreAsync>g__Core|5_0(HttpRequestMessage request, Boolean useAsync, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Zoobee.Infrastructure.Parsers.Services.Downloader.HttpHtmlDownloader.DownloadAsync(String url, CancellationToken ct) in C:\Users\Formatis\Documents\GitHub\Zoobee\Zoobee.Infrastructure.Parsers\Services\Downloader\HttpHtmlDownloader.cs:line 37
+[00:24:53 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: бритпремиум, Вид: собаки, Метрика: 850]
+[00:24:53 WRN] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: НЕУДАЧА https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pauch_isegrim_roots_dlya_sobak_2_kh_proteinovyy_s_utkoy_kurinymi_serdechkami_i_ovoshchami_410_g/. Ошибка: Network Error: An error occurred while sending the request.
+[00:24:53 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/igrushki_2/
+[00:24:53 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[00:26:07 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:26:08 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:26:08 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:26:09 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:26:09 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:26:09 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/tovary_dlya_shchenkov/igrushki_2/
+[00:27:42 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:28:16 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: бритпремиум, Вид: собаки, Метрика: 850]
+[00:28:16 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[00:31:18 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[00:31:21 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[00:31:21 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[00:31:22 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/
+[00:31:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[00:31:22 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[00:31:28 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[00:31:41 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: бритпремиум, Вид: собаки, Метрика: 850]
+[00:31:41 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[00:31:50 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/ (Status: 200)
+[00:31:53 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/gruming/pukhoderki/
+[21:23:36 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[21:23:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[21:23:36 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[21:23:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[21:23:37 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[21:23:37 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[21:23:39 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/
+[21:23:40 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: бритпремиум, Вид: собаки, Метрика: 850]
+[21:23:41 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[21:23:41 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"FoodType":"Wet","PetAgeRange":null,"ProductWeightGrams":null,"Id":"51a4d95e-76f3-4df8-9eee-7eb9fa69f5d6","Name":"Консерва Брит ПРЕМИУМ, для взрослых собак всех пород, с говядиной и сердцем, by Nature, 850 гр","Description":"Полнорационный влажный консервированный корм премиум-класса с мясом говядины и сердцем для собак всех пород, 850 г","SiteArticles":{"Zoobazar":"5051144"},"UPC":null,"EAN":null,"AverageRating":5,"MinPrice":0,"MaxPrice":0,"CreatorCountryName":"РОССИЯ","BrandName":"Брит ПРЕМИУМ","ProductLineupName":"by Nature","CreatorCompanyName":"ООО \"Елецкий мясокомбинат \"Липецкая область, город Елец, ул. Промышленная д.92","Tags":[],"PetKind":"Собаки","MediaURIs":["https://zoobazar.by/local/templates/main/assets/img/logo.png","https://zoobazar.by/upload/iblock/e16/jp49i74z99d2axxyxobdzw42w93nct88/address.svg","https://zoobazar.by/upload/iblock/bbc/l559nz49m01wql3g8th86t2lsyv99y6u/Frame-8.svg","https://zoobazar.by/upload/iblock/a2f/hezz9muocfjcv6vsq8o6d79p0vqwt2jq/recommendation.svg"],"$type":"FoodProductDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[21:23:41 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Upserted Food: Консерва Брит ПРЕМИУМ, для взрослых собак всех пород, с говядиной и сердцем, by Nature, 850 гр
+[21:23:41 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/ (Status: 200)
+[21:23:41 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/
+[21:23:41 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/sobaki/vlazhnye_korma/premium_klassa_7/konserva_brit_dlya_vzroslykh_sobak_vsekh_porod_s_govyadinoy_i_serdtsem_premium_by_nature_850_gr/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":7.89,"Discount":0,"ResultPrice":7.89,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[21:23:42 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_pushistoe_schaste_one_line_dlya_sobak_25_40_sm_1/
+[21:23:42 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: пушистоесчастье, Вид: собаки, Метрика: null]
+[21:23:42 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[21:23:42 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"FoodType":"Dry","PetAgeRange":null,"ProductWeightGrams":null,"Id":"660725a1-4728-461f-aa9e-d121ee0aabb4","Name":"Ошейник Пушистое счастье One line для собак, 25-40 см","Description":"Размеры ошейника: 2,5 см, 40–55 см.Ошейник рекомендуется собакам следующих пород: кокер-спаниель, бультерьер, золотистый ретривер, бассет-хаунд, бигль, боксёр, эрдельтерьер, далматинец, ризеншнауцер, скотч-терьер, фокстерьер, шелти, лабрадор, чау-чау, хаски, ротвейлер, среднеазиатская овчарка, немецкая овчарка.","SiteArticles":{"Zoobazar":"7649731"},"UPC":null,"EAN":null,"AverageRating":0,"MinPrice":0,"MaxPrice":0,"CreatorCountryName":"КИТАЙ","BrandName":"Пушистое счастье","ProductLineupName":"","CreatorCompanyName":"Экономик Девелопмент Зон, Чоу Жианг СТР., Иу Сити, Чжэцзян Провинс, Китай","Tags":[],"PetKind":"Собаки","MediaURIs":["https://zoobazar.by/local/templates/main/assets/img/logo.png","https://zoobazar.by/upload/iblock/e16/jp49i74z99d2axxyxobdzw42w93nct88/address.svg","https://zoobazar.by/upload/iblock/bbc/l559nz49m01wql3g8th86t2lsyv99y6u/Frame-8.svg","https://zoobazar.by/upload/iblock/a2f/hezz9muocfjcv6vsq8o6d79p0vqwt2jq/recommendation.svg"],"$type":"FoodProductDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[21:23:42 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Upserted Food: Ошейник Пушистое счастье One line для собак, 25-40 см
+[21:23:43 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/sobaki/osheyniki_shleyki_namordniki/osheyniki/osheynik_pushistoe_schaste_one_line_dlya_sobak_25_40_sm_1/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":19.99,"Discount":50,"ResultPrice":10.00,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[21:23:43 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc
+[21:23:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc
+[21:23:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 501 для Url: https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc
+[21:23:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc&PAGEN_2=2
+[21:23:43 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc завершена. Время выполнения: 96 ms. Всего задач: 499
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 499 new tasks from https://zoobazar.by/catalog/sobaki/?sort=best_sale&order=desc
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/?PAGEN_2=2
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/ завершена. Время выполнения: 32 ms. Всего задач: 373
+[21:23:44 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/pri_allergii_diabete/
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 375 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/?PAGEN_2=2
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/ завершена. Время выполнения: 31 ms. Всего задач: 373
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 373 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_pishchevareniya_3/
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/ (Status: 200)
+[21:23:45 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/irbis/
+[21:23:46 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ОСТАНОВЛЕН.
+[22:47:04 INF] (Program) Роли установлены : ["admin","customer","organisation"]
+[22:47:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: ЗАПУЩЕН.
+[22:47:06 INF] (Zoobee.Infrastructure.Parsers.Hosts.TransformationWorker) Transformation Worker started.
+[22:47:07 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/brands/irbis/
+[22:47:07 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) URLS Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/"]
+[22:47:07 INF] (Zoobee.Infrastructure.Parsers.Services.Seeding.ScrapingSeeder) Sitemaps Seeded : @["https://zoobazar.by/sitemap.xml","https://zoobazar.by/catalog/koshki/","https://zoobazar.by/catalog/koshki/"]
+[22:47:08 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/
+[22:47:09 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: felix, Вид: кошки, Метрика: 75]
+[22:47:09 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[22:47:10 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"FoodType":"Wet","PetAgeRange":null,"ProductWeightGrams":75,"Id":"d14f87f9-f6c0-4bde-b541-b0e095332156","Name":"Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г","Description":"Каждый котик желает наслаждаться совершенно особенным кормом, у которого будет такой аппетитный вид и аромат, словно Вы приготовили его сами. Каждый пакетик корма для взрослых кошек «Аппетитные кусочки» содержит нежные кусочки в сочном желе – вкуснятину, от которой кота за уши не оттащишь!\nЭксперты Purina, разрабатывая влажные корма для домашних любимцев, создали корм для взрослых кошек Felix «Аппетитные кусочки» — специально для Вашего любителя вкуснятины. Влажный корм для кошек Felix Аппетитные кусочки — полнорационный, содержит все необходимое для здоровой активной долгой жизни.\n• Является источником необходимых Омега-6 жирных кислот с правильным сочетанием минеральных веществ и витаминов\n• 100&#37; сбалансированный рацион\n• Баланс минералов\n• Содержит витамины Д и Е","SiteArticles":{"Zoobazar":"12512765"},"UPC":null,"EAN":null,"AverageRating":5,"MinPrice":0,"MaxPrice":0,"CreatorCountryName":"РОССИЯ","BrandName":"FELIX","ProductLineupName":"Аппетитные кусочки","CreatorCompanyName":"г. Москва, Павелецкая пл., д.2, стр.1, Россия (филиал в с. Ворсино Боровского р-на Калужской обл., 249020, Калужская обл., Боровский р-н, с. Ворсино, ул. Лыскина, вл. 1, Россия).","Tags":[],"PetKind":"Кошки","MediaURIs":["https://zoobazar.by/local/templates/main/assets/img/logo.png","https://zoobazar.by/upload/iblock/e16/jp49i74z99d2axxyxobdzw42w93nct88/address.svg","https://zoobazar.by/upload/iblock/bbc/l559nz49m01wql3g8th86t2lsyv99y6u/Frame-8.svg","https://zoobazar.by/upload/iblock/a2f/hezz9muocfjcv6vsq8o6d79p0vqwt2jq/recommendation.svg"],"$type":"FoodProductDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[22:47:10 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Upserted Food: Пауч Felix для взрослых кошек, кусочки в желе с кроликом, 75 г
+[22:47:10 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/koshki/vlazhnye_korma/dlya_vzroslykh_1/pauch_felix_dlya_vzroslykh_koshek_kusochki_v_zhele_s_krolikom_75_g/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":1.39,"Discount":0,"ResultPrice":1.39,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[22:47:11 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_spiral_dlya_sobak_zelenaya_diametr_19_sm/
+[22:47:11 DBG] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сгенерирован целевой отпечаток (Fingerprint): [Бренд: mrkranch, Вид: собаки, Метрика: null]
+[22:47:11 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/brands/irbis/ (Status: 200)
+[22:47:11 INF] (Zoobee.Infrastructure.Services.Products.Matching.ProductInfoMatcher) Сопоставление НЕ УДАЛОСЬ. Причина: В БД не найдено кандидатов по фильтру Бренд/Вид питомца.
+[22:47:11 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/gryzuny/kletki_domiki_perenoski/
+[22:47:11 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"FoodType":"Dry","PetAgeRange":null,"ProductWeightGrams":null,"Id":"11df333c-a52c-4309-9f3f-4012457ccf63","Name":"Игрушка Плетеное кольцо-спираль для собак, зеленая, диаметр 19 см","Description":"Плетеная игрушка-кольцо - не просто игрушка, а настоящий многофункциональный тренировочный снаряд. Прочные стропы из нейлона выдержат продолжительные игры с высокой нагрузкой. Кольцо изготовлено из легкого, очень прочного нейлона, который не имеет запаха и полностью безопасен для питомца. Игрушку легко мыть: под проточной водой или в стиральной машине. Игрушка предназначена для совместных игр как в помещении, так и на улице. Важно: перед использованием удалите все бирки и крепления. Прекратите использовать игрушку, если на ней появились повреждения, оторваны или отсутствуют отдельные ее части.","SiteArticles":{"Zoobazar":"MKR542182"},"UPC":null,"EAN":null,"AverageRating":0,"MinPrice":0,"MaxPrice":0,"CreatorCountryName":"КИТАЙ","BrandName":"Mr.Kranch","ProductLineupName":"","CreatorCompanyName":"ROOM 101, BUILDING #42, NO.258 XIN SHANGHAI, China","Tags":[],"PetKind":"Собаки","MediaURIs":["https://zoobazar.by/local/templates/main/assets/img/logo.png","https://zoobazar.by/upload/iblock/e16/jp49i74z99d2axxyxobdzw42w93nct88/address.svg","https://zoobazar.by/upload/iblock/bbc/l559nz49m01wql3g8th86t2lsyv99y6u/Frame-8.svg","https://zoobazar.by/upload/iblock/a2f/hezz9muocfjcv6vsq8o6d79p0vqwt2jq/recommendation.svg"],"$type":"FoodProductDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[22:47:11 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Upserted Food: Игрушка Плетеное кольцо-спираль для собак, зеленая, диаметр 19 см
+[22:47:12 ERR] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Failed to save selling slot: {"Id":"00000000-0000-0000-0000-000000000000","SellingUrl":"https://zoobazar.by/catalog/sobaki/igrushki/koltsa_tarelki/igrushka_pletenoe_koltso_spiral_dlya_sobak_zelenaya_diametr_19_sm/","Rating":0,"SellerCompanyName":"Zoobazar","DefaultSlotPrice":47.99,"Discount":0,"ResultPrice":47.99,"ProductId":"00000000-0000-0000-0000-000000000000","$type":"SellingSlotDto"}.
+Error: {"Returns":"00000000-0000-0000-0000-000000000000","Failed":true,"$type":"OperationResult`1"}
+[22:47:12 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/
+[22:47:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/
+[22:47:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 374 для Url: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/
+[22:47:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/?PAGEN_2=2
+[22:47:12 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/ завершена. Время выполнения: 64 ms. Всего задач: 372
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 372 new tasks from https://zoobazar.by/catalog/sobaki/vlazhnye_korma/dlya_sterilizovannykh_3/
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Start Transformation for Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Начат процесс трансформации в хендлере. Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Извлечено ссылок: 407 для Url: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Добавлена задача листинга для следующей страницы: https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/?PAGEN_2=2
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers.ZoobazarCatalogHandler) Обработка https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/ завершена. Время выполнения: 34 ms. Всего задач: 405
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: УСПЕХ https://zoobazar.by/catalog/gryzuny/kletki_domiki_perenoski/ (Status: 200)
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Hosts.ScrapingWorker) Scraping Worker: Начало обработки https://zoobazar.by/catalog/koshki/sukhie_korma/dlya_lecheniya_mochekamennoy_bolezni/
+[22:47:13 INF] (Zoobee.Infrastructure.Parsers.Services.Transformation.TransformationService) Added 405 new tasks from https://zoobazar.by/catalog/sobaki/miski_poilki_kormushki_1/
+[22:49:46 INF] (Program) Роли установлены : ["admin","customer","organisation"]

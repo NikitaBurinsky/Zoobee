@@ -25,6 +25,7 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 				PetAgeRange = from.PetAgeRange,
 				ProductWeightGramms = from.ProductWeightGrams
 			};
+			//TODO Создание CreatorCompany и прочих приблуд в первую очередь
 			var res = SetBaseProductFields(entity, from);
 			return res.Succeeded ?
 				OperationResult<FoodProductEntity>.Success(entity) :

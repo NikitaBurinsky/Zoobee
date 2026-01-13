@@ -156,7 +156,8 @@ namespace Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding
 				{
 					var entity = new CreatorCountryEntity
 					{
-						CountryName = item.dto.CountryName,
+						CountryNameEng = item.dto.CountryNameEng,	
+						CountryNameRus = item.dto.CountryNameRus,
 					};
 					var res = await EnvUOW.ManufacturesUOWork.CreatorCountryRepository.CreateAsync(entity);
 					if (res.Succeeded)

@@ -31,7 +31,7 @@ namespace Zoobee.Infrastructure.Specifications.Base
 				Includes.Add(e => e.CreatorCountry);
 				Criteria.And(
 					e => filter.FromCountries
-					.Any(c => e.CreatorCountry.CountryName == c));
+					.Any(c => e.CreatorCountry.CountryNameRus == c || e.CreatorCountry.CountryNameEng == c));
 			}
 			if (filter.FromBrands != null)
 			{

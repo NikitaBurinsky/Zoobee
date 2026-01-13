@@ -14,19 +14,79 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 {
 	public class ZoobazarFoodHandler : BaseZoobazarProductHandler
 	{
-		protected override bool IsMatch(HtmlDocument doc)
+		protected override bool IsMatch(HtmlDocument doc, string url)
 		{
-			var checkText = doc.Text.ToLower();
-			List<string> strings = new List<string>
+			// Более жёсткое определение: собираем несколько источников текста с страницы
+			// и применяем принятую логику с позитивными/негативными сигналами и "сильными" индикаторами.
+			if (doc is null || url == null || !url.Contains("catalog")) 
+				return false; 
+
+			var sb = new System.Text.StringBuilder();
+
+			// title, h1, meta description, canonical
+			sb.AppendLine(doc.DocumentNode.SelectSingleNode("//title")?.InnerText ?? "");
+			sb.AppendLine(doc.DocumentNode.SelectSingleNode("//h1[@id='pagetitle']")?.InnerText
+				?? doc.DocumentNode.SelectSingleNode("//h1")?.InnerText ?? "");
+			sb.AppendLine(doc.DocumentNode.SelectSingleNode("//meta[@name='description']")?.GetAttributeValue("content", "") ?? "");
+			sb.AppendLine(doc.DocumentNode.SelectSingleNode("//link[@rel='canonical']")?.GetAttributeValue("href", "") ?? "");
+
+			// Все блоки свойств товара (label + value)
+			var propNodes = doc.DocumentNode.SelectNodes("//div[contains(@class,'product-property')]");
+			if (propNodes != null)
 			{
-				"корм",
-				"лакомст",
-				"паштет",
-				"консерв",
-				"пауч",
-				"korm"
+				foreach (var n in propNodes)
+					sb.AppendLine(n.InnerText);
+			}
+
+			// JSON-LD (schema.org) скрипты — могут содержать "@type":"Product" или "offers" и т.д.
+			var ldNodes = doc.DocumentNode.SelectNodes("//script[@type='application/ld+json']");
+			if (ldNodes != null)
+			{
+				foreach (var s in ldNodes)
+					sb.AppendLine(s.InnerText);
+			}
+
+			var combined = sb.ToString().ToLowerInvariant();
+
+			// Позитивные маркеры, однозначно указывающие на корм (включая морфемы)
+			var positiveMarkers = new[]
+			{
+				"корм","корма","кормы","кормов","влажн","влажный","влажные","сухой","сухие",
+				"пауч","паучи","паштет","консерв","консервы","консерва","лакомств","лакомства",
+				"korm","food","wet food","dry food","diet","veterinary"
 			};
-			return strings.Any(checkText.Contains);
+
+			// Негативные маркеры — похожие категории, которые НЕ являются кормом
+			var negativeMarkers = new[]
+			{
+				"аксессуар","аксесс","игруш","игрушк","клетк","перенос","переноск","ошейник","шлейк",
+				"поилка","миск","наполнител","наполнитель","домик","лежак","кормушка" // некоторые похожие слова оставляем, но кормушка не мешает если сильно выражен корм
+			};
+
+			int positiveCount = positiveMarkers.Count(m => combined.Contains(m));
+			int negativeCount = negativeMarkers.Count(m => combined.Contains(m));
+
+			// Сильные индикаторы (одного из них достаточно в сочетании с другим маркером)
+			bool hasWeight = System.Text.RegularExpressions.Regex.IsMatch(combined, @"\b\d+(?:[.,]\d+)?\s*(кг|г|kg|g)\b", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+			bool hasFoodPropertyLabel = doc.DocumentNode.SelectSingleNode("//div[contains(@class,'product-property__label') and (contains(.,'Вид корма') or contains(.,'Вес') or contains(.,'Состав'))]") != null;
+			bool hasProductSchema = ldNodes != null && ldNodes.Any(s => s.InnerText.ToLowerInvariant().Contains("\"@type\":\"product\"") || s.InnerText.ToLowerInvariant().Contains("\"@type\": \"product\""));
+
+			// Правила принятия решения:
+			// - Если есть очевидные негативные маркеры и нет позитивных — не корм.
+			if (negativeCount > 0 && positiveCount == 0) return false;
+
+			// - Достаточно двух и более позитивных маркеров => корм.
+			if (positiveCount >= 2) return true;
+
+			// - Один позитивный маркер + любой сильный индикатор => корм.
+			if (positiveCount == 1 && (hasWeight || hasFoodPropertyLabel || hasProductSchema)) return true;
+
+			// - Если нет явных маркеров, но есть несколько сильных индикаторов (вес + product schema / поле "Вид корма") => корм.
+			int strongIndicators = (hasWeight ? 1 : 0) + (hasFoodPropertyLabel ? 1 : 0) + (hasProductSchema ? 1 : 0);
+			if (strongIndicators >= 2) return true;
+
+			// Иначе — не считаем страницу однозначно страницей корма.
+			return false;
 		}
 		protected override BaseProductDto ParseSpecificData(HtmlDocument doc, BaseProductDto baseDto)
 		{

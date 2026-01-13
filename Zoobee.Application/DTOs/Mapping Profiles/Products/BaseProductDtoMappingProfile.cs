@@ -80,7 +80,8 @@ namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
 			dto.AverageRating = from.AverageRating;
 			dto.MinPrice = from.MinPrice;
 			dto.MaxPrice = from.MaxPrice;
-			dto.CreatorCountryName = from.CreatorCountry.CountryName;
+			//TODO Сейчас в CCName хранится русское название. Нужно унифицировать
+			dto.CreatorCountryName = from.CreatorCountry.CountryNameRus;
 			dto.CreatorCompanyName = from.CreatorCompany.CompanyName;
 			dto.BrandName = from.Brand.BrandName;
 			dto.ProductLineupName = from.ProductLineup.LineupName;

@@ -30,7 +30,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar
 
 			if (handler == null)
 			{
-				_logger.LogWarning("No handler found for TaskType: {Type}", taskType);
+				_logger.LogWarning("No handler found for Url: {Url}, TaskType: {Type}",url, taskType);
 				// Можно вернуть пустой успех, чтобы не считать это сбоем парсинга, или ошибку
 				return new TransformationResult
 				{

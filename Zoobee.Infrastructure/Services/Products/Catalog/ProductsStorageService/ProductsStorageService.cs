@@ -11,6 +11,13 @@ namespace Zoobee.Infrastructure.Services.Products.Catalog.ProductsStorageService
 	{
 		IMappingService mapper;
 		IProductsUnitOfWork productsUoW;
+
+		public ProductsStorageService(IMappingService mapper, IProductsUnitOfWork productsUoW)
+		{
+			this.mapper = mapper;
+			this.productsUoW = productsUoW;
+		}
+
 		public async Task<OperationResult<Guid>> CreateProductAndSave<ProductDto, ProductEntity>(ProductDto dto)
 			where ProductDto : BaseProductDto
 			where ProductEntity : BaseProductEntity

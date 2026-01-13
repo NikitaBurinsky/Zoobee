@@ -21,7 +21,9 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 
 		public async Task<TransformationResult> HandleAsync(string content, string url)
 		{
-			var result = new TransformationResult();
+			var result = new TransformationResult() { 
+			UpdatedTaskType = ScrapingTaskType.Sitemap,
+			};
 			try
 			{
 				var links = await ZoobazarLinksExtractor.ExtractLinksAsync(content, url);

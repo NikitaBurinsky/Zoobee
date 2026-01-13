@@ -1,24 +1,14 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 using Zoobee.Application.DTOs.Business_Items.Sellings;
 using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
 using Zoobee.Application.Interfaces.Services.Products.Catalog;
 using Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
 using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
 using Zoobee.Domain;
-using Zoobee.Domain.DataEntities.Products;
-using Zoobee.Infrastructure.Parsers.Core.Enums;
-using Zoobee.Infrastructure.Parsers.Core.Transformation;
-using Zoobee.Infrastructure.Parsers.Data;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Transformation;
-using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
 
 namespace Zoobee.Infrastructure.Parsers.Services.Transformation
@@ -76,6 +66,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 						continue;
 					}
 
+					_logger.LogInformation("Start Transformation for Url: {Url}", task.Url);
 					// 3. Запускаем трансформацию, передавая тип задачи
 					var result = await transformer.TransformAsync(content, task.Url, task.Type);
 
@@ -96,7 +87,7 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 
 						// 6. Помечаем, что данные успешно обработаны (чтобы не брать их снова)
 						// Например, ставим флаг в таблице ScrapingData или меняем статус Task
-						await _scrapingRepository.MarkAsTransformedAsync(task.Id, ct);
+						await _scrapingRepository.MarkAsTransformedAsync(task.Id, ct, result.UpdatedTaskType);
 					}
 					else
 					{

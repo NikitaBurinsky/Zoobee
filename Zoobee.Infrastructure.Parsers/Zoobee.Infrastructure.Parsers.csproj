@@ -34,4 +34,8 @@
     <ProjectReference Include="..\Zoobee.Core\Zoobee.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="docs\pages-examples\Zoobazar\Sitemaps\" />
+  </ItemGroup>
+
 </Project>

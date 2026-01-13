@@ -7,7 +7,7 @@ using Zoobee.Infrastructure.Parsers.Core.Entities;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Downloader;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Scheduling;
 
-namespace Zoobee.Infrastructure.Parsers.Workers
+namespace Zoobee.Infrastructure.Parsers.Hosts
 {
 	public class ScrapingWorker : BackgroundService
 	{

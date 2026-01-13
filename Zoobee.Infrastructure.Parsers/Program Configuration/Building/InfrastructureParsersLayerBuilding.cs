@@ -26,7 +26,6 @@ using Zoobee.Infrastructure.Parsers.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Services.Storage;
 using Zoobee.Infrastructure.Parsers.Services.Transformation;
-using Zoobee.Infrastructure.Parsers.Workers;
 
 namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 {
@@ -109,7 +108,7 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 				else
 				{
 					o.UseNpgsql(configuration.GetConnectionString("ParsersDatabaseConnection"),
-						b => b.MigrationsAssembly("Zoobee.Infrastructure.Parsers"));
+						b => b.MigrationsAssembly("Zoobee.Web"));
 				}
 			});
 			return services;

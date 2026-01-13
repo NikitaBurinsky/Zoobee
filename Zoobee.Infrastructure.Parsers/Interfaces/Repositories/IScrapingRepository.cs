@@ -43,7 +43,8 @@ namespace Zoobee.Infrastructure.Parsers.Interfaces.Repositories
 		/// <summary>
 		/// Помечает задачу как "Трансформированную".
 		/// Это может означать смену статуса задачи или установку флага IsProcessed в таблице данных.
+		/// Также можно обновить тип задачи, если это необходимо.
 		/// </summary>
-		Task MarkAsTransformedAsync(Guid taskId, CancellationToken ct);
+		Task MarkAsTransformedAsync(Guid taskId, CancellationToken ct, ScrapingTaskType? UpdatedTaskType);
 	}
 }

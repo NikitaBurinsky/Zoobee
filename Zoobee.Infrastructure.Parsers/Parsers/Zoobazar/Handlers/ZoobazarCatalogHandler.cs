@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 using Zoobee.Infrastructure.Parsers.Core.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
-using Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services;
+using System.Globalization;
 
 namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 {
@@ -29,6 +29,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 		public bool CanHandle(ScrapingTaskType taskType, string content, string url)
 		{
 			if (taskType == ScrapingTaskType.Catalog) return true;
+			if (!url.Contains("zoobazar.by/catalog")) return false;
 			bool catalog_main = content.Contains("<div class=\"catalog__main\">");
 			bool catalog_head = content.Contains("<div class=\"catalog__heading\">");
 
@@ -50,24 +51,21 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 
 			try
 			{
-				var links = await ZoobazarLinksExtractor.ExtractLinksAsync(content, "https://zoobazar.by");
-				int totalLinks = links?.Count() ?? 0;
-				logger.LogInformation("Извлечено ссылок: {Count} для Url: {Url}", totalLinks, url);
+				List<string> otherLinks, linksFromCatalog;
+				ExtractLinksFromCatalogAsync(content, "zoobazar.by", out linksFromCatalog, out otherLinks);
+
+				int totalLinks = linksFromCatalog?.Count() + otherLinks?.Count() ?? 0;
 
 				if (totalLinks > 0)
 				{
-					foreach (var link in links)
-					{
-						if (link.Contains("://zoobazar"))
-						{
-							transformResult.NewTasks.Add(new(link, ScrapingTaskType.Unknown));
-							logger.LogDebug("Добавлена новая задача: Url={Link}, Type={Type}", link, ScrapingTaskType.Unknown);
-						}
-						else
-						{
-							logger.LogDebug("Пропущена ссылка (не соответствует хосту): {Link}", link);
-						}
-					}
+					
+					var addedCount = SaveNewLinksTasks(transformResult, linksFromCatalog, ScrapingTaskType.ProductPage);
+					logger.LogInformation("Добавлено ссылок на продукты в каталоге: {AddedCount}", addedCount);
+					logger.LogTrace(addedCount > 0 ? "Ссылки на продукты: {Links}" : "Нет ссылок на продукты", string.Join(",\n ", linksFromCatalog));	
+					addedCount = SaveNewLinksTasks(transformResult, otherLinks, ScrapingTaskType.Unknown);
+					logger.LogInformation("Добавлено иных ссылок: {AddedCount}", addedCount);
+					logger.LogTrace(addedCount > 0 ? "Ссылки на иные страницы: {Links}" : "Нет иных ссылок", string.Join(",\n ", otherLinks));	
+
 				}
 				else
 				{
@@ -111,6 +109,186 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 				transformResult.IsSuccess = false;
 				return transformResult;
 			}
+		}
+
+		private int SaveNewLinksTasks(TransformationResult transformResult, List<string> linksFromCatalog, ScrapingTaskType currentTaskType)
+		{
+			int c = 0;
+			foreach (var link in linksFromCatalog)
+			{
+				//TODO Здесь отсеиваются ссылки по путям. В будущем расширить и\или перенести фильтрацию ссылок в другое место
+				//Также здесь и отсеиваются ссылки на shops и прочие, нужные в будущем приблуды
+				if (link.Contains("://zoobazar.by/catalog"))
+				{
+					transformResult.NewTasks.Add(new(link, currentTaskType));
+					++c;
+					logger.LogDebug("В результат транформации добавлена новая задача: Url={Link}, Type={Type}", link, currentTaskType);
+				}
+				else
+				{
+					//logger.LogDebug("Пропущена ссылка (не соответствует хосту): {Link}", link);
+				}
+			}
+			return c;
+		}
+
+		private void ExtractLinksFromCatalogAsync(string content, string baseUrl, out List<string> catalogLinks, out List<string> otherLinks)
+		{
+			catalogLinks = new List<string>();
+			otherLinks = new List<string>();
+
+			if (string.IsNullOrWhiteSpace(content))
+			{
+				logger.LogDebug("Empty content passed to ExtractLinksFromCatalogAsync");
+				return;
+			}
+
+			// Parse document
+			var doc = new HtmlDocument();
+			doc.LoadHtml(content);
+
+			// Build a base Uri that can be used to resolve relative links.
+			// If baseUrl contains no scheme, default to https.
+			Uri baseUri;
+			try
+			{
+				if (Uri.TryCreate(baseUrl, UriKind.Absolute, out baseUri) == false)
+				{
+					// treat as host (e.g. "zoobazar.by") or path
+					var normalized = baseUrl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+									 baseUrl.StartsWith("https://", StringComparison.OrdinalIgnoreCase)
+						? baseUrl
+						: "https://" + baseUrl.Trim();
+					baseUri = new Uri(normalized);
+				}
+			}
+			catch (Exception ex)
+			{
+				logger.LogWarning(ex, "Failed to create base URI from '{BaseUrl}', fallback to https://zoobazar.by", baseUrl);
+				baseUri = new Uri("https://zoobazar.by/");
+			}
+
+			// Extract product links (only anchors that are inside a div.product)
+			var productHrefSet = ExtractProductLinksFromDocument(doc, baseUri);
+
+			// Extract all other links and exclude product links
+			var allHrefSet = ExtractAllLinksFromDocument(doc, baseUri);
+
+			// Remove product links from other links
+			allHrefSet.ExceptWith(productHrefSet);
+
+			catalogLinks = productHrefSet.ToList();
+			otherLinks = allHrefSet.ToList();
+
+			logger.LogDebug("ExtractLinksFromCatalogAsync -> product links: {ProductCount}, other links: {OtherCount}", catalogLinks.Count, otherLinks.Count);
+		}
+
+		/// <summary>
+		/// Extracts absolute product links from the document. Only anchors that are descendants of a node
+		/// with class 'product' are considered product links.
+		/// Returns deduplicated set of absolute URLs.
+		/// </summary>
+		private HashSet<string> ExtractProductLinksFromDocument(HtmlDocument doc, Uri baseUri)
+		{
+			var result = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+			// Регулярное выражение, которое ищет div с классом product и извлекает href из ссылок внутри него
+			string pattern = @"<div\s+[^>]*class\s*=\s*['""]?product['""]?[^>]*>.*?<a\s+[^>]*href\s*=\s*['""]([^'""]+)['""][^>]*>.*?</div>";
+			var matches = Regex.Matches(doc.Text, pattern, RegexOptions.IgnoreCase | RegexOptions.Singleline);
+
+			foreach (Match match in matches)
+			{
+				if (match.Groups.Count > 1 && !string.IsNullOrWhiteSpace(match.Groups[1].Value))
+				{
+					var href = match.Groups[1].Value.Trim();
+					var resolved = TryResolveHref(href, baseUri);
+					if (resolved != null)
+					{
+						result.Add(resolved);
+					}
+				}
+			}
+
+			return result;
+		}
+
+		/// <summary>
+		/// Extracts absolute links from all anchors in the document.
+		/// Returns deduplicated set of absolute URLs.
+		/// </summary>
+		private HashSet<string> ExtractAllLinksFromDocument(HtmlDocument doc, Uri baseUri)
+		{
+			var result = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+			var anchors = doc.DocumentNode.SelectNodes("//a[@href]");
+			if (anchors == null) return result;
+
+			foreach (var a in anchors)
+			{
+				var href = a.GetAttributeValue("href", null);
+				if (string.IsNullOrWhiteSpace(href)) continue;
+
+				var resolved = TryResolveHref(href, baseUri);
+				if (resolved != null)
+				{
+					result.Add(resolved);
+				}
+			}
+
+			return result;
+		}
+
+		/// <summary>
+		/// Resolves an href value against the provided baseUri and normalizes results.
+		/// Returns null for non-http(s) schemes like javascript:, mailto:, or pure fragments.
+		/// </summary>
+		private static string? TryResolveHref(string href, Uri baseUri)
+		{
+			href = href.Trim();
+
+			// Skip fragments, javascript, mailto and data URIs
+			if (href.StartsWith("#", StringComparison.Ordinal) ||
+				href.StartsWith("javascript:", StringComparison.OrdinalIgnoreCase) ||
+				href.StartsWith("mailto:", StringComparison.OrdinalIgnoreCase) ||
+				href.StartsWith("data:", StringComparison.OrdinalIgnoreCase))
+			{
+				return null;
+			}
+
+			// Protocol-relative (//host/path) -> add scheme from baseUri
+			if (href.StartsWith("//", StringComparison.Ordinal))
+			{
+				return $"{baseUri.Scheme}:{href}";
+			}
+
+			// Absolute URI
+			if (Uri.TryCreate(href, UriKind.Absolute, out var abs))
+			{
+				// only accept http/https absolute links
+				if (abs.Scheme == Uri.UriSchemeHttp || abs.Scheme == Uri.UriSchemeHttps)
+				{
+					return abs.GetLeftPart(UriPartial.Path) + (string.IsNullOrEmpty(abs.Query) ? "" : abs.Query) + (string.IsNullOrEmpty(abs.Fragment) ? "" : abs.Fragment);
+				}
+				return null;
+			}
+
+			// Relative URI -> resolve against baseUri
+			try
+			{
+				if (Uri.TryCreate(baseUri, href, out var resolved))
+				{
+					if (resolved.Scheme == Uri.UriSchemeHttp || resolved.Scheme == Uri.UriSchemeHttps)
+					{
+						return resolved.GetLeftPart(UriPartial.Path) + (string.IsNullOrEmpty(resolved.Query) ? "" : resolved.Query) + (string.IsNullOrEmpty(resolved.Fragment) ? "" : resolved.Fragment);
+					}
+				}
+			}
+			catch
+			{
+				// ignore resolution failures
+			}
+
+			return null;
 		}
 		private static string BuildNextCatalogLink(string url, int newPageNumber)
 		{

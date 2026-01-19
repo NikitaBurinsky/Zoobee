@@ -10,6 +10,7 @@ using Zoobee.Domain.DataEntities.Environment.Manufactures;
 
 namespace Zoobee.Domain.DataEntities.Products
 {
+
 	public class BaseProductEntity : BaseEntity
 	{
 		public Guid Id { get; set; }

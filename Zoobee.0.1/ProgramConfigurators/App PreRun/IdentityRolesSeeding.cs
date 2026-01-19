@@ -7,7 +7,7 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 {
 	public static class IdentityRolesInitializer
 	{
-		public static async Task RolesSeedingAsync(this WebApplication app)
+		public static void RolesSeeding(this WebApplication app)
 		{
 			using var scope = app.Services.CreateScope();
 			var services = scope.ServiceProvider;
@@ -15,7 +15,7 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 			var userManager = services.GetRequiredService<UserManager<BaseApplicationUser>>();
 			var config = services.GetRequiredService<IConfiguration>();
 
-			await InitializeAsync(userManager, rolesManager, config);
+			InitializeAsync(userManager, rolesManager, config);
 
 			var logger = services.GetRequiredService<ILogger<Program>>();
 			var roles = rolesManager.Roles.Select(e => e.Name).ToList();
@@ -30,14 +30,14 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 			if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword))
 				throw new InvalidOperationException("Admin credentials are not configured.");
 
-			if (await roleManager.FindByNameAsync("admin") == null)
-				await roleManager.CreateAsync(new ApplicationRole("admin"));
+			if (await roleManager.FindByNameAsync("super-admin") == null)
+				await roleManager.CreateAsync(new ApplicationRole("super-admin"));
 
 			if (await roleManager.FindByNameAsync("customer") == null)
 				await roleManager.CreateAsync(new ApplicationRole("customer"));
 
-			if (await roleManager.FindByNameAsync("seeding-admin") == null)
-				await roleManager.CreateAsync(new ApplicationRole("seeding-admin"));
+			if (await roleManager.FindByNameAsync("db-admin") == null)
+				await roleManager.CreateAsync(new ApplicationRole("db-admin"));
 
 
 			if (await userManager.FindByNameAsync(adminEmail) == null)

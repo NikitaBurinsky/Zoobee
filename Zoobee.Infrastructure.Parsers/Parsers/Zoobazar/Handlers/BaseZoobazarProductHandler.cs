@@ -17,6 +17,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers
 		public bool CanHandle(ScrapingTaskType taskType, string content, string url)
 		{
 			if (taskType != ScrapingTaskType.ProductPage && taskType != ScrapingTaskType.Unknown) return false;
+			if (!url.Contains("zoobazar.by/catalog")) return false;
 
 			var doc = new HtmlDocument();
 			doc.LoadHtml(content);

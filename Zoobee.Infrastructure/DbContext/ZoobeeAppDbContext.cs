@@ -57,9 +57,9 @@ namespace Zoobee.Infrastructure.Repositoties
 			builder.ApplyConfiguration(new AdminUserEntityConfigurator());
 			builder.ApplyConfiguration(new OrganisationUserEntityConfigurator());
 			builder.ApplyConfiguration(new CustomerUserEntityConfigurator());
+			builder.ApplyConfigurationsFromAssembly(typeof(BaseApplicationUser).Assembly);
 
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseEntity).Assembly);
-			builder.ApplyConfigurationsFromAssembly(typeof(BaseApplicationUser).Assembly);
 			builder.ApplyConfigurationsFromAssembly(typeof(BaseProductEntity).Assembly);
 		}
 

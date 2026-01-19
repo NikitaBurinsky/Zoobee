@@ -1,10 +1,11 @@
-п»їusing HtmlAgilityPack;
+using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Zoobee.Infrastructure.Parsers.Core.Enums;
 
 namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services
 {
@@ -24,8 +25,8 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services
 			if (nodes == null)
 				return Task.FromResult(new List<string>());
 
-			// РЎРѕР·РґР°РµРј РѕР±СЉРµРєС‚ Uri РёР· Р±Р°Р·РѕРІРѕРіРѕ URL РґР»СЏ РєРѕСЂСЂРµРєС‚РЅРѕРіРѕ РѕР±СЉРµРґРёРЅРµРЅРёСЏ
-			// Р•СЃР»Рё baseurl РїСЂРёС€РµР» Р±РµР· РїСЂРѕС‚РѕРєРѕР»Р° (РЅР°РїСЂ. "zoobazar.by"), РґРѕР±Р°РІР»СЏРµРј https://
+			// Создаем объект Uri из базового URL для корректного объединения
+			// Если baseurl пришел без протокола (напр. "zoobazar.by"), добавляем https://
 			if (!baseurl.StartsWith("http", StringComparison.OrdinalIgnoreCase))
 			{
 				baseurl = "https://" + baseurl;
@@ -33,7 +34,7 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services
 
 			if (!Uri.TryCreate(baseurl, UriKind.Absolute, out Uri baseUri))
 			{
-				// Р•СЃР»Рё Р±Р°Р·РѕРІС‹Р№ URL РЅРµРєРѕСЂСЂРµРєС‚РµРЅ, РјС‹ РЅРµ СЃРјРѕР¶РµРј РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅС‹Рµ СЃСЃС‹Р»РєРё
+				// Если базовый URL некорректен, мы не сможем восстановить относительные ссылки
 				return Task.FromResult(new List<string>());
 			}
 
@@ -43,10 +44,10 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services
 
 				if (string.IsNullOrWhiteSpace(href)) continue;
 
-				// Р”РµРєРѕРґРёСЂСѓРµРј HTML СЃСѓС‰РЅРѕСЃС‚Рё (РЅР°РїСЂРёРјРµСЂ, &amp; -> &)
+				// Декодируем HTML сущности (например, &amp; -> &)
 				href = System.Net.WebUtility.HtmlDecode(href.Trim());
 
-				// РРіРЅРѕСЂРёСЂСѓРµРј СЃСЃС‹Р»РєРё-СЏРєРѕСЂСЏ (#), javascript, mailto Рё tel
+				// Игнорируем ссылки-якоря (#), javascript, mailto и tel
 				if (href.StartsWith("#") ||
 					href.StartsWith("javascript:", StringComparison.OrdinalIgnoreCase) ||
 					href.StartsWith("mailto:", StringComparison.OrdinalIgnoreCase) ||
@@ -57,29 +58,22 @@ namespace Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Services
 
 				try
 				{
-					// 2. РњР°РіРёСЏ РєР»Р°СЃСЃР° Uri: РѕР±СЉРµРґРёРЅСЏРµРј Р±Р°Р·Сѓ Рё РЅР°Р№РґРµРЅРЅСѓСЋ СЃСЃС‹Р»РєСѓ
-					// Р­С‚Рѕ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚:
-					// - РђР±СЃРѕР»СЋС‚РЅС‹Рµ СЃСЃС‹Р»РєРё (https://google.com) -> РѕСЃС‚Р°СЋС‚СЃСЏ РєР°Рє РµСЃС‚СЊ
-					// - РћС‚РЅРѕСЃРёС‚РµР»СЊРЅС‹Рµ РѕС‚ РєРѕСЂРЅСЏ (/catalog) -> https://base.com/catalog
-					// - РћС‚РЅРѕСЃРёС‚РµР»СЊРЅС‹Рµ РѕС‚ С‚РµРєСѓС‰РµР№ РїР°РїРєРё (page.html) -> https://base.com/sub/page.html
+					// 2. Магия класса Uri: объединяем базу и найденную ссылку
+					// Это автоматически обрабатывает:
+					// - Абсолютные ссылки (https://google.com) -> остаются как есть
+					// - Относительные от корня (/catalog) -> https://base.com/catalog
+					// - Относительные от текущей папки (page.html) -> https://base.com/sub/page.html
 					Uri combinedUri = new Uri(baseUri, href);
 
 					uniqueUrls.Add(combinedUri.AbsoluteUri);
 				}
 				catch (UriFormatException)
 				{
-					// РРіРЅРѕСЂРёСЂСѓРµРј Р±РёС‚С‹Рµ URL
+					// Игнорируем битые URL
 				}
 			}
 
 			return Task.FromResult(uniqueUrls.ToList());
 		}
 	}
-
-
-
-
-
-
 }
-

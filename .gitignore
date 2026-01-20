@@ -43,6 +43,9 @@ docker-compose.override.yml
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+## Игнор файлов примеров страниц
+Zoobee.Infrastructure.Parsers/docs/pages-examples/
+
 ## Игнорировать файлы журналов и дампы
 *.log
 *.dump

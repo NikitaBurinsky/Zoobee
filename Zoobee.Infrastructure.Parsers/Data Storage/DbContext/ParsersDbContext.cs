@@ -3,6 +3,7 @@ using Zoobee.Application.DtoTypes.Base;
 using Zoobee.Domain.DataEntities.Base.SoftDelete;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
+using Zoobee.Infrastructure.Parsers.Core.Entities.FailedSaveParsedItemTaskEntity;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 
 namespace Zoobee.Infrastructure.Parsers.Data

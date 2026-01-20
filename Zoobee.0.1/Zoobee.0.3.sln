@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ED13E3C7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoobee.Test", "..\Zoobee.Test\Zoobee.Test.csproj", "{48FD30A6-CF1D-4B4B-BD01-F99EF35EC9DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoobee.Application.Shared", "..\Zoobee.Application.Shared\Zoobee.Application.Shared.csproj", "{1A5F402C-64F5-4B0A-A693-0E818F17BBC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{48FD30A6-CF1D-4B4B-BD01-F99EF35EC9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48FD30A6-CF1D-4B4B-BD01-F99EF35EC9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48FD30A6-CF1D-4B4B-BD01-F99EF35EC9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5F402C-64F5-4B0A-A693-0E818F17BBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5F402C-64F5-4B0A-A693-0E818F17BBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5F402C-64F5-4B0A-A693-0E818F17BBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5F402C-64F5-4B0A-A693-0E818F17BBC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{04B147D6-1B08-4512-B458-040617621926} = {3F0A4BEA-D4B3-4279-885F-B6BA29ADA129}
 		{166B5386-9195-4CCD-BF13-1E0F1D523F99} = {3F0A4BEA-D4B3-4279-885F-B6BA29ADA129}
 		{48FD30A6-CF1D-4B4B-BD01-F99EF35EC9DC} = {ED13E3C7-5625-457C-928C-1F35BD5A958D}
+		{1A5F402C-64F5-4B0A-A693-0E818F17BBC8} = {9587D54D-970F-4ED0-8DA0-1453236E22EB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EA2D8226-DF73-484F-B7D9-C93C548EAB45}

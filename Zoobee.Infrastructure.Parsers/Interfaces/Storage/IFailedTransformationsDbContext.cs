@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Domain.DataEntities.Products;
-using Zoobee.Infrastructure.Parsers.Core.Entities;
+using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
 
 namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 {
@@ -14,5 +14,7 @@ namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 		public DbSet<FailedParsedSaveTaskEntity> FailedInfos { get; } 
 		public DbSet<BaseProductEntity> FailedProducts { get; }
 		public DbSet<SellingSlotEntity> FailedSellings { get; }
+
+		
 	}
 }

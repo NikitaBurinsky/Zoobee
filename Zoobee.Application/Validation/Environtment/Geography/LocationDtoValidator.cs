@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environtment.Geography;
 using Zoobee.Domain.Localization;
 
 namespace Zoobee.Application.Validation.Environtment.Geography

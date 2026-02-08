@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Zoobee.Application.DTOs.Filters;
-using Zoobee.Application.DTOs.Filters.Products.Toilet_Product;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Filters;
+using Zoobee.Application.Shared.DTOs.Filters.Products.Toilet_Product;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Services.Products.ProductsFinder;
 
 namespace ZooStores.Web.Area.Customer

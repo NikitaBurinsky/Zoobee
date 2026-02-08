@@ -1,5 +1,5 @@
 ﻿using LinqKit;
-using Zoobee.Application.DTOs.Filters.Products.Base_Product;
+using Zoobee.Application.Shared.DTOs.Filters.Products.Base_Product;
 using Zoobee.Application.Filtration.Base;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Domain.Enums;

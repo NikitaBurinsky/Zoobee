@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zoobee.Application.Shared.DTOs.System.Parsing.FailedSaveParsedItemsTask.Components;
 
-namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures
+namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity
 {
 	public class FailedItemErrorData
 	{

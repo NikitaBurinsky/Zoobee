@@ -5,7 +5,7 @@ using Zoobee.Application.Shared.DTOs.System.Parsing;
 
 namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity
 {
-	public class FailedParsedSaveTaskEntity : BaseEntity
+	public class FailedToSaveParsedItemTaskEntity : BaseEntity
 	{
 		public Guid Id { get; set; }
 		public bool IsResolved { get; set; }
@@ -16,13 +16,16 @@ namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedI
 		public FailedItemResolvingInfo? ResolvedInfo { get; set; }
 		public FailedItemErrorData FailureData { get; set; }
 		public FailedItemType FailedObject { get; set; }
+		public Type ProductType { get; set; }
 		public string? FailedProductJSON { get; set; }
 		public string? FailedSlotJSON { get; set; }
+
+
 	}
 
-	public class FailedTransformationEntityConfigurator : IEntityTypeConfiguration<FailedParsedSaveTaskEntity>
+	public class FailedTransformationEntityConfigurator : IEntityTypeConfiguration<FailedToSaveParsedItemTaskEntity>
 	{
-		public void Configure(EntityTypeBuilder<FailedParsedSaveTaskEntity> builder)
+		public void Configure(EntityTypeBuilder<FailedToSaveParsedItemTaskEntity> builder)
 		{
 			builder.HasKey(x => x.Id);
 			builder.ComplexProperty(e => e.ResolvedInfo)

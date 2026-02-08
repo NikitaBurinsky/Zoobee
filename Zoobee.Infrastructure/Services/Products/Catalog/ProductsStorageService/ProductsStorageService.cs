@@ -1,4 +1,4 @@
-﻿using Zoobee.Application.DTOs.Products.Base;
+﻿using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
 using Zoobee.Application.Interfaces.Services.MappingService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;

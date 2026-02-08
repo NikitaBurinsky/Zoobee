@@ -6,12 +6,12 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
 using Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
+using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
+using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Services.Products.Matching;
@@ -25,10 +25,15 @@ namespace Zoobee.Infrastructure.Services.Products.ProductsInfoService
 		ProductInfoMatcher productsInfoMatcher;
 		IProductsStorageService ProductsStorageService;
 		IServiceProvider services;
+		private readonly IProductTypeRegistryService _productRegistry;
 
-		public ProductsInfoService(IProductsUnitOfWork uof, ProductInfoMatcher productsInfoMatcher, IProductsStorageService productsStorageService, IServiceProvider services)
+
+		public ProductsInfoService(IProductsUnitOfWork uof, ProductInfoMatcher productsInfoMatcher, 
+			IProductsStorageService productsStorageService, IServiceProvider services,
+			IProductTypeRegistryService productTypeRegistryService)
 		{
 			this.uof = uof;
+			_productRegistry = productTypeRegistryService;
 			this.productsInfoMatcher = productsInfoMatcher;
 			ProductsStorageService = productsStorageService;
 			this.services = services;
@@ -80,11 +85,15 @@ namespace Zoobee.Infrastructure.Services.Products.ProductsInfoService
 			return OperationResult.Success();
 		}
 
+		public OperationResult UpdateOrAddProductInfoOfType(BaseProductDto dto, Type productType, string sourceUrl = null) 
+		{
+			var mapping = _productRegistry.GetMappingOrDefault(productType);
 
+			var method = typeof(IProductsInfoService).GetMethod(nameof(IProductsInfoService.UpdateOrAddProductInfo));
+			var genericMethod = method.MakeGenericMethod(mapping.EntityType, mapping.DtoType);
 
-
-
-
-
+			var res = (OperationResult)genericMethod.Invoke(this, new object[] { dto, sourceUrl });
+			throw new NotImplementedException();
+		}
 	}
 }

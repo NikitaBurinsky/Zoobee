@@ -2,6 +2,7 @@
 {
 	public class RegistrationRequestModel
 	{
+		public string PublicUniqueName { get; set; }
 		public string Email { get; set; }
 		public int BornYear { get; set; }
 		public string Password { get; set; }

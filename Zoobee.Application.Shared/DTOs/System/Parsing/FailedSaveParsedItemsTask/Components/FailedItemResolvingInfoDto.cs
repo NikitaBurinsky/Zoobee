@@ -14,8 +14,13 @@ namespace Zoobee.Application.Shared.DTOs.System.Parsing.FailedSaveParsedItemsTas
 	}
 	public class FailedItemResolvingInfoDto
 	{
-		public string ResolvedByName { get; set; }
-		public DateTime ResolvedAt { get; set; }
-		public string ResolutionNotes { get; set; }
+		/// <summary>
+		/// Пока не имеем UserDto в приложении, используем guid для идентификации пользователя, который решил проблему.
+		/// Система юзеров будет добавлена позже, там введем более удобную ссылку на пользователя.
+		/// TODO: заменить на ссылку на пользователя, когда система юзеров будет добавлена.
+		/// </summary>
+		public Guid? ResolvedById { get; set; }
+		public DateTime? ResolvedAt { get; set; }
+		public string? ResolutionNotes { get; set; }
 	}
 }

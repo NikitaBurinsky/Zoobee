@@ -3,7 +3,7 @@ using Zoobee.Application.DtoTypes.Base;
 using Zoobee.Domain.DataEntities.Base.SoftDelete;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Parsers.Core.Entities;
-using Zoobee.Infrastructure.Parsers.Core.Entities.FailedSaveParsedItemTaskEntity;
+using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
 using Zoobee.Infrastructure.Parsers.Interfaces.Storage;
 
 namespace Zoobee.Infrastructure.Parsers.Data
@@ -15,7 +15,7 @@ namespace Zoobee.Infrastructure.Parsers.Data
 		public DbSet<ScrapingTask> ScrapingTasks { get; set; }
 		public DbSet<ScrapingData> ScrapingDatas { get; set; }
 
-		public DbSet<FailedParsedSaveTaskEntity> FailedInfos { get; set; }
+		public DbSet<FailedToSaveParsedItemTaskEntity> FailedInfos { get; set; }
 		public DbSet<BaseProductEntity> FailedProducts { get; set; }
 		public DbSet<SellingSlotEntity> FailedSellings { get; set; }
 
@@ -100,5 +100,6 @@ namespace Zoobee.Infrastructure.Parsers.Data
 				Entity.DeleteData.DeletedAt = now;
 			}
 		}
+
 	}
 }

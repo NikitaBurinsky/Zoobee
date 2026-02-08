@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Net;
 using System.Text.Json;
-using Zoobee.Application.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environtment.Geography;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient.GeoCoderResponse;
 using Zoobee.Domain;

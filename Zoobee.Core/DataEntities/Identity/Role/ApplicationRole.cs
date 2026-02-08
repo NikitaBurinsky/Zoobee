@@ -10,6 +10,5 @@ namespace Zoobee.Domain.DataEntities.Identity.Role
 	{
 		public ApplicationRole() : base() { }
 		public ApplicationRole(string roleName) : base(roleName) { }
-
 	}
 }

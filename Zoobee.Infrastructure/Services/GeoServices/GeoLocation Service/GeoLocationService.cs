@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Net;
-using Zoobee.Application.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environtment.Geography;
 using Zoobee.Application.Interfaces.Repositories.Environtment.Geography;
 using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;

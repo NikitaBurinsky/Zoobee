@@ -14,12 +14,12 @@ namespace Zoobee.Application.Shared.DTOs.System.Parsing
 		SellingSlot,
 		Both
 	}
-	public class FailedSaveParsedItemsTaskDto : BaseEntityItemDto
+	public class FailedToSaveParsedItemTaskDto : BaseEntityItemDto
 	{
 		public Guid TaskId { get; set; }
 		public string? ProductJSON { get; set; }
+		public string? ProductType { get; set; }
 		public string? SellingSlotJSON { get; set; }
-		public FailureDetectionSource DetectionSource { get; set; }
 		public FailedItemType FailedItemType { get; set; }
 		public FailedItemErrorDataDto ErrorData { get; set; }
 		public bool IsResolved { get; set; }

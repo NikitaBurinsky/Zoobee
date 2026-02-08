@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Filters;
-using Zoobee.Application.DTOs.Filters.Products.Toilet_Product;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Filters;
+using Zoobee.Application.Shared.DTOs.Filters.Products.Toilet_Product;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Filtration.Base;
 using Zoobee.Application.Filtration.Food_Products;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;

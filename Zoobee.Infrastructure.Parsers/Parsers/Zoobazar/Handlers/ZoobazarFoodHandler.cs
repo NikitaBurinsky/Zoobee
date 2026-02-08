@@ -1,9 +1,8 @@
 ﻿using HtmlAgilityPack;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using Zoobee.Application.DTOs.Business_Items.Sellings;
-using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Products.Base;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Domain.DataEntities.Data_Primitives;
 using Zoobee.Domain.DataEntities.Products;
 

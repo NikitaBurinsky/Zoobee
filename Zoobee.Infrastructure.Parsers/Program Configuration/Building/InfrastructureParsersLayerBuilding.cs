@@ -8,6 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
 using Zoobee.Infrastructure.Parsers.Core.Configuration;
 using Zoobee.Infrastructure.Parsers.Core.Configurations;
 using Zoobee.Infrastructure.Parsers.Data;
@@ -26,6 +27,8 @@ using Zoobee.Infrastructure.Parsers.Services.Scheduling;
 using Zoobee.Infrastructure.Parsers.Services.Seeding;
 using Zoobee.Infrastructure.Parsers.Services.Storage;
 using Zoobee.Infrastructure.Parsers.Services.Transformation;
+using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
+using Zoobee.Application.Shared.DTOs.System.Parsing;
 
 namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 {
@@ -40,7 +43,13 @@ namespace Zoobee.Infrastructure.Parsers.Program_Configuration.Building
 			AddSiteTransformers(services);
 			AddResourceHandlers(services);
 			AddConfigurations(services, configuration);
+			AddMappingProfiles(services);
 			return services;
+		}
+
+		private static void AddMappingProfiles(IServiceCollection services)
+		{
+			services.AddScoped<IBaseMappingProfile<FailedToSaveParsedItemTaskEntity, FailedToSaveParsedItemTaskDto>>();
 		}
 
 		private static IServiceCollection AddConfigurations(IServiceCollection services, IConfiguration configuration)

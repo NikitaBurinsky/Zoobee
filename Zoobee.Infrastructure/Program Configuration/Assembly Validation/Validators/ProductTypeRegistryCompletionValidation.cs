@@ -2,8 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
-using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
+using Zoobee.Application.Shared.DTOs.Products.Base;
 
 namespace Zoobee.Infrastructure.Program_Configuration.Assembly_Validation.Validators
 {

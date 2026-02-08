@@ -9,6 +9,17 @@
 	- TransformationResolver - сервис, используемый TransformationService для выбора соответсвующего странице IWebPageTransformer'a
 
 
+# ВАЖНО (NOTES)
+
+#### Проект Infrastructure.Parsers создан максимально отделяемым от остальных частей системы, чтобы в будущем была возможность выделить из него отдельный микро-сервис.
+#### Это ведет к ряду уточнений и особенностей в архитектуре и подходах к реализации.
+- Все трансформеры и обработчики страниц регистрируются в InfrastructureParsersLayerBuilding.cs
+- `Mapping Profiles` для Entities из системы парсинга, создаются и регистрируются в `Infrastructure.Parsers/Mapping Profiles/`, в отличие от остальных частей проекта.
+- Сервисы Infrastructure.Parsers могут использовать сервисы из Application и Core, но не наоборот. 
+- Infrastructure.Parsers обладают независимым ParsersDbContext и набором сущностей, специфичных только для системы парсинга и трансформации. Остальные слои не знают об их существовании даже в теории. 
+	Единственной связью между слоями является передача сущностей в ZoobeeAppDbContext в слое Infrastructure через соответствующие репозитории и прослойка администатора для управления через API (Database Administrator).
+- В отличие от остальных частей системы, сущности InfrastructureParsers логически зависимы от Dto из Application, (а не наоборот). Например, могут использовать Enum из Application Dto.
+
 # Как добавить новый сайт в систему Scraping
 
 Откройте appsettings.json.

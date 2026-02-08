@@ -1,12 +1,13 @@
 ﻿using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+using Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 
-namespace Zoobee.Application.DTOs.Mapping_Profiles.Products
+namespace Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products
 {
 	public class FoodProductDtoMappingProfile : BaseProductDtoMappingProfile<FoodProductDto, FoodProductEntity>
 	{

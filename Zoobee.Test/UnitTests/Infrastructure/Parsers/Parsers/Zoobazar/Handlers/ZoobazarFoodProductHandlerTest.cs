@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using System.Text.Json;
 using System.IO;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Infrastructure.Parsers.Parsers.Zoobazar.Handlers;
 
 namespace Zoobee.Tests.UnitTests.Parsers.Zoobazar

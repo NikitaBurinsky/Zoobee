@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Environtment.Manufactures;
+using Zoobee.Application.Shared.DTOs.Environtment.Manufactures;
 using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
 using Zoobee.Domain.Localization;
 

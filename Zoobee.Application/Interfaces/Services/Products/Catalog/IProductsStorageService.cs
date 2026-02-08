@@ -1,4 +1,4 @@
-﻿using Zoobee.Application.DTOs.Products.Base;
+﻿using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 

@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using Zoobee.Application.DTOs.Business_Items.Sellings;
-using Zoobee.Application.DTOs.Products.Base;
+﻿using Zoobee.Application.Shared.DTOs.Business_Items.Sellings;
+using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Infrastructure.Parsers.Core.Enums;
 
 namespace Zoobee.Infrastructure.Parsers.Core.Transformation

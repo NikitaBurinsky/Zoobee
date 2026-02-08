@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 
 namespace ZooStores.Web.Area.Organisation

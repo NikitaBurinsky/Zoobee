@@ -4,20 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Zoobee.Domain;
-using Zoobee.Infrastructure.Parsers.Core.Entities.FailedSaveParsedItemTaskEntity;
+using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
 
 namespace Zoobee.Infrastructure.Parsers.Interfaces.Repositories
 {
-	public interface IFailedTransformationsRepository
+	public interface IFailedToSaveParsedTasksRepository
 	{
-		public IQueryable<FailedParsedSaveTaskEntity> GetAllResolved();
-		public IQueryable<FailedParsedSaveTaskEntity> GetAllPendingResolve();
-		public IQueryable<FailedParsedSaveTaskEntity> GetPendingFailedProducts();
-		public IQueryable<FailedParsedSaveTaskEntity> GetPendingFailedSellingSlots();
-		public OperationResult CreateFailedTransformationTask(FailedParsedSaveTaskEntity fte);
-		public FailedParsedSaveTaskEntity Get(Guid Id);
-		public FailedParsedSaveTaskEntity SetAsResolved(Guid ResolvedId, Guid ResolvedById);
-		public IList<FailedParsedSaveTaskEntity> GetLatest(int count);
-		public IList<FailedParsedSaveTaskEntity> GetOldest(int count);
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetAllResolved();
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetAllPendingResolve();
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetPendingFailedProducts();
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetPendingFailedSellingSlots();
+		public OperationResult CreateFailedTransformationTask(FailedToSaveParsedItemTaskEntity fte);
+		public FailedToSaveParsedItemTaskEntity Get(Guid Id);
+		public OperationResult Delete(Guid Id);
+		public FailedToSaveParsedItemTaskEntity SetAsResolved(FailedToSaveParsedItemTaskEntity ResolvedId, string resolutionNotes, Guid ResolvedById);
+		public IList<FailedToSaveParsedItemTaskEntity> GetLatest(int count);
+		public IList<FailedToSaveParsedItemTaskEntity> GetOldest(int count);
+		public int SaveChanges();
 	}
 }

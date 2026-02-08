@@ -1,5 +1,5 @@
 ﻿using LinqKit;
-using Zoobee.Application.DTOs.Filters;
+using Zoobee.Application.Shared.DTOs.Filters;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Specifications.Base;
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
+﻿using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 
@@ -22,5 +16,7 @@ namespace Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoSe
 		public OperationResult UpdateOrAddProductInfo<Entity, Dto>(Dto dto,	string sourceUrl = null)
 							where Entity : BaseProductEntity
 							where Dto : BaseProductDto;
+		public OperationResult UpdateOrAddProductInfoOfType(BaseProductDto dto, Type productType, string sourceUrl = null);
 	}
+
 }

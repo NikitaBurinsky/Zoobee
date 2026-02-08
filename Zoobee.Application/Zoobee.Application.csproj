@@ -23,12 +23,14 @@
 
   <ItemGroup>
     <Folder Include="Features\Database Administration\Parsing\Parsing Failures Handling\Commands\" />
+    <Folder Include="Features\Database Administration\Parsing\Parsing Failures Handling\Queries\Validation\" />
     <Folder Include="Validation\Products\" />
     <Folder Include="Validation\Sellings\" />
   </ItemGroup>
 
 
   <ItemGroup>
+    <ProjectReference Include="..\Zoobee.Application.Shared\Zoobee.Application.Shared.csproj" />
     <ProjectReference Include="..\Zoobee.Core\Zoobee.Domain.csproj" />
   </ItemGroup>
 

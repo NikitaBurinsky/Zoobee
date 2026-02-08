@@ -4,17 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures
+namespace Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity
 {
-	public enum FailureDetectionSource
-	{
-		OperationResult,
-		Exception,
-		Unknown
-	}
 	public class FailedItemResolvingInfo
 	{
-		public string? ResolvedByName { get; set; }
+		public Guid? ResolvedById { get; set; }
 		public DateTime? ResolvedAt { get; set; }
 		public string? ResolutionNotes { get; set; }
 	}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Zoobee.Application.DTOs.Business_Items.Sellings;
+using Zoobee.Application.Shared.DTOs.Business_Items.Sellings;
 using Zoobee.Domain;
 
 namespace Zoobee.Application.Interfaces.Services.Products.Catalog

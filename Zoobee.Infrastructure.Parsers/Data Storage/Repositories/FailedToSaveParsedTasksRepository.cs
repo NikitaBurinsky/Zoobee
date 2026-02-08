@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Zoobee.Application.Shared.DTOs.System.Parsing;
 using Zoobee.Domain;
 using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
@@ -23,7 +25,7 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Returns all resolved failed tasks (IsResolved == true).
 		/// </summary>
-		public IQueryable<FailedParsedSaveTaskEntity> GetAllResolved()
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetAllResolved()
 		{
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -33,7 +35,7 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Returns all pending failed tasks (IsResolved == false).
 		/// </summary>
-		public IQueryable<FailedParsedSaveTaskEntity> GetAllPendingResolve()
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetAllPendingResolve()
 		{
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -43,7 +45,7 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Returns pending failed tasks where the failed object is a product.
 		/// </summary>
-		public IQueryable<FailedParsedSaveTaskEntity> GetPendingFailedProducts()
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetPendingFailedProducts()
 		{
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -53,7 +55,7 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Returns pending failed tasks where the failed object is a selling slot.
 		/// </summary>
-		public IQueryable<FailedParsedSaveTaskEntity> GetPendingFailedSellingSlots()
+		public IQueryable<FailedToSaveParsedItemTaskEntity> GetPendingFailedSellingSlots()
 		{
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -63,31 +65,31 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Creates a new failed transformation task.
 		/// </summary>
-		public OperationResult CreateFailedTransformationTask(FailedParsedSaveTaskEntity fte)
+		public OperationResult CreateFailedTransformationTask(FailedToSaveParsedItemTaskEntity fte)
 		{
 			try
 			{
 				if (fte == null)
-					return OperationResult.Error("Failed transformation entity cannot be null", System.Net.HttpStatusCode.BadRequest);
+					return OperationResult.Error("Error.FailedParsedTasks.NullEntity", System.Net.HttpStatusCode.BadRequest);
 
 				if (fte.Id == Guid.Empty)
 					fte.Id = Guid.NewGuid();
 
 				_context.FailedInfos.Add(fte);
-				_context.SaveChangesAsync().GetAwaiter().GetResult();
+				_context.SaveChanges();
 
 				return OperationResult.Success();
 			}
 			catch (Exception ex)
 			{
-				return OperationResult.Error($"Error creating failed transformation task: {ex.Message}", System.Net.HttpStatusCode.InternalServerError);
+				return OperationResult.Error("Error.FailedParsedTasks.WriteDbError", System.Net.HttpStatusCode.InternalServerError);
 			}
 		}
 
 		/// <summary>
 		/// Retrieves a failed task by its ID.
 		/// </summary>
-		public FailedParsedSaveTaskEntity Get(Guid id)
+		public FailedToSaveParsedItemTaskEntity Get(Guid id)
 		{
 			if (id == Guid.Empty)
 				return null;
@@ -100,7 +102,7 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Marks a failed task as resolved by a specific user.
 		/// </summary>
-		public FailedParsedSaveTaskEntity SetAsResolved(Guid resolvedId, Guid resolvedById)
+		public FailedToSaveParsedItemTaskEntity SetAsResolved(Guid resolvedId, Guid resolvedById, string resolutionNotes)
 		{
 			if (resolvedId == Guid.Empty)
 				return null;
@@ -112,14 +114,14 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 			failedTask.IsResolved = true;
 			failedTask.ResolvedInfo = new FailedItemResolvingInfo
 			{
-				ResolvedByName = resolvedById.ToString(), // You may want to get the actual user name from the user ID
+				ResolvedById = resolvedById, // You may want to get the actual user name from the user ID
 				ResolvedAt = DateTime.UtcNow,
 				ResolutionNotes = null // Can be set later if needed
 			};
 			failedTask.Metadata.LastModified = DateTime.UtcNow;
 
 			_context.FailedInfos.Update(failedTask);
-			_context.SaveChangesAsync().GetAwaiter().GetResult();
+			_context.SaveChanges();
 
 			return failedTask;
 		}
@@ -127,10 +129,10 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Gets the N most recent failed tasks ordered by creation date descending.
 		/// </summary>
-		public IList<FailedParsedSaveTaskEntity> GetLatest(int count)
+		public IList<FailedToSaveParsedItemTaskEntity> GetLatest(int count)
 		{
 			if (count <= 0)
-				count = 10; // Default to 10 if invalid count provided
+				count = 10; 
 
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -142,10 +144,10 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 		/// <summary>
 		/// Gets the N oldest failed tasks ordered by creation date ascending.
 		/// </summary>
-		public IList<FailedParsedSaveTaskEntity> GetOldest(int count)
+		public IList<FailedToSaveParsedItemTaskEntity> GetOldest(int count)
 		{
 			if (count <= 0)
-				count = 10; // Default to 10 if invalid count provided
+				count = 10; 
 
 			return _context.FailedInfos
 				.AsNoTracking()
@@ -153,5 +155,34 @@ namespace Zoobee.Infrastructure.Parsers.Data_Storage.Repositories
 				.Take(count)
 				.ToList();
 		}
+
+		public OperationResult Delete(Guid Id)
+		{
+			if (Id == Guid.Empty)
+				return OperationResult.Error("Error.FailedToSaveParsedItems.RemoveDbError.FailedToSaveParsedItemNotFound", HttpStatusCode.BadRequest);
+			var entity = Get(Id);
+
+			_context.FailedInfos.Remove(Get(Id));	
+			_context.SaveChanges();
+			return OperationResult.Success();
+		}
+
+		public FailedToSaveParsedItemTaskEntity SetAsResolved(FailedToSaveParsedItemTaskEntity resolvedEntity, string resolutionNotes, Guid ResolvedById)
+		{
+			var entry = _context.FailedInfos.Update(resolvedEntity);
+			if(entry == null)
+				return null;
+			entry.Entity.IsResolved = true;
+			entry.Entity.ResolvedInfo = new FailedItemResolvingInfo
+			{
+				ResolvedById = ResolvedById,
+				ResolvedAt = DateTime.UtcNow,
+				ResolutionNotes = resolutionNotes,
+			};
+			_context.SaveChanges();
+			return entry.Entity;
+		}
+
+		public int SaveChanges() => _context.SaveChanges();
 	}
 }

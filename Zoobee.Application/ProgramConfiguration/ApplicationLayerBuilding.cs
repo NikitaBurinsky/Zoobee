@@ -2,9 +2,9 @@
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using Zoobee.Application.DTOs.Mapping_Profiles.Products;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Domain.DataEntities.Products;
 
 namespace Zoobee.Application.ServiceCollectionExtensions

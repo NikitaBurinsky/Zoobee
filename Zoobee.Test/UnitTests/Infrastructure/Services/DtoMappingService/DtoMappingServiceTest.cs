@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Localization;
 using Moq;
 using NUnit.Framework;
-using Zoobee.Application.DTOs.Mapping_Profiles.Products;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;

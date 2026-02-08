@@ -1,8 +1,9 @@
-﻿namespace Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient.GeoCoderResponse
-{
-	using Newtonsoft.Json;
-	using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using Zoobee.Application.Interfaces.Services;
+using System.Collections.Generic;
 
+namespace Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient.GeoCoderResponse
+{
 	public class GeoCoderResponse
 	{
 		[JsonProperty("response")]

@@ -39,7 +39,6 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 			if (await roleManager.FindByNameAsync("db-admin") == null)
 				await roleManager.CreateAsync(new ApplicationRole("db-admin"));
 
-
 			if (await userManager.FindByNameAsync(adminEmail) == null)
 			{
 				var admin = new OrganisationUser
@@ -47,7 +46,6 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 					Email = adminEmail,
 					UserName = adminEmail,
 				};
-
 				var res = await userManager.CreateAsync(admin, adminPassword);
 				if (res.Succeeded)
 					await userManager.AddToRoleAsync(admin, "admin");

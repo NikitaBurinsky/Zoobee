@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Zoobee.Application.DTOs.Products.Base;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
+using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Services.Products.Matching.Fingerprinting;
 

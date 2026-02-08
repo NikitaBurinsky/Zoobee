@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Catalog;
+using Zoobee.Application.Shared.DTOs.Catalog;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
 using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 using Zoobee.Domain.DataEntities.Identity.Users;

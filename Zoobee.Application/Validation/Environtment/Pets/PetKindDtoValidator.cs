@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.DTOs.Environtment.Pets;
 using Zoobee.Application.Interfaces.Repositories.Environtment.Pets;
+using Zoobee.Application.Shared.DTOs.Environtment.Pets;
 using Zoobee.Domain.Localization;
 
 namespace Zoobee.Application.Validation.Environtment.Pets

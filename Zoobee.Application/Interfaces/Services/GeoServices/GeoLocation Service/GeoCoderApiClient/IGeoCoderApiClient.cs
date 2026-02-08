@@ -1,4 +1,4 @@
-﻿using Zoobee.Application.DTOs.Environtment.Geography;
+﻿using Zoobee.Application.Shared.DTOs.Environtment.Geography;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 

@@ -1,5 +1,5 @@
-﻿using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
+﻿using Zoobee.Application.Shared.DTOs.Products.Base;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
 using Zoobee.Domain.DataEntities.Products;
 

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Zoobee.Application.DTOs.Products.Base;
-using Zoobee.Application.DTOs.Products.Types;
+using Zoobee.Application.Shared.DTOs.Products.Base;
+using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding;
 using Zoobee.Application.Interfaces.Services.GeoServices;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;

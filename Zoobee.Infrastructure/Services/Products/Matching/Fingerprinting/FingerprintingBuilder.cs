@@ -1,5 +1,4 @@
-﻿// Путь: Zoobee.Infrastructure/Services/Products/Matching/Fingerprinting/FingerprintBuilder.cs
-using Zoobee.Application.DTOs.Products.Base;
+﻿using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain.DataEntities.Products;
 using Zoobee.Infrastructure.Services.Products.Matching.Attributes;
 using Zoobee.Infrastructure.Services.Products.Matching.Normalization;

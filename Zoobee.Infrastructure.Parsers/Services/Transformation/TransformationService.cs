@@ -1,12 +1,15 @@
 ﻿using Microsoft.Extensions.Logging;
-using Zoobee.Application.DTOs.Business_Items.Sellings;
-using Zoobee.Application.DTOs.Products.Base;
+using System.Text.Json;
 using Zoobee.Application.Interfaces.Repositories.UnitsOfWork;
 using Zoobee.Application.Interfaces.Services.Products.Catalog;
 using Zoobee.Application.Interfaces.Services.Products.Catalog.ProductsInfoService;
 using Zoobee.Application.Interfaces.Services.Products.ProductsStorage;
-using Zoobee.Application.Interfaces.Services.ProductTypeRegistry;
+using Zoobee.Application.Interfaces.Services.System.Parsing;
+using Zoobee.Application.Shared.DTOs.Business_Items.Sellings;
+using Zoobee.Application.Shared.DTOs.Products.Base;
+using Zoobee.Application.Shared.DTOs.System.Parsing;
 using Zoobee.Domain;
+using Zoobee.Infrastructure.Parsers.Core.Entities.Failures.FailedSaveParsedItemTaskEntity;
 using Zoobee.Infrastructure.Parsers.Interfaces.Repositories;
 using Zoobee.Infrastructure.Parsers.Interfaces.Services.Transformation;
 using Zoobee.Infrastructure.Parsers.Interfaces.Transformation;
@@ -23,24 +26,23 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 
 		private readonly IProductsInfoService productsInfoService;
 		private readonly ISellingSlotsInfoService sellingSlotsInfoService;
-		private readonly IProductTypeRegistryService _productRegistry;
-
+		private IParsingFailuresService failuresService;
 
 
 		public TransformationService(IScrapingRepository scrapingRepository,
 			IProductsUnitOfWork productsUnitOfWork, ITransformerResolver transformerResolver,
 			ILogger<TransformationService> logger, IProductsStorageService productsStorageService,
 			IProductsInfoService productsInfoService, ISellingSlotsInfoService sellingSlotsInfoService,
-			IProductTypeRegistryService productRegistry)
+			IParsingFailuresService failuresService)
 		{
 			_scrapingRepository = scrapingRepository;
 			_productsUnitOfWork = productsUnitOfWork;
 			_transformerResolver = transformerResolver;
 			_logger = logger;
+			this.failuresService = failuresService;
 			this.productsStorageService = productsStorageService;
 			this.productsInfoService = productsInfoService;
 			this.sellingSlotsInfoService = sellingSlotsInfoService;
-			_productRegistry = productRegistry;
 		}
 
 		public async Task ProcessPendingDataAsync(CancellationToken ct)
@@ -104,59 +106,81 @@ namespace Zoobee.Infrastructure.Parsers.Services.Transformation
 
 		private async Task SaveExtractedDataAsync(BaseProductDto productData, SellingSlotDto slotData, CancellationToken ct)
 		{
-
-			//TODO 
-			//В будущем, добавим отдельные хранилища для обьектов, которые распарсились, но не удалось сохранить
+			OperationResult productRes = null, slotRes = null;
+			Exception productException = null, slotException = null;
 			if (productData != null)
 			{
 				var productType = productData.GetType();
-				try
+				(productRes, productException) = MapAndSaveProductInfo(productData, slotData, productType);
+			}
+			if (slotData != null)
+			{
+				(slotRes, slotException) = MatchAndSaveSellingSlotInfo(slotData);
+			}
+
+			// Handling possible failures
+			if (productRes == null || productRes.Failed)
+			{
+				if (slotRes == null || slotRes.Failed)
 				{
-					MapAndSaveProductInfo(productData, slotData, productType);
+					await failuresService.CreateResolvationTask_FailedBothAsync(slotData, productData, slotRes, productRes, slotException, productException);
+					//todo log
 				}
-				catch (Exception ex)
+				else
 				{
-					_logger.LogError(ex, "Failed to save product {ProductName} of type {ProductType}",
-						productData.Name, productType.Name);
-					throw;
+					await failuresService.CreateResolvationTask_FailedProductAsync(productData, productRes, productException);
+					//todo log
 				}
-				finally
-				{
-					if(slotData != null)
-					{
-						var res = sellingSlotsInfoService.MatchAndSaveSellingSlot(slotData);
-						if (res.Succeeded)
-							_logger.LogInformation("Saved selling slot: {@SlotData}", slotData);
-						else
-							_logger.LogError("Failed to save selling slot: {@SlotData}.\nError: {@Res}", slotData, res);
-					}
-				}
+			}
+			else if (slotRes == null || slotRes.Failed)
+			{
+				await failuresService.CreateResolvationTask_FailedSlotAsync(slotData, slotRes, productData, slotException);
+				//todo log
 			}
 		}
 
-		private void MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType)
+		private (OperationResult, Exception) MatchAndSaveSellingSlotInfo(SellingSlotDto slotData)
 		{
-			var mapping = _productRegistry.GetMappingOrDefault(productType);
-
-			var method = typeof(IProductsInfoService).GetMethod(nameof(IProductsInfoService.UpdateOrAddProductInfo));
-			var genericMethod = method.MakeGenericMethod(mapping.EntityType, mapping.DtoType);
-
-			var res = (OperationResult)genericMethod.Invoke(productsInfoService, new object[] { productData, slotData.SellingUrl });
-
-			if (res.Succeeded)
-				_logger.LogInformation("Saved product information: {@ProductData}", productData);
-			else
-				_logger.LogError("Failed to save selling slot: {@ProductData}.\nError: {@Res}", productData, res);
-
-			if (productType == typeof(BaseProductDto))
+			try
 			{
-				_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", productData.Name);
+				var slotRes = sellingSlotsInfoService.MatchAndSaveSellingSlot(slotData);
+				return (slotRes, null);
 			}
-			else
+			catch (Exception ex)
 			{
-				_logger.LogInformation("Upserted {ProductType}: {Name}",
-					productType.Name.Replace("ProductDto", ""),
-					productData.Name);
+				return (null, ex);				
+			}
+		}
+
+		private (OperationResult, Exception) MapAndSaveProductInfo(BaseProductDto productData, SellingSlotDto slotData, Type productType)
+		{
+			try
+			{
+				var res = productsInfoService.UpdateOrAddProductInfoOfType(productData, productType, slotData.SellingUrl);
+				if (res.Succeeded)
+					_logger.LogInformation("Saved product information: {@ProductData}", productData);
+				else
+				{
+					_logger.LogError("Failed to save selling slot: {@ProductData}.\nError: {@Res}", productData, res);
+				}
+
+				if (productType == typeof(BaseProductDto))
+				{
+					_logger.LogWarning("Upserted Generic Product (Type Unknown): {Name}", productData.Name);
+				}
+				else
+				{
+					_logger.LogInformation("Upserted {ProductType}: {Name}",
+						productType.Name.Replace("ProductDto", ""),
+						productData.Name);
+				}
+				return (res, null);
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, "Failed to save product {ProductName} of type {ProductType}",
+					productData.Name, productType.Name);
+				return (null, ex);
 			}
 		}
 	}

@@ -11,10 +11,8 @@ namespace Zoobee.Infrastructure.Parsers.Interfaces.Storage
 {
 	public interface IFailedTransformationsDbContext
 	{
-		public DbSet<FailedParsedSaveTaskEntity> FailedInfos { get; } 
-		public DbSet<BaseProductEntity> FailedProducts { get; }
-		public DbSet<SellingSlotEntity> FailedSellings { get; }
-
-		
+		public DbSet<FailedToSaveParsedItemTaskEntity> FailedInfos { get; } 
+		public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+		public int SaveChanges();
 	}
 }

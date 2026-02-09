@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
+using Zoobee.Application.Shared.Constants;
 using Zoobee.Domain.DataEntities.Identity.Role;
 using Zoobee.Domain.DataEntities.Identity.Users;
 
@@ -30,25 +31,25 @@ namespace Zoobee.Web.ProgramConfigurators.AppPreRun
 			if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword))
 				throw new InvalidOperationException("Admin credentials are not configured.");
 
-			if (await roleManager.FindByNameAsync("super-admin") == null)
-				await roleManager.CreateAsync(new ApplicationRole("super-admin"));
+			if (await roleManager.FindByNameAsync(UserRoles.SuperAdmin) == null)
+				await roleManager.CreateAsync(new ApplicationRole(UserRoles.SuperAdmin));
 
-			if (await roleManager.FindByNameAsync("customer") == null)
-				await roleManager.CreateAsync(new ApplicationRole("customer"));
+			if (await roleManager.FindByNameAsync(UserRoles.Customer) == null)
+				await roleManager.CreateAsync(new ApplicationRole(UserRoles.Customer));
 
-			if (await roleManager.FindByNameAsync("db-admin") == null)
-				await roleManager.CreateAsync(new ApplicationRole("db-admin"));
+			if (await roleManager.FindByNameAsync(UserRoles.DatabaseAdmin) == null)
+				await roleManager.CreateAsync(new ApplicationRole(UserRoles.DatabaseAdmin));
 
 			if (await userManager.FindByNameAsync(adminEmail) == null)
 			{
-				var admin = new OrganisationUser
+				var admin = new AdminUser
 				{
 					Email = adminEmail,
 					UserName = adminEmail,
 				};
 				var res = await userManager.CreateAsync(admin, adminPassword);
 				if (res.Succeeded)
-					await userManager.AddToRoleAsync(admin, "admin");
+					await userManager.AddToRoleAsync(admin, UserRoles.SuperAdmin);
 			}
 		}
 	}

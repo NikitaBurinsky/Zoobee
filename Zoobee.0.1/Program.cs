@@ -4,7 +4,7 @@ using Zoobee.Application.ServiceCollectionExtensions;
 using Zoobee.Infrastructure.ServiceCollectionExtensions;
 using Serilog;
 using Serilog.Events;
-using Zoobee.Web.Views;
+using Zoobee.Web.Configuration;
 using Zoobee.Infrastructure.Parsers.Program_Configuration.Building;
 using Zoobee.Web.ProgramConfigurators.AppPreRun;
 using Zoobee.Infrastructure.Parsers.ProgramConfigurators.AppPreRun;

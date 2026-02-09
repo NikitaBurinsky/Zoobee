@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 using Zoobee.Core.Errors;
 using Zoobee.Domain.Localization;
 
-namespace Zoobee.Web.Views
+namespace Zoobee.Web.Configuration
 {
 	public static class PresentationLayerBuilding
 	{
@@ -17,6 +17,7 @@ namespace Zoobee.Web.Views
 			AddLocalizationResources(services);
 			AddSwaggerEndpointsDocumentation(services);
 			AddValidation(services);
+			services.AddAuthorizationPolicies();
 			services.AddAuthorization();
 			services.AddAuthentication();
 		}

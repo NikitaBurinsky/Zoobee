@@ -1,40 +1,7 @@
-﻿# Общая иерархия трансформеров
+﻿# SUPPORT_SCALE_GUIDELINE (Entrypoint)
 
-	- TransformationWorker - Хост процесса трансформации скачанных данных в требуемый нам вид
-	- IWebPageTransformer's - Классы обработки конкретных сайтов (прим. ZoobazarTransformer)
-	- IResourceHandler's - Обработчики конкретных типов страницы внутри трансформеров сайтов. Они и занимаются выделением полезной информации со страниц, а именно
-		информации о продуктах, информацию об офферах, и ссылок на другие страницы сайта, для дальнейшей их обработки (прим. ZoobazarTransformer -> ZoobazarFoodHandler, ZoobazarSitemapHandler...) 
+Актуальные playbook'и масштабирования:
 
-	- TransformationService - сервис, инкапсулирующий и обьединяющий работу всего преобразования
-	- TransformationResolver - сервис, используемый TransformationService для выбора соответсвующего странице IWebPageTransformer'a
-
-
-# ВАЖНО (NOTES)
-
-#### Проект Infrastructure.Parsers создан максимально отделяемым от остальных частей системы, чтобы в будущем была возможность выделить из него отдельный микро-сервис.
-#### Это ведет к ряду уточнений и особенностей в архитектуре и подходах к реализации.
-- Все трансформеры и обработчики страниц регистрируются в InfrastructureParsersLayerBuilding.cs
-- `Mapping Profiles` для Entities из системы парсинга, создаются и регистрируются в `Infrastructure.Parsers/Mapping Profiles/`, в отличие от остальных частей проекта.
-- Сервисы Infrastructure.Parsers могут использовать сервисы из Application и Core, но не наоборот. 
-- Infrastructure.Parsers обладают независимым ParsersDbContext и набором сущностей, специфичных только для системы парсинга и трансформации. Остальные слои не знают об их существовании даже в теории. 
-	Единственной связью между слоями является передача сущностей в ZoobeeAppDbContext в слое Infrastructure через соответствующие репозитории и прослойка администатора для управления через API (Database Administrator).
-- В отличие от остальных частей системы, сущности InfrastructureParsers логически зависимы от Dto из Application, (а не наоборот). Например, могут использовать Enum из Application Dto.
-
-# Как добавить новый сайт в систему Scraping
-
-Откройте appsettings.json.
-
-Найдите массив Sources.
-
-Добавьте новый объект с именем источника и ссылками.
-
-Перезапустите приложение. ScrapingSeeder проверит наличие ссылок в БД и добавит только отсутствующие. Дубликаты игнорируются.
-
-# Как добавить новый сайт и страницы в систему Transformation
-
-Создать класс реализующий интерфейс IWebPageTransformer для конкретного сайта. В свойстве string TargetSourceName указать название сайта. 
-Внутри конструктора выбрать из DI контейнера IResourceHandler для этого же сайта (прим. _handlers = handlers.Where(h => h.TargetSourceName == "Zoobazar");)
-
-Создать классы реализующие интерфейсы IResourceHandler для каждого типа страницы на сайте (такие как товар-корм, sitemap, товар-туалет...). В свойстве TargetSourceName указать название сайта
-
-Зарегистрировать трансформеров и обработчиков в InfrastructureParsersLayerBuilding.cs;
+- [`docs/SCALING/MAPPING_PROFILES.md`](../../docs/SCALING/MAPPING_PROFILES.md)
+- [`docs/SCALING/PARSERS_GROWTH.md`](../../docs/SCALING/PARSERS_GROWTH.md)
+- [`docs/SCALING/FUTURE_FOUNDATIONS.md`](../../docs/SCALING/FUTURE_FOUNDATIONS.md)

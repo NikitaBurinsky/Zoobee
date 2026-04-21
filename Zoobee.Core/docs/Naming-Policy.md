@@ -1,18 +1,7 @@
-﻿# Core Naming Policies
+﻿# Core Naming Policy (Entrypoint)
 
-## Domain Classes
+Каноническая политика именования:
 
-### Database Entities
-### "DomainClass"Entity
-	Examples:
-	- FoodProductEntity
-	- MediaFileEntity
+- [`docs/CONVENTIONS/NAMING.md`](../../docs/CONVENTIONS/NAMING.md)
 
-## Operation Results Naming Policy
-
-### Errors Messages 
-### "Error.{DomainContextObject or process(s)}.{Optional: ErrorContextField}.{Error}"
-	Examples:
-	-	OperationResult.Error(localizer["Error.CreatorCompanies.CreatorCompanyNotFound"]...
-	-	OperationResult.Error(localizer["Error.SellerCompanies.WriteDbError"]...
-	-   OperationResult.Error(localizer["Error.Seed.DeliveryAreas.SellerCompanyNotFound"]...
+Этот файл сохранен как legacy entrypoint и не является source of truth.

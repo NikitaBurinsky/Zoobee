@@ -1,0 +1,69 @@
+name: Docs Impact Gate
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  docs-impact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR Docs Impact section
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || "";
+
+            if (!body.includes("## Docs Impact")) {
+              core.setFailed("Missing `## Docs Impact` section in PR body.");
+              return;
+            }
+
+            const naChecked = /-\s*\[x\]\s*`?DOCS_IMPACT_NA`?/i.test(body);
+            const yesChecked = /-\s*\[x\]\s*`?DOCS_IMPACT_UPDATED`?/i.test(body);
+
+            if ((naChecked && yesChecked) || (!naChecked && !yesChecked)) {
+              core.setFailed("Exactly one Docs Impact checkbox must be checked.");
+              return;
+            }
+
+            const reasonMatch = body.match(/Reason \(required\):\s*([\s\S]*?)\n\s*Updated docs links/i);
+            const reasonText = reasonMatch ? reasonMatch[1].trim() : "";
+            if (!reasonText || reasonText.includes("Заполнить обязательно")) {
+              core.setFailed("Docs Impact reason is required.");
+              return;
+            }
+
+            if (yesChecked) {
+              const docsLinksMatch = body.match(/Updated docs links \(required for `DOCS_IMPACT_UPDATED`\):\s*([\s\S]*?)\n\s*ADR link/i);
+              const docsLinks = docsLinksMatch ? docsLinksMatch[1].trim() : "";
+              if (!docsLinks || docsLinks.includes("Пример:")) {
+                core.setFailed("When docs-impact is `DOCS_IMPACT_UPDATED`, provide updated docs links.");
+                return;
+              }
+            }
+
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: pr.number,
+                per_page: 100
+              }
+            );
+
+            const touchesCode = files.some(f =>
+              /\.(cs|csproj|sln|json|yml|yaml)$/i.test(f.filename) &&
+              !f.filename.startsWith("docs/") &&
+              !f.filename.startsWith(".github/")
+            );
+
+            if (touchesCode && naChecked) {
+              core.warning("Code files changed while Docs Impact marked as N/A. Ensure this is intentional.");
+            }

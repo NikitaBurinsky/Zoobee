@@ -4,7 +4,7 @@ using NUnit.Framework;
 using Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products;
 using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
 using Zoobee.Core.Errors;
 using Zoobee.Domain.DataEntities.Catalog.Tags;
@@ -23,7 +23,7 @@ namespace Zoobee.Test.UnitTests.Infrastructure.Services
 		private DtoMappingService mappingService;
 
 		Mock<IServiceProvider> serviceProviderMock = new Mock<IServiceProvider>();
-		Mock<IEnvirontmentDataUnitOfWork> envDataUnitOfWorkMock = new Mock<IEnvirontmentDataUnitOfWork>();
+		Mock<IEnvironmentDataUnitOfWork> envDataUnitOfWorkMock = new Mock<IEnvironmentDataUnitOfWork>();
 		Mock<ITagsRepository> tagsRepositoryMock = new Mock<ITagsRepository>();
 		Mock<IStringLocalizer<Errors>> localizerMock = new Mock<IStringLocalizer<Errors>>();
 

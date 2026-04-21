@@ -1,9 +1,9 @@
 ﻿using FluentValidation.Results;
 using Zoobee.Domain;
 
-namespace Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding
+namespace Zoobee.Application.Interfaces.Services.EnvironmentDataSeeding
 {
-	public interface IEnvirontmentDataSeedingService
+	public interface IEnvironmentDataSeedingService
 	{
 		public Task<List<OperationResult<ValidationResult>>> JsonSeedBrands(Stream json);
 		public Task<List<OperationResult<ValidationResult>>> JsonSeedCreatorCountries(Stream json);

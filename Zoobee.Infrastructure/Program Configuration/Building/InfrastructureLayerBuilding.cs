@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Application.Shared.DTOs.Products.Types;
-using Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding;
+using Zoobee.Application.Interfaces.Services.EnvironmentDataSeeding;
 using Zoobee.Application.Interfaces.Services.GeoServices;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
@@ -100,7 +100,7 @@ namespace Zoobee.Application.ServiceCollectionExtensions
 			services.AddScoped<IProductsStorageService, ProductsStorageService>();
 			services.AddScoped<IMediaStorageService, MediaStorageService>();
 			services.AddScoped<ICountryBorderService, CountryBorderService>();
-			services.AddScoped<IEnvirontmentDataSeedingService, EnvirontmentDataSeedingService>();
+			services.AddScoped<IEnvironmentDataSeedingService, EnvironmentDataSeedingService>();
 			services.AddScoped<IProductsFinderService, ProductsFinderService>();
 			services.AddScoped<IMappingService, DtoMappingService>();
 			services.AddScoped<IProductsInfoService, ProductsInfoService>();

@@ -22,6 +22,25 @@
 
 
   <ItemGroup>
+    <Folder Include="Features\Database Administration\CRUD\Brands\Commands\Delete\" />
+    <Folder Include="Features\Database Administration\CRUD\Brands\Commands\Update\" />
+    <Folder Include="Features\Database Administration\CRUD\Brands\Queries\Read\" />
+    <Folder Include="Features\Database Administration\CRUD\CreatorCompanies\Commands\Create\" />
+    <Folder Include="Features\Database Administration\CRUD\CreatorCompanies\Commands\Delete\" />
+    <Folder Include="Features\Database Administration\CRUD\CreatorCompanies\Commands\Update\" />
+    <Folder Include="Features\Database Administration\CRUD\CreatorCompanies\Queries\Read\" />
+    <Folder Include="Features\Database Administration\CRUD\PetKinds\Commands\Create\" />
+    <Folder Include="Features\Database Administration\CRUD\PetKinds\Commands\Delete\" />
+    <Folder Include="Features\Database Administration\CRUD\PetKinds\Commands\Update\" />
+    <Folder Include="Features\Database Administration\CRUD\PetKinds\Queries\Read\" />
+    <Folder Include="Features\Database Administration\CRUD\ProductsLineups\Commands\Create\" />
+    <Folder Include="Features\Database Administration\CRUD\ProductsLineups\Commands\Delete\" />
+    <Folder Include="Features\Database Administration\CRUD\ProductsLineups\Commands\Update\" />
+    <Folder Include="Features\Database Administration\CRUD\ProductsLineups\Queries\Read\" />
+    <Folder Include="Features\Database Administration\CRUD\SellerCompanies\Commands\Create\" />
+    <Folder Include="Features\Database Administration\CRUD\SellerCompanies\Commands\Delete\" />
+    <Folder Include="Features\Database Administration\CRUD\SellerCompanies\Commands\Update\" />
+    <Folder Include="Features\Database Administration\CRUD\SellerCompanies\Queries\Read\" />
     <Folder Include="Features\Database Administration\Parsing\Parsing Failures Handling\Commands\" />
     <Folder Include="Features\Database Administration\Parsing\Parsing Failures Handling\Queries\Validation\" />
     <Folder Include="Validation\Products\" />

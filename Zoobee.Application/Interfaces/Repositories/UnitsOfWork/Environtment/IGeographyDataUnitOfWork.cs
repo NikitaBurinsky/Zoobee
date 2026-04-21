@@ -1,6 +1,6 @@
-﻿using Zoobee.Application.Interfaces.Repositories.Environtment.Geography;
+﻿using Zoobee.Application.Interfaces.Repositories.Environment.Geography;
 
-namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment
+namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment
 {
 	public interface IGeographyDataUnitOfWork
 	{

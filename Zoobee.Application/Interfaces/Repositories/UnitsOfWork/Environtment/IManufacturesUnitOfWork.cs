@@ -1,6 +1,6 @@
-﻿using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+﻿using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 
-namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment
+namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment
 {
 	public interface IManufacturesUnitOfWork
 	{

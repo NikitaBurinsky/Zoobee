@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Net;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 using Zoobee.Application.Interfaces.Services.Products.ProductsMapperService.Mapping_Profiles;
 using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Core.Errors;
@@ -16,10 +16,10 @@ namespace Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products
 		where ProductEntity : BaseProductEntity
 	{
 		IStringLocalizer<Errors> localizer;
-		IEnvirontmentDataUnitOfWork envUOW { get; }
+		IEnvironmentDataUnitOfWork envUOW { get; }
 		ITagsRepository tagsRepository { get; }
 
-		protected BaseProductDtoMappingProfile(IStringLocalizer<Errors> localizer, IEnvirontmentDataUnitOfWork envUOW, ITagsRepository tagsRepository)
+		protected BaseProductDtoMappingProfile(IStringLocalizer<Errors> localizer, IEnvironmentDataUnitOfWork envUOW, ITagsRepository tagsRepository)
 		{
 			this.localizer = localizer;
 			this.envUOW = envUOW;

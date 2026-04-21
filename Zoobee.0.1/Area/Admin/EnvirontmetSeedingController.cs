@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding;
+using Zoobee.Application.Interfaces.Services.EnvironmentDataSeeding;
 
 namespace ZooStores.Web.Area.Admin
 {
@@ -10,7 +10,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("pet-kinds")]
 		public async Task<IActionResult> SeedPetKinds(
 			IFormFile petKinds,
-			[FromServices] IEnvirontmentDataSeedingService seedingService
+			[FromServices] IEnvironmentDataSeedingService seedingService
 			)
 		{
 			if (!ModelState.IsValid)
@@ -23,7 +23,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("brands")]
 		public async Task<IActionResult> SeedBrands(
 			IFormFile brands,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -35,7 +35,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("creator-countries")]
 		public async Task<IActionResult> SeedCreatorCountries(
 			IFormFile creatorCountries,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -47,7 +47,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("product-lineups")]
 		public async Task<IActionResult> SeedProductLineups(
 			IFormFile lineups,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -60,7 +60,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("seller-companies")]
 		public async Task<IActionResult> SeedSellerCompanies(
 			IFormFile sellerCompanies,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -73,7 +73,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("zoostores")]
 		public async Task<IActionResult> SeedZooStores(
 			IFormFile creatorCompanies,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -86,7 +86,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("delivery-areas")]
 		public async Task<IActionResult> SeedDeliveryAreas(
 			IFormFile deliveryAreas,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);
@@ -99,7 +99,7 @@ namespace ZooStores.Web.Area.Admin
 		[HttpPost("creator-companies")]
 		public async Task<IActionResult> SeedCreatorCompanies(
 			IFormFile creatorCompanies,
-			[FromServices] IEnvirontmentDataSeedingService seedingService)
+			[FromServices] IEnvironmentDataSeedingService seedingService)
 		{
 			if (!ModelState.IsValid)
 				return BadRequest(ModelState);

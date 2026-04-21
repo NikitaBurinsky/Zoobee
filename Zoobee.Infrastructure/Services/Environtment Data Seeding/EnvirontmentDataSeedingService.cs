@@ -4,11 +4,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using System.Net;
 using System.Text.Json;
-using Zoobee.Application.Shared.DTOs.Environtment.Geography;
-using Zoobee.Application.Shared.DTOs.Environtment.Manufactures;
-using Zoobee.Application.Shared.DTOs.Environtment.Pets;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
-using Zoobee.Application.Interfaces.Services.EnvirontmentDataSeeding;
+using Zoobee.Application.Shared.DTOs.Environment.Geography;
+using Zoobee.Application.Shared.DTOs.Environment.Manufactures;
+using Zoobee.Application.Shared.DTOs.Environment.Pets;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
+using Zoobee.Application.Interfaces.Services.EnvironmentDataSeeding;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
@@ -21,11 +21,11 @@ using Zoobee.Domain.Localization;
 
 namespace Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding
 {
-	public class EnvirontmentDataSeedingService : IEnvirontmentDataSeedingService
+	public class EnvironmentDataSeedingService : IEnvironmentDataSeedingService
 	{
-		public EnvirontmentDataSeedingService(IStringLocalizer<Validations> validLocalizer,
+		public EnvironmentDataSeedingService(IStringLocalizer<Validations> validLocalizer,
 			IStringLocalizer<Errors> errorLocalizer,
-			IEnvirontmentDataUnitOfWork envUOW,
+			IEnvironmentDataUnitOfWork envUOW,
 			IGeoLocationService geoService,
 			IServiceProvider serviceProvider)
 		{
@@ -38,7 +38,7 @@ namespace Zoobee.Infrastructure.Services.EnvirontmetnDataSeeding
 		private IGeoLocationService geoLocationService { get; set; }
 		private IStringLocalizer<Validations> ValidLocalizer { get; }
 		private IStringLocalizer<Errors> ErrorLocalizer { get; }
-		private IEnvirontmentDataUnitOfWork EnvUOW { get; }
+		private IEnvironmentDataUnitOfWork EnvUOW { get; }
 		private IServiceProvider services { get; }
 
 		/// <summary>

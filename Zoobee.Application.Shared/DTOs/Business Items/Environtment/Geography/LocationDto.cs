@@ -1,7 +1,7 @@
 ﻿using Zoobee.Application.Shared.DTOs.Business_Items.Base;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 
-namespace Zoobee.Application.Shared.DTOs.Environtment.Geography
+namespace Zoobee.Application.Shared.DTOs.Environment.Geography
 {
 	public class LocationDto : BaseEntityItemDto
 	{

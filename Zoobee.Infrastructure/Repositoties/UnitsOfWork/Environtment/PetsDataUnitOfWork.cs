@@ -1,7 +1,7 @@
-﻿using Zoobee.Application.Interfaces.Repositories.Environtment.Pets;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+﻿using Zoobee.Application.Interfaces.Repositories.Environment.Pets;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 
-namespace Zoobee.Infrastructure.Repositoties.UnitsOfWork.Environtment
+namespace Zoobee.Infrastructure.Repositoties.UnitsOfWork.Environment
 {
 	public class PetsDataUnitOfWork : IPetsDataUnitOfWork
 	{

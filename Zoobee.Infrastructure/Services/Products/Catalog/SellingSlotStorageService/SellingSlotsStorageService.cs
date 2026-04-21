@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Net;
 using Zoobee.Application.Shared.DTOs.Business_Items.Sellings;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 using Zoobee.Application.Interfaces.Repositories.Products_Repositories;
 using Zoobee.Application.Interfaces.Repositories.Sellings;
 using Zoobee.Application.Interfaces.Services.Products.Catalog;

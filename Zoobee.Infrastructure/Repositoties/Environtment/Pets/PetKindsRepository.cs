@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Net;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Pets;
+using Zoobee.Application.Interfaces.Repositories.Environment.Pets;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;
 
-namespace Zoobee.Infrastructure.Repositoties.Environtment.Pets
+namespace Zoobee.Infrastructure.Repositoties.Environment.Pets
 {
 	public class PetKindsRepository : RepositoryBase, IPetKindsRepository
 	{

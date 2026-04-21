@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 using Zoobee.Domain.DataEntities.Environment.Creators;
 namespace Zoobee.Web.ProgramConfigurators.App_PreRun
 {

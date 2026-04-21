@@ -1,10 +1,10 @@
-﻿using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+﻿using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 
-namespace Zoobee.Infrastructure.Repositoties.UnitsOfWork.Environtment
+namespace Zoobee.Infrastructure.Repositoties.UnitsOfWork.Environment
 {
-	internal class EnvirontmentDataUnitOfWork : IEnvirontmentDataUnitOfWork
+	internal class EnvironmentDataUnitOfWork : IEnvironmentDataUnitOfWork
 	{
-		public EnvirontmentDataUnitOfWork(IGeographyDataUnitOfWork geoUOWork,
+		public EnvironmentDataUnitOfWork(IGeographyDataUnitOfWork geoUOWork,
 			IManufacturesUnitOfWork manufacturesUOWork,
 			IPetsDataUnitOfWork petsDataUnitOfWork)
 		{

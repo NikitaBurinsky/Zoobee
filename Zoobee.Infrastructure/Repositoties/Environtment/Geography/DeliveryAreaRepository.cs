@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using System.Net;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Geography;
+using Zoobee.Application.Interfaces.Repositories.Environment.Geography;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 
-namespace Zoobee.Infrastructure.Repositoties.Environtment.Geography
+namespace Zoobee.Infrastructure.Repositoties.Environment.Geography
 {
 	public class DeliveryAreaRepository : RepositoryBase, IDeliveryAreaRepository
 	{

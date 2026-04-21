@@ -1,6 +1,6 @@
 ﻿using Zoobee.Application.Shared.DTOs.Business_Items.Base;
 
-namespace Zoobee.Application.Shared.DTOs.Environtment.Pets
+namespace Zoobee.Application.Shared.DTOs.Environment.Pets
 {
 	public class PetKindDto : BaseEntityItemDto
 	{

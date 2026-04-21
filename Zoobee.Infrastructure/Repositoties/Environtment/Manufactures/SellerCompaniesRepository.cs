@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Net;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 using Zoobee.Core.Errors;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Environment.Manufactures;
 
-namespace Zoobee.Infrastructure.Repositoties.Environtment.Manufactures
+namespace Zoobee.Infrastructure.Repositoties.Environment.Manufactures
 {
 	public class SellerCompaniesRepository : RepositoryBase, ISellerCompanyRepository
 	{

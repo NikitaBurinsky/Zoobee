@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Localization;
 using Zoobee.Application.Interfaces.Repositories.Catalog;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 using Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products;
 using Zoobee.Application.Shared.DTOs.Products.Types;
 using Zoobee.Core.Errors;
@@ -12,7 +12,7 @@ namespace Zoobee.Application.Shared.DTOs.Mapping_Profiles.Products
 	public class ToiletProductDtoMappingProfile : BaseProductDtoMappingProfile<ToiletProductDto, ToiletProductEntity>
 	{
 		public ToiletProductDtoMappingProfile(IStringLocalizer<Errors> localizer,
-			IEnvirontmentDataUnitOfWork envUOW,
+			IEnvironmentDataUnitOfWork envUOW,
 			ITagsRepository tagsRepository) :
 			base(localizer, envUOW, tagsRepository)
 		{

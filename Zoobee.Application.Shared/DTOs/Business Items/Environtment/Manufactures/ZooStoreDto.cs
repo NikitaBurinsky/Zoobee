@@ -1,8 +1,8 @@
 ﻿using Zoobee.Application.Shared.DTOs.Business_Items.Base;
-using Zoobee.Application.Shared.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environment.Geography;
 using Zoobee.Domain.DataEntities.Environment.Manufactures;
 
-namespace Zoobee.Application.Shared.DTOs.Environtment.Manufactures
+namespace Zoobee.Application.Shared.DTOs.Environment.Manufactures
 {
 	public class ZooStoreDto : BaseEntityItemDto
 	{

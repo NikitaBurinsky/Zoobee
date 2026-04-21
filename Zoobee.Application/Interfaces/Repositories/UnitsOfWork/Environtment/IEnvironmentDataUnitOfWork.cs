@@ -1,6 +1,6 @@
-﻿namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment
+﻿namespace Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment
 {
-	public interface IEnvirontmentDataUnitOfWork
+	public interface IEnvironmentDataUnitOfWork
 	{
 		IGeographyDataUnitOfWork GeoUOWork { get; }
 		IManufacturesUnitOfWork ManufacturesUOWork { get; }

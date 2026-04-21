@@ -1,7 +1,7 @@
 ﻿using Zoobee.Application.Interfaces.Repositories.IRepositoryBase;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 
-namespace Zoobee.Application.Interfaces.Repositories.Environtment.Geography
+namespace Zoobee.Application.Interfaces.Repositories.Environment.Geography
 {
 	public interface ILocationsRepository : IRepositoryBase<LocationEntity>
 	{

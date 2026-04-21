@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Net;
-using Zoobee.Application.Shared.DTOs.Environtment.Geography;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Geography;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
-using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environtment;
+using Zoobee.Application.Shared.DTOs.Environment.Geography;
+using Zoobee.Application.Interfaces.Repositories.Environment.Geography;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.UnitsOfWork.Environment;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService;
 using Zoobee.Application.Interfaces.Services.GeoServices.GeoLocationService.GeoCoderApiClient;
 using Zoobee.Core.Errors;
@@ -19,7 +19,7 @@ namespace Zoobee.Infrastructure.Services.GeoServices.GeoLocationService
 		private IDeliveryAreaRepository deliveryAreaRepository { get; set; }
 		private ILocationsRepository locationsRepository { get; set; }
 		private IGeoCoderApiClient geoCoder { get; set; }
-		public GeoLocationService(IEnvirontmentDataUnitOfWork envUOW,
+		public GeoLocationService(IEnvironmentDataUnitOfWork envUOW,
 			IStringLocalizer<Errors> local,
 			IGeoCoderApiClient geoCoder)
 		{

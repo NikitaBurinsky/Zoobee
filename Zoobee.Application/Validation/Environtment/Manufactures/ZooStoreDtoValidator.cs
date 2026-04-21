@@ -1,11 +1,11 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
-using Zoobee.Application.Shared.DTOs.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
+using Zoobee.Application.Shared.DTOs.Environment.Manufactures;
 using Zoobee.Domain.DataEntities.Environment.Manufactures;
 using Zoobee.Domain.Localization;
 
-namespace Zoobee.Application.Validation.Environtment.Manufactures
+namespace Zoobee.Application.Validation.Environment.Manufactures
 {
 	public class ZooStoreDtoValidator : BaseDtoValidator<ZooStoreDto>
 	{

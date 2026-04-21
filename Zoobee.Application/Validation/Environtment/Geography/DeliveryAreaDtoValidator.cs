@@ -1,13 +1,13 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Geography;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Geography;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 using Zoobee.Application.Interfaces.Services.GeoServices;
-using Zoobee.Application.Shared.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environment.Geography;
 using Zoobee.Domain.DataEntities.Environment.Geography;
 using Zoobee.Domain.Localization;
 
-namespace Zoobee.Application.Validation.Environtment.Geography
+namespace Zoobee.Application.Validation.Environment.Geography
 {
 	public class DeliveryAreaDtoValidator : BaseDtoValidator<DeliveryAreaDto>
 	{

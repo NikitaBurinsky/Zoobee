@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Pets;
-using Zoobee.Application.Shared.DTOs.Environtment.Pets;
+using Zoobee.Application.Interfaces.Repositories.Environment.Pets;
+using Zoobee.Application.Shared.DTOs.Environment.Pets;
 using Zoobee.Domain.Localization;
 
-namespace Zoobee.Application.Validation.Environtment.Pets
+namespace Zoobee.Application.Validation.Environment.Pets
 {
 	public class PetKindDtoValidator : BaseDtoValidator<PetKindDto>
 	{

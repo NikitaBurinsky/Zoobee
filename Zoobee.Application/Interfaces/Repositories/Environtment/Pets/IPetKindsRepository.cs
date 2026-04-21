@@ -1,7 +1,7 @@
 ﻿using Zoobee.Application.Interfaces.Repositories.IRepositoryBase;
 using Zoobee.Domain.DataEntities.Products;
 
-namespace Zoobee.Application.Interfaces.Repositories.Environtment.Pets
+namespace Zoobee.Application.Interfaces.Repositories.Environment.Pets
 {
 	public interface IPetKindsRepository : IRepositoryBase<PetKindEntity>
 	{

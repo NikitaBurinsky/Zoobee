@@ -1,5 +1,5 @@
 ﻿using Zoobee.Application.Interfaces.Repositories.Catalog;
-using Zoobee.Application.Interfaces.Repositories.Environtment.Manufactures;
+using Zoobee.Application.Interfaces.Repositories.Environment.Manufactures;
 using Zoobee.Application.Shared.DTOs.Products.Base;
 using Zoobee.Domain;
 using Zoobee.Domain.DataEntities.Products;

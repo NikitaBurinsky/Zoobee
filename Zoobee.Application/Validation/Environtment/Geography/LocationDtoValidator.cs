@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Localization;
-using Zoobee.Application.Shared.DTOs.Environtment.Geography;
+using Zoobee.Application.Shared.DTOs.Environment.Geography;
 using Zoobee.Domain.Localization;
 
-namespace Zoobee.Application.Validation.Environtment.Geography
+namespace Zoobee.Application.Validation.Environment.Geography
 {
 	public class LocationDtoValidator : BaseDtoValidator<LocationDto>
 	{
